@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutCompany from './components/AboutCompany';
-import ContactSection from './components/ContactSection.Jsx';
+import ContactSection from './components/ContactSection.jsx';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Portfolio from './components/Portfoio';  // Spelling ko sahi karein
