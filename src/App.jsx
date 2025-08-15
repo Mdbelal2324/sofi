@@ -18,9 +18,15 @@ import AboutMore from "./components/AboutMore";
 import ServiceDetails from "./components/ServiceDetails";
 import WebDevelopment from "./components/Webdevelopment";
 import AppDevelopment from "./components/Appdevelopment";
-import SeoService from "./components/Seoservice";
-import SalesforceDevelopment from "./components/Salesforcedevelopment";
+import CrmSolution from "./components/CrmSolution.jsx";
 import EcommerceDevelopment from "./components/Ecommercedevelopment";
+import PortfolioHero from "./components/PortfolioHero.jsx";
+import DigitalMarketing from "./components/DigitalMarketing.jsx";
+import AiMlDevelopment from "./components/AiMlDevelopment.jsx";
+import ChatbotAIDevelopment from "./components/ChatbotAIDevelopment";
+import LetTalkAi from "./components/LetTalkAi.jsx";
+
+
 
 function App() {
   return (
@@ -51,9 +57,16 @@ function App() {
         <Route path="/mission" element={<Mission/>} />
         <Route path="/webdevelopment" element={<WebDevelopment/>} />
         <Route path="/appdevelopment" element={<AppDevelopment/>} />
-        <Route path="/seoservice"  element={<SeoService/>}   />
-        <Route path="/salesforcedevelopment"  element={<SalesforceDevelopment/>}   />
+    
+        <Route path="/crmsolution"   element={<CrmSolution/>} />
         <Route path="/ecommercedevelopment"   element={<EcommerceDevelopment/>} />
+        <Route path="/digitalmarketing"     element={<DigitalMarketing/>} />
+        <Route path="/portfolio" element={<PortfolioHero />} />
+        <Route path="/aimldevelopment" element={<AiMlDevelopment />} />
+         <Route path="/ChatbotAIDevelopment" element={<ChatbotAIDevelopment />} />
+          <Route path="/lettalkai" element={<LetTalkAi />} />
+
+        
       </Routes>
       <Footer />
     </Router>

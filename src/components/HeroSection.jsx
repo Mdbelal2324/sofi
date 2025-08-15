@@ -3,7 +3,7 @@ import Hero from "../assets/image/home.webp";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#3f51b5] py-20">
+    <section className="bg-[#3f51b5] py-40">
       <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
         
         {/* Left Text Content */}
