@@ -33,39 +33,49 @@ const AboutCompany = () => {
 
         {/* Right Section - Text */}
         <div className="w-full lg:w-1/2">
-          <h3 className="text-purple-600 text-lg font-bold mb-2">ABOUT COMPANY</h3>
+          <h3 className="text-purple-600 text-lg font-bold mb-2">About SofiLoft</h3>
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             We've Been Thriving For 25 Years.
           </h1>
           <p className="text-gray-600 mb-6">
-            Continually harness backward-compatible initiatives and synergistic
-            content. Objectively strategize cutting-edge niches with
-            collaborative synergy. Globally pontificate e-business processes
-            through orthogonal web readiness to enhance backend value.
+           We are your end-to-end software development partner, turning visionary ideas into high-impact digital products. From custom websites and mobile apps to AI/ML-driven platforms and CRM solutions, we combine deep technical skills with strategic insight to help organizations simplify operations, engage users, and accelerate their growth trajectory.
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center space-x-2">
               <span className="text-blue-500 text-xl">✔️</span>
               <span className="text-gray-700">
-                Dramatically re-engineer value-added IT systems via mission
+               Rapid, tailored web and mobile app development for competitive advantage
               </span>
             </li>
             <li className="flex items-center space-x-2">
               <span className="text-blue-500 text-xl">✔️</span>
               <span className="text-gray-700">
-                Website & Mobile application design & Development
+                Advanced AI and machine learning integrations unlocking business intelligence
               </span>
             </li>
             <li className="flex items-center space-x-2">
               <span className="text-blue-500 text-xl">✔️</span>
               <span className="text-gray-700">
-                Professional User Experience & Interface researching
+               Custom CRM, ERP, and workflow automation for increased efficiency
+              </span>
+            </li>
+                   <li className="flex items-center space-x-2">
+              <span className="text-blue-500 text-xl">✔️</span>
+              <span className="text-gray-700">
+              Cloud-based infrastructure with continuous integration and delivery
+              </span>
+            </li>
+                
+                   <li className="flex items-center space-x-2">
+              <span className="text-blue-500 text-xl">✔️</span>
+              <span className="text-gray-700">
+             Conversion-optimized UX/UI design focused on user delight and ROI
               </span>
             </li>
           </ul>
           <Link to="/aboutMore">
           <button className="bg-purple-600 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-700 transition">
-            ABOUT MORE →
+             More started→
           </button>
           </Link>
         </div>

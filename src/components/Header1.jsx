@@ -17,19 +17,20 @@ const Header = () => {
       { label: 'Digital Marketing', path: '/digitalmarketing' },
       { label: 'Al/ML Development', path: '/aimldevelopment' },
       { label: 'Chatbot Development', path: '/chatbotaidevelopment' },
-      { label: 'AR/VR Development', path: '/' },
+      { label: 'AR/VR Development', path: '/ar' },
     ],
     Resources: [
       { label: 'Blog', path: '/blog' },
       { label: 'Whitepapers', path: '/whitepapers' },
       { label: 'FAQs', path: '/faqs' },
     ],
-    About: [
-      { label: 'About1', path: '/' },
-    ],
   };
 
-  const navItems = ['Services', 'Portfolio', 'About'];
+  const navItems = [
+    { label: 'Services', dropdown: true },
+    { label: 'Portfolio', dropdown: false, path: '/portfolio' },
+    { label: 'About', dropdown: false, path: '/about' },
+  ];
 
   return (
     <header className="bg-white shadow-md fixed top-0 w-full z-50">
@@ -39,9 +40,9 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <img src={Logo} alt="Logo" className="w-10 h-10" />
           <div>
-            <h1 className="text-lg font-bold text-gray-800">SofiLoft Technologie LLP</h1>
+            <h1 className="text-lg font-bold text-gray-800"> SofiLoft Technologies</h1>
             <p className="text-xs text-gray-500">
-              Technology <span className="text-orange-500">Outsourcing</span> <span className="italic">Simplified</span>
+              Beyond Code.<span className="text-orange-500"> Creating</span> <span className="italic">Value</span>
             </p>
           </div>
         </div>
@@ -50,50 +51,50 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6 relative">
 
           {/* Let's Talk AI Button */}
-         <button
-  onClick={() => navigate("/lettalkai")}
-  className="relative px-5 py-2 rounded-full font-medium text-gray-900 transition-all duration-300 hover:scale-105"
-  style={{
-    background: "linear-gradient(white, white) padding-box, linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc) border-box",
-    border: "2px solid transparent",
-  }}
->
-  <span className="flex items-center gap-2">
-    ✨ Let's talk AI
-  </span>
-</button>
+          <button
+            onClick={() => navigate("/lettalkai")}
+            className="relative px-5 py-2 rounded-full font-medium text-gray-900 transition-all duration-300 hover:scale-105"
+            style={{
+              background: "linear-gradient(white, white) padding-box, linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc) border-box",
+              border: "2px solid transparent",
+            }}
+          >
+            <span className="flex items-center gap-2">
+              ✨ Let's talk AI
+            </span>
+          </button>
 
           <Link to="/" className="text-gray-900 hover:text-orange-600 transition">Home</Link>
 
-          {navItems.map((label) => (
-            label === "Portfolio" ? (
-              <Link
-                key={label}
-                to="/portfolio"
-                className="text-gray-900 hover:text-orange-600"
-              >
-                {label}
-              </Link>
-            ) : (
-              <div key={label} className="relative group">
+          {navItems.map((item) => (
+            item.dropdown ? (
+              <div key={item.label} className="relative group">
                 <button className="flex items-center gap-2 text-gray-900 hover:text-orange-600">
-                  {label} <ChevronDown size={16} />
+                  {item.label} <ChevronDown size={16} />
                 </button>
                 <div className="absolute top-full left-0 w-64 bg-blue-500 text-white shadow-lg rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
                   <ul className="text-sm py-2">
-                    {dropdownItems[label].map((item) => (
-                      <li key={item.label}>
+                    {dropdownItems[item.label].map((subItem) => (
+                      <li key={subItem.label}>
                         <Link
-                          to={item.path}
+                          to={subItem.path}
                           className="block px-5 py-3 hover:bg-orange-600 transition duration-200"
                         >
-                          {item.label}
+                          {subItem.label}
                         </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
+            ) : (
+              <Link
+                key={item.label}
+                to={item.path}
+                className="text-gray-900 hover:text-orange-600"
+              >
+                {item.label}
+              </Link>
             )
           ))}
 
@@ -135,44 +136,44 @@ const Header = () => {
             Home
           </Link>
 
-          {navItems.map((label) => (
-            label === "Portfolio" ? (
-              <Link
-                key={label}
-                to="/portfolio"
-                className="block text-gray-700 hover:text-orange-600 py-2"
-                onClick={() => setMenuOpen(false)}
-              >
-                {label}
-              </Link>
-            ) : (
-              <div key={label} className="py-2">
+          {navItems.map((item) => (
+            item.dropdown ? (
+              <div key={item.label} className="py-2">
                 <button
-                  onClick={() => setDropdown(dropdown === label ? null : label)}
+                  onClick={() => setDropdown(dropdown === item.label ? null : item.label)}
                   className="flex items-center justify-between w-full text-gray-700 hover:text-orange-600"
                 >
-                  {label}
-                  <ChevronDown size={16} className={`${dropdown === label ? 'rotate-180' : ''} transition-transform`} />
+                  {item.label}
+                  <ChevronDown size={16} className={`${dropdown === item.label ? 'rotate-180' : ''} transition-transform`} />
                 </button>
-                {dropdown === label && (
+                {dropdown === item.label && (
                   <ul className="mt-1 pl-4 space-y-1 bg-orange-500 rounded-lg text-white overflow-hidden animate-scaleIn">
-                    {dropdownItems[label].map((item) => (
-                      <li key={item.label}>
+                    {dropdownItems[item.label].map((subItem) => (
+                      <li key={subItem.label}>
                         <Link
-                          to={item.path}
+                          to={subItem.path}
                           className="block text-sm px-4 py-2 hover:bg-orange-600"
                           onClick={() => {
                             setDropdown(null);
                             setMenuOpen(false);
                           }}
                         >
-                          {item.label}
+                          {subItem.label}
                         </Link>
                       </li>
                     ))}
                   </ul>
                 )}
               </div>
+            ) : (
+              <Link
+                key={item.label}
+                to={item.path}
+                className="block text-gray-700 hover:text-orange-600 py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
             )
           ))}
 

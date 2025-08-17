@@ -14,7 +14,7 @@ import ContactFrom from "./components/ContactFrom";
 import  OurTeam from "./components/OurTeam";
 import Mission from "./components/Mission";
 import About from "./components/About";
-import AboutMore from "./components/AboutMore";
+
 import ServiceDetails from "./components/ServiceDetails";
 import WebDevelopment from "./components/Webdevelopment";
 import AppDevelopment from "./components/Appdevelopment";
@@ -25,6 +25,10 @@ import DigitalMarketing from "./components/DigitalMarketing.jsx";
 import AiMlDevelopment from "./components/AiMlDevelopment.jsx";
 import ChatbotAIDevelopment from "./components/ChatbotAIDevelopment";
 import LetTalkAi from "./components/LetTalkAi.jsx";
+import Consult from "./components/Consult.jsx";
+import Testomonial from "./components/Testomonial.jsx";
+import Faq from "./components/Faq.jsx"
+import Ar from "./components/Ar.jsx"
 
 
 
@@ -37,9 +41,15 @@ function App() {
           <>
             <HeroSection />
             <AboutCompany />
+            
             <Services />
             <WhyChooseUs />
+            
             <Portfolio />
+            <Consult />
+            <Testomonial/>
+            <Faq/>
+            
             
             <ContactSection />
           
@@ -52,7 +62,7 @@ function App() {
         <Route path="/ContactFrom" element={<ContactFrom/>} />
         <Route path="/OurTeam"   element={<OurTeam/>} />
         <Route path="/About"     element={<About/>}  />
-        <Route path="/AboutMore" element={<AboutMore/>} />
+        
         <Route path="/service-details/:id" element={<ServiceDetails />} />
         <Route path="/mission" element={<Mission/>} />
         <Route path="/webdevelopment" element={<WebDevelopment/>} />
@@ -65,6 +75,7 @@ function App() {
         <Route path="/aimldevelopment" element={<AiMlDevelopment />} />
          <Route path="/ChatbotAIDevelopment" element={<ChatbotAIDevelopment />} />
           <Route path="/lettalkai" element={<LetTalkAi />} />
+          <Route path="/ar"  element={<Ar/>} />
 
         
       </Routes>

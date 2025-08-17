@@ -33,6 +33,30 @@ const Portfolio = () => {
       description: 'Rank higher on search engines and increase traffic organically.',
       link: '/seo-optimization'
     },
+     {
+      title: 'SEO Optimization',
+      category: 'Marketing',
+      image: Project3,
+      date: 'May 24th 2025',
+      description: 'Rank higher on search engines and increase traffic organically.',
+      link: '/seo-optimization'
+    },
+     {
+      title: 'SEO Optimization',
+      category: 'Marketing',
+      image: Project3,
+      date: 'May 24th 2025',
+      description: 'Rank higher on search engines and increase traffic organically.',
+      link: '/seo-optimization'
+    },
+     {
+      title: 'SEO Optimization',
+      category: 'Marketing',
+      image: Project3,
+      date: 'May 24th 2025',
+      description: 'Rank higher on search engines and increase traffic organically.',
+      link: '/seo-optimization'
+    },
   ];
 
   const CustomPrevArrow = (props) => (

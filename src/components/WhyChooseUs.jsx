@@ -1,68 +1,86 @@
-import React from 'react';
-import Why from '../assets/image/why.svg'; // Ensure path is correct
+import React from "react";
+import { FaUserTie, FaCheckCircle, FaUsers } from "react-icons/fa";
+import { MdOutlineManageSearch } from "react-icons/md";
+import whyImage from "../assets/image/chose.jpg"; // replace with your image path
 
-const WhyChooseUs = () => {
+export default function WhyChooseUs() {
+  const features = [
+    {
+      icon: <MdOutlineManageSearch className="text-blue-500 text-3xl" />,
+      title: "Client-Centric Approach",
+      desc: "We take the time to delve into your unique goals, challenges, and target audience before crafting any solutions."
+    },
+    {
+      icon: <FaCheckCircle className="text-blue-500 text-3xl" />,
+      title: "Proven Track Record of Success",
+      desc: "We showcase a curated selection of our best projects across various industries, demonstrating our ability."
+    },
+    {
+      icon: <FaUsers className="text-blue-500 text-3xl" />,
+      title: "A Team of Experts You Can Trust",
+      desc: "Our team comprises passionate and dedicated IT specialists with a deep understanding of the latest technologies."
+    }
+  ];
+
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#3f51b5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
-          {/* Left Column - Text */}
+          {/* Left Image */}
+          <div className="flex justify-center">
+            <img
+              src={whyImage}
+              alt="Why Choose Us"
+              className="rounded-2xl shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+
+          {/* Right Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <span className="flex items-center text-blue-600 font-semibold uppercase tracking-wide mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 6v6l4 2"
+                />
+              </svg>
               Why Choose Us
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-yellow-300 mb-4">
+              Your Trusted Partner For IT Success
             </h2>
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-600 mb-6">
-              You Get IT & Business Solution
-            </h3>
-            <p className="text-gray-600 mb-8 leading-relaxed text-base md:text-lg">
-              Dynamically brand plug-and-play action items for extensive leadership.
-              Seamlessly collaborate and quickly leverage 24/7 portals through scalable alignment.
+            <p className="text-gray-200 mb-6">
+              In today's digital landscape, having a strong online presence and
+              robust IT infrastructure is crucial for business growth. But with
+              so many IT agencies out there, why choose us? Here's why we stand out.
             </p>
 
-            {/* Feature List */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
-              {[
-                'Big Data Analysis',
-                'High Quality Security',
-                '24/7 Online Support',
-                'Virtual Support Team',
-              ].map((feature, i) => (
-                <div key={i} className="flex items-start space-x-3">
-                  <svg
-                    className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-gray-700 text-base md:text-lg">{feature}</span>
+            <div className="space-y-6">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start">
+                  <div className="flex-shrink-0 mr-4">{feature.icon}</div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-yellow-300">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-200">{feature.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
-
-            <a
-              href="#"
-              className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 text-sm md:text-base"
-            >
-              LEARN MORE →
-            </a>
           </div>
 
-          {/* Right Column - Image */}
-          <div className="w-full">
-            <img
-              src={Why}
-              alt="Why Choose Us"
-              className="w-full h-auto object-contain rounded-xl shadow-lg"
-            />
-          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default WhyChooseUs;
+}

@@ -1,78 +1,193 @@
-import React from 'react'
+// ConsultationBanner.jsx
+import React from "react";
+import { Mail, User, Phone, MessageSquare, MapPin } from "lucide-react";
 
-function ContactFrom() {
+const ConsultationBanner = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-6 flex flex-col lg:flex-row gap-10">
-      {/* Contact Info Section */}
-      <div className="w-full lg:w-1/2 space-y-6">
-        <h2 className="text-3xl sm:text-4xl font-bold">Contact us</h2>
-        <p className="text-gray-600 text-base sm:text-lg">
-          Our delivered services elevate us to the status of one of the top app
-          development companies. Why delay? Reach out and initiate the process.
-        </p>
-        <div className="space-y-4">
-          <div className="flex items-start sm:items-center gap-4 p-4 border rounded-lg shadow-md">
-            <div className="bg-blue-500 text-white p-3 sm:p-4 rounded-full text-xl">
-              📍
-            </div>
-            <div>
-              <h3 className="font-semibold text-base sm:text-lg">Our Address:</h3>
-              <p className="text-sm sm:text-base">68/P0, Jagruti Rd, Pratap Nagar, Sanganer, Jaipur, Rajasthan 302033</p>
+    <section className="relative pt-24 pb-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Banner Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-bold">
+            Transform Your Business Idea Into Reality!
+          </h2>
+        </div>
+
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Left Text */}
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold leading-snug text-gray-800">
+              <span className="text-orange-500">
+                Looking for a reliable technology partner?
+              </span>
+              <br />
+              Let’s <span className="font-extrabold">make it</span> simple.
+              <br />
+              Schedule a call and <br />
+              <span className="text-blue-600">we’ll be in touch shortly.</span>
+            </h3>
+
+            {/* Decorative Images */}
+            <div className="mt-8 flex items-center gap-4">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"
+                alt="Notebook"
+                className="w-16 h-16 object-contain"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2921/2921226.png"
+                alt="Coffee"
+                className="w-16 h-16 object-contain"
+              />
             </div>
           </div>
-          <div className="flex items-start sm:items-center gap-4 p-4 border rounded-lg shadow-md">
-            <div className="bg-blue-500 text-white p-3 sm:p-4 rounded-full text-xl">📧</div>
-            <div>
-              <h3 className="font-semibold text-base sm:text-lg">Our Mailbox:</h3>
-              <p className="text-sm sm:text-base">info@bytonicweb.com</p>
+
+          {/* Right Form */}
+          <div className="bg-white shadow-lg rounded-2xl p-6 border">
+            <form className="space-y-4">
+              {/* Name + Email */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-center border rounded-lg px-3 py-2">
+                  <User className="text-gray-400 mr-2 w-5 h-5" />
+                  <input
+                    type="text"
+                    placeholder="Full Name *"
+                    className="w-full outline-none text-sm"
+                    required
+                  />
+                </div>
+                <div className="flex items-center border rounded-lg px-3 py-2">
+                  <Mail className="text-gray-400 mr-2 w-5 h-5" />
+                  <input
+                    type="email"
+                    placeholder="Email ID *"
+                    className="w-full outline-none text-sm"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Mobile Number */}
+              <div className="flex items-center border rounded-lg px-3 py-2">
+                <Phone className="text-gray-400 mr-2 w-5 h-5" />
+                <input
+                  type="tel"
+                  placeholder="+91 81234 56789"
+                  className="w-full outline-none text-sm"
+                  required
+                />
+              </div>
+
+              {/* Select Option */}
+              <div className="border rounded-lg px-3 py-2">
+                <select className="w-full outline-none text-sm">
+                  <option>Mobile App Development</option>
+                  <option>Web Development</option>
+                  <option>UI/UX Design</option>
+                  <option>Software Consulting</option>
+                </select>
+              </div>
+
+              {/* Message */}
+              <div className="flex items-start border rounded-lg px-3 py-2">
+                <MessageSquare className="text-gray-400 mr-2 w-5 h-5 mt-1" />
+                <textarea
+                  placeholder="Write a Message *"
+                  rows="3"
+                  className="w-full outline-none text-sm resize-none"
+                  required
+                ></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full bg-black text-white font-semibold py-3 rounded-lg hover:bg-gray-800 transition"
+              >
+                Schedule Free Consultation
+              </button>
+            </form>
+
+            {/* Client Logos */}
+            <div className="flex flex-wrap items-center justify-center gap-6 mt-6">
+              <img
+                src="https://1000logos.net/wp-content/uploads/2017/05/Coca-Cola-logo.png"
+                alt="CocaCola"
+                className="h-6"
+              />
+              <img
+                src="https://1000logos.net/wp-content/uploads/2022/06/Titan-Logo.png"
+                alt="Titan"
+                className="h-6"
+              />
+              <img
+                src="https://1000logos.net/wp-content/uploads/2021/05/Adani-logo.png"
+                alt="Adani"
+                className="h-6"
+              />
+              <img
+                src="https://1000logos.net/wp-content/uploads/2017/05/Pepsi-Logo.png"
+                alt="Pepsi"
+                className="h-6"
+              />
+              <img
+                src="https://1000logos.net/wp-content/uploads/2021/05/Hero-MotoCorp-logo.png"
+                alt="Hero"
+                className="h-6"
+              />
+              <img
+                src="https://1000logos.net/wp-content/uploads/2016/10/Samsung-Logo.png"
+                alt="Samsung"
+                className="h-6"
+              />
             </div>
           </div>
-          <div className="flex items-start sm:items-center gap-4 p-4 border rounded-lg shadow-md">
-            <div className="bg-blue-500 text-white p-3 sm:p-4 rounded-full text-xl">📞</div>
-            <div>
-              <h3 className="font-semibold text-base sm:text-lg">Phone Number:</h3>
-              <p className="text-sm sm:text-base">+91-88239 19595</p>
+        </div>
+
+        {/* Contact With Me Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-10">
+            Contact with me
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Sales Department */}
+            <div className="bg-gray-50 rounded-2xl shadow p-6 flex flex-col items-start">
+              <Phone className="w-8 h-8 text-gray-600 mb-3" />
+              <h3 className="text-lg font-semibold text-gray-700">
+                Sales Department
+              </h3>
+              <p className="text-indigo-900 font-medium mt-2">
+                +91 9468967000
+              </p>
+            </div>
+
+            {/* HR Department */}
+            <div className="bg-gray-50 rounded-2xl shadow p-6 flex flex-col items-start">
+              <Mail className="w-8 h-8 text-gray-600 mb-3" />
+              <h3 className="text-lg font-semibold text-gray-700">
+                HR Department
+              </h3>
+              <p className="text-indigo-900 font-medium mt-2">
+                HR@webinfosoftware.com
+              </p>
+            </div>
+
+            {/* Office Location */}
+            <div className="bg-gray-50 rounded-2xl shadow p-6 flex flex-col items-start">
+              <MapPin className="w-8 h-8 text-gray-600 mb-3" />
+              <h3 className="text-lg font-semibold text-gray-700">
+                Office Location
+              </h3>
+              <p className="text-indigo-900 font-medium mt-2">
+                Jaipur, Rajasthan, India
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </section>
+  );
+};
 
-      {/* Contact Form Section */}
-      <div className="w-full lg:w-1/2 p-6 bg-white shadow-lg rounded-lg">
-        <h3 className="text-xl sm:text-2xl font-bold mb-2">Ready to Get Started?</h3>
-        <p className="text-gray-600 text-sm sm:text-base mb-4">
-          Your email address will not be published. Required fields are marked *
-        </p>
-        <form className="space-y-4">
-          <input
-            type="text"
-            placeholder="Your Name *"
-            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
-          />
-          <input
-            type="email"
-            placeholder="Your Email *"
-            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
-          />
-          <input
-            type="text"
-            placeholder="Phone Number"
-            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
-          />
-          <textarea
-            placeholder="Message..."
-            className="w-full p-3 border rounded-lg h-28 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full bg-yellow-500 text-white py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 text-sm sm:text-base"
-          >
-            SEND MESSAGE
-          </button>
-        </form>
-      </div>
-    </div>
-  )
-}
-
-export default ContactFrom;
+export default ConsultationBanner;

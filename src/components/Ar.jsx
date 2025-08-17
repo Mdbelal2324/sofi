@@ -1,12 +1,12 @@
-// CrmSolutions.jsx
+// ArVrDevelopment.jsx
 import React, { useState } from "react";
-import { FaUsers, FaCogs, FaChartLine } from "react-icons/fa";
+import { FaVrCardboard, FaGlasses, FaCode } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
 
-const CrmSolutions = () => {
+const ArVrDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggleFAQ = (index) => {
@@ -16,50 +16,50 @@ const CrmSolutions = () => {
   const services = [
     {
       id: 1,
-      icon: <FaUsers size={28} />,
-      title: "Custom CRM Development",
+      icon: <FaVrCardboard size={28} />,
+      title: "Custom AR/VR Application Development",
       description:
-        "We build scalable CRM systems tailored to your business processes, ensuring efficiency and growth.",
+        "We create immersive AR/VR applications that enhance user experience, from training simulations to interactive product demos.",
       color: "bg-purple-600",
     },
     {
       id: 2,
-      icon: <FaCogs size={28} />,
-      title: "CRM Strategy & Consulting",
+      icon: <FaGlasses size={28} />,
+      title: "AR/VR Strategy & Consulting",
       description:
-        "Our experts help you define CRM strategies, choose the right platform, and maximize ROI.",
+        "Get expert advice on choosing the right AR/VR technology and platforms to maximize engagement and ROI.",
       color: "bg-blue-600",
     },
     {
       id: 3,
-      icon: <FaChartLine size={28} />,
-      title: "CRM Integration",
+      icon: <FaCode size={28} />,
+      title: "3D Modeling & Animation",
       description:
-        "Seamlessly integrate CRM with ERP, marketing tools, and third-party applications.",
+        "Our experts design realistic 3D assets, environments, and animations for AR/VR experiences.",
       color: "bg-red-500",
     },
     {
       id: 4,
-      icon: <FaCogs size={28} />,
-      title: "Sales & Marketing Automation",
+      icon: <FaCode size={28} />,
+      title: "Cross-Platform AR/VR Solutions",
       description:
-        "Automate lead tracking, sales pipelines, and marketing campaigns to drive conversions.",
+        "Deploy immersive applications on VR headsets, AR mobile apps, and mixed reality platforms.",
       color: "bg-green-500",
     },
     {
       id: 5,
-      icon: <FaUsers size={28} />,
-      title: "CRM Migration & Upgrades",
+      icon: <FaCode size={28} />,
+      title: "AR/VR Maintenance & Optimization",
       description:
-        "Migrate from legacy systems to modern CRM platforms without data loss.",
+        "We keep your AR/VR apps updated, optimized, and bug-free for the best performance.",
       color: "bg-yellow-500",
     },
     {
       id: 6,
-      icon: <FaCogs size={28} />,
-      title: "CRM Maintenance & Support",
+      icon: <FaCode size={28} />,
+      title: "Training & Simulation Solutions",
       description:
-        "We provide ongoing support, bug fixes, and updates for smooth CRM operations.",
+        "Build VR training modules and AR-based simulations for industries like healthcare, aviation, and education.",
       color: "bg-pink-500",
     },
   ];
@@ -68,52 +68,61 @@ const CrmSolutions = () => {
     {
       title: "Retail & E-commerce",
       img: web4,
-      desc: "Track customer purchases, manage loyalty programs, and improve customer retention.",
+      desc: "Allow customers to try products virtually with AR-based shopping experiences.",
     },
     {
       title: "Healthcare",
       img: web4,
-      desc: "Manage patient data, appointments, and communication effectively with CRM.",
+      desc: "Enable medical simulations, VR surgeries, and AR-based patient care solutions.",
     },
     {
       title: "Education",
       img: web4,
-      desc: "Streamline student enrollment, communication, and course management.",
+      desc: "Provide immersive learning experiences, 3D classrooms, and virtual labs.",
     },
     {
       title: "Real Estate",
       img: web4,
-      desc: "Track leads, manage property listings, and automate client follow-ups.",
+      desc: "Offer virtual property tours and AR-based interior visualization.",
     },
     {
-      title: "Finance & Banking",
+      title: "Gaming & Entertainment",
       img: web4,
-      desc: "Manage client relationships, transactions, and personalized banking services.",
+      desc: "Deliver next-level immersive VR games and interactive AR entertainment apps.",
     },
     {
       title: "Manufacturing",
       img: web4,
-      desc: "Integrate sales, production, and distribution processes in a unified CRM system.",
+      desc: "Train employees with VR-based safety simulations and AR-based machine assistance.",
     },
   ];
 
   const techStacks = [
     {
-      category: "CRM Platforms",
+      category: "AR/VR SDKs",
       items: [
-        { name: "Salesforce", img: "/images/salesforce.png" },
-        { name: "Zoho CRM", img: "/images/zoho.png" },
-        { name: "HubSpot", img: "/images/hubspot.png" },
-        { name: "Microsoft Dynamics", img: "/images/dynamics.png" },
+        { name: "ARKit", img: "/images/arkit.png" },
+        { name: "ARCore", img: "/images/arcore.png" },
+        { name: "Vuforia", img: "/images/vuforia.png" },
+        { name: "Wikitude", img: "/images/wikitude.png" },
       ],
     },
     {
-      category: "Integration Tools",
+      category: "Game Engines",
       items: [
-        { name: "Zapier", img: "/images/zapier.png" },
-        { name: "MuleSoft", img: "/images/mulesoft.png" },
-        { name: "REST API", img: "/images/restapi.png" },
-        { name: "GraphQL", img: "/images/graphql.png" },
+        { name: "Unity 3D", img: "/images/unity.png" },
+        { name: "Unreal Engine", img: "/images/unreal.png" },
+        { name: "CryEngine", img: "/images/cryengine.png" },
+        { name: "Godot", img: "/images/godot.png" },
+      ],
+    },
+    {
+      category: "Devices",
+      items: [
+        { name: "Oculus Rift", img: "/images/oculus.png" },
+        { name: "HTC Vive", img: "/images/htcvive.png" },
+        { name: "HoloLens", img: "/images/hololens.png" },
+        { name: "Magic Leap", img: "/images/magicleap.png" },
       ],
     },
     {
@@ -147,44 +156,44 @@ const CrmSolutions = () => {
 
   const faqs = [
     {
-      question: "How much does CRM development cost?",
+      question: "What is the cost of AR/VR development?",
       answer:
-        "It depends on features, integrations, and customization. A basic CRM may cost $3,000+, while enterprise-grade CRMs cost more.",
+        "Cost depends on the complexity, platform, and features. Basic AR apps may start around $2,000, while complex VR simulations can go much higher.",
     },
     {
-      question: "How long does it take to implement a CRM?",
+      question: "How long does it take to develop an AR/VR application?",
       answer:
-        "A simple CRM may take 4-6 weeks, while a complex system with integrations may take 3-6 months.",
+        "A simple AR app may take 4-6 weeks, while advanced VR simulations could take 3-6 months.",
     },
     {
-      question: "Can CRM be integrated with my existing tools?",
+      question: "Do AR/VR apps work on all devices?",
       answer:
-        "Yes, we integrate CRMs with marketing tools, ERP systems, payment gateways, and more.",
+        "Yes, we build cross-platform AR/VR apps that run on mobile, desktops, and VR headsets.",
     },
     {
-      question: "Do you provide CRM training and support?",
+      question: "Can AR/VR be integrated with existing business systems?",
       answer:
-        "Absolutely! We provide onboarding, training, and long-term support for your team.",
+        "Absolutely! We can integrate AR/VR solutions with your CRM, ERP, or e-commerce platforms.",
     },
   ];
 
   return (
-    <div id="crmsolutions">
+    <div id="arvrdevelopment">
       {/* FIRST SECTION */}
       <section className="nft-main-banner-sec py-12">
         <div className="container mx-auto px-6 md:px-28">
           <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
             <div className="md:w-1/2">
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Powerful{" "}
+                Innovative{" "}
                 <span className="relative text-red-500">
-                  CRM Solutions
+                  AR/VR Development
                   <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
                 </span>{" "}
                 Company
               </h1>
               <p className="text-lg text-gray-600 mb-6">
-                Manage customer relationships, streamline sales processes, and improve business growth with our custom CRM solutions.
+                We design immersive AR and VR solutions to enhance business operations, training, education, and customer engagement.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-purple-500 to-purple-700">
@@ -196,7 +205,7 @@ const CrmSolutions = () => {
               </div>
             </div>
             <div className="md:w-5/12 flex justify-center pt-20">
-              <img src={web2} alt="CRM Solutions" className="rounded-lg object-contain" />
+              <img src={web2} alt="AR/VR Development" className="rounded-lg object-contain" />
             </div>
           </div>
         </div>
@@ -206,14 +215,14 @@ const CrmSolutions = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="flex-1 flex justify-center">
-            <img src={web3} alt="CRM Services" className="max-w-sm w-full" />
+            <img src={web3} alt="AR/VR Solutions" className="max-w-sm w-full" />
           </div>
           <div className="flex-1">
             <h2 className="text-3xl lg:text-4xl font-bold">
-              Proven <span className="text-pink-500 underline">CRM Solutions</span>
+              Proven <span className="text-pink-500 underline">AR/VR Solutions</span>
             </h2>
             <p className="mt-6 text-gray-600">
-              From customer management to automation, our CRM solutions help businesses boost productivity and sales.
+              From product visualization to training simulations, our AR/VR solutions drive innovation and results.
             </p>
             <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
               Connect With Experts Now!
@@ -226,10 +235,10 @@ const CrmSolutions = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Top <span className="text-pink-500">CRM Development</span> Services
+            Top <span className="text-pink-500">AR/VR Development</span> Services
           </h2>
           <p className="text-gray-600 mt-3">
-            We help businesses manage customers better with customized CRM solutions.
+            Delivering immersive experiences through cutting-edge AR/VR development services.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -249,10 +258,10 @@ const CrmSolutions = () => {
       <section className="bg-gray-900 text-white py-16 px-6 md:px-20">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            CRM Solutions for All Industries
+            AR/VR Development for All Industries
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            Our CRM systems support industries like retail, healthcare, education, and more.
+            Our AR/VR solutions serve industries like retail, healthcare, education, and more.
           </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -271,7 +280,7 @@ const CrmSolutions = () => {
       {/* TECH STACK SECTION */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Latest Tech Stacks for CRM Development
+          Latest Tech Stacks for AR/VR Development
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {techStacks.map((stack, idx) => (
@@ -293,7 +302,7 @@ const CrmSolutions = () => {
       {/* FAQ SECTION */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          FAQs on CRM Solutions
+          FAQs on AR/VR Development
         </h2>
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
@@ -321,4 +330,4 @@ const CrmSolutions = () => {
   );
 };
 
-export default CrmSolutions;
+export default ArVrDevelopment;
