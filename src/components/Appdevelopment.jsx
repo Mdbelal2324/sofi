@@ -3,10 +3,35 @@ import React, { useState } from "react";
 import { FaMobileAlt, FaUserTie, FaCode } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
-import web3 from "../assets/image/web2.webp";
-import web4 from "../assets/image/web3.png";
-import web5 from "../assets/image/web4.png";
-import porto1 from "../assets/image/E-commerce.png";
+import web4 from "../assets/image/Healthcare.png";
+import edu from "../assets/image/Education.jpg";
+import restu from "../assets/image/Resturant.png"
+import ecom from "../assets/image/E-commerce.png";
+import retail from "../assets/image/Retail.png";
+import banking from "../assets/image/Banking.png";
+import state from "../assets/image/Real.png";
+import treval from "../assets/image/Travel.png";
+
+
+import native from "../assets/image/native.png"
+
+import flutter from "../assets/image/flutter.png";
+import swift from  "../assets/image/swift.png";
+import kotlin from "../assets/image/kotlin.png";
+import java from "../assets/image/java.png";
+import php from "../assets/image/php3.png";
+import node from "../assets/image/node2.png";
+import python from "../assets/image/python2.png";
+import post from "../assets/image/post.png";
+import fire from "../assets/image/fire.png";
+import db from "../assets/image/db.png";
+import my from "../assets/image/my.png";
+
+
+
+
+
+
 
 const AppDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -14,140 +39,236 @@ const AppDevelopment = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // SERVICES SECTION
   const services = [
     {
       id: 1,
-      icon: <FaMobileAlt size={28} />,
-      title: "Custom Mobile App Development",
+      icon: <FaCode size={28} />,
+      title: "Cross-Platform App Development",
       description:
-        "We build tailor-made mobile applications that match your unique business needs, delivering high performance and engaging user experiences.",
+        "We build powerful and efficient cross-platform mobile applications using frameworks like React Native and Flutter. This approach enables faster deployment and cost savings while ensuring a consistent and seamless user experience acroWe build powerful and efficient cross-platform mobile applications using frameworks like React Native and Flutter. This approach enables faster deployment and cost savings while ensuring a consistent and seamless user experience across both iOS and Android devices. Our solutions deliver near-native performance and high functionality, helping your business reach a wider audience through a single, unified app.",
       color: "bg-purple-600",
     },
     {
       id: 2,
-      icon: <FaUserTie size={28} />,
-      title: "App Development Consulting",
+      icon: <FaMobileAlt size={28} />,
+      title: "App Maintenance and Support",
       description:
-        "Our expert consultants guide you through strategy, design, and execution to make your app idea a reality.",
+        "Our dedicated app maintenance and support services ensure your mobile application remains secure, updated, and operates flawlessly over time. We continuously monitor performance, promptly fix bugs, provide feature upgrades, and maintain compatibility with the latest OS versionsOur dedicated app maintenance and support services ensure your mobile application remains secure, updated, and operates flawlessly over time. We continuously monitor performance, promptly fix bugs, provide feature upgrades, and maintain compatibility with the latest OS versions. This comprehensive care guarantees your app delivers a superior user experience, encouraging customer retention and long-term success..",
       color: "bg-blue-600",
     },
     {
       id: 3,
-      icon: <FaCode size={28} />,
-      title: "Cross-Platform App Development",
+      icon: <FaUserTie size={28} />,
+      title: "Prototyping and MVP Development",
       description:
-        "Reach more users with apps that work seamlessly on iOS, Android, and the web.",
+        "Quickly validate your app idea with our prototyping and minimum viable product (MVP) development services. This iterative process reduces risks, saves time, and enables you to refine features before full-scale productionQuickly validate your app idea with our prototyping and minimum viable product (MVP) development services. We help you develop functional prototypes that allow early testing and user feedback collection. This iterative process reduces development risks, saves time and resources, and enables you to refine features before full-scale production, ultimately ensuring your app perfectly aligns with user needs and business goals..",
       color: "bg-red-500",
+    },
+    {
+      id: 4,
+      icon: <FaMobileAlt size={28} />,
+      title: "UI/UX Design for Mobile Apps",
+      description:
+        "Our expert designers craft visually appealing and user-friendly interfaces optimized specifically for mobile devices. We create apps that maximize user satisfaction and engagemenOur expert designers craft visually appealing and user-friendly interfaces optimized specifically for mobile devices. Focusing on intuitive navigation, responsive layouts, and engaging visuals, we create apps that maximize user satisfaction and engagement. By delivering outstanding UI/UX design, we help your app stand out in the crowded marketplace, promoting longer user sessions and higher retention rates.t.",
+      color: "bg-green-600",
+    },
+    {
+      id: 5,
+      icon: <FaCode size={28} />,
+      title: "E-commerce Mobile App Development",
+      description:
+        "Expand your retail business with tailor-made e-commerce mobile apps featuring secure payment gateways, easy product browsing, simplified checkout, and personalized recommendationsExpand your retail business with tailor-made e-commerce mobile apps featuring secure payment gateways, easy product browsing, simplified checkout, and personalized recommendations. Our custom apps provide seamless shopping experiences, helping you increase sales and build customer loyalty. We integrate targeted features like push notifications and discounts to engage users and boost repeat purchases effectively..",
+      color: "bg-pink-600",
+    },
+    {
+      id: 6,
+      icon: <FaUserTie size={28} />,
+      title: "Enterprise Mobile App Development",
+      description:
+        "SofiLoft creates scalable and secure enterprise mobile applications designed to improve business efficiency and productivity through dashboards, workflow automation, and analyticsSofiLoft creates scalable and secure enterprise mobile applications designed to improve business efficiency and productivity. Our apps include custom dashboards, workflow automation systems, real-time data analytics, and secure access controls. These tailored solutions empower organizations to streamline processes, enhance communication, and make informed decisions anytime and anywhere through mobile devices..",
+      color: "bg-yellow-600",
+    },
+    {
+      id: 7,
+      icon: <FaMobileAlt size={28} />,
+      title: "On-Demand App Development",
+      description:
+        "We develop comprehensive on-demand mobile applications for transportation, food delivery, and service industries with real-time tracking and secure payment integrationWe develop comprehensive on-demand mobile applications for transportation, food delivery, and service industries. Our apps feature real-time tracking, flexible and secure payment systems, and seamless communication between customers and providers. These user-friendly apps elevate customer convenience and satisfaction while offering service providers reliable tools for efficient management and growth..",
+      color: "bg-indigo-600",
+    },
+    {
+      id: 8,
+      icon: <FaCode size={28} />,
+      title: "IoT Mobile App Development",
+      description:
+        "Connect, monitor, and control IoT devices through custom-built mobile apps designed for smart homes, healthcare, and manufacturing industriesConnect, monitor, and control IoT devices through custom-built mobile applications designed for industries such as smart homes, healthcare, and manufacturing. We develop secure, intuitive apps that provide real-time device status, alerts, and remote control features—helping users interact effortlessly with their Internet of Things ecosystems and enhancing operational efficiency.",
+      color: "bg-teal-600",
+    },
+    {
+      id: 9,
+      icon: <FaUserTie size={28} />,
+      title: "Mobile App Testing and QA",
+      description:
+        "Our rigorous testing and quality assurance services ensure your mobile app operates flawlessly across devices with maximum security and performancConnect, monitor, and control IoT devices through custom-built mobile applications designed for industries such as smart homes, healthcare, and manufacturing. We develop secure, intuitive apps that provide real-time device status, alerts, and remote control features—helping users interact effortlessly with their Internet of Things ecosystems and enhancing operational efficiency.e.",
+      color: "bg-gray-700",
     },
   ];
 
+  // INDUSTRY SECTION
   const industryServices = [
-    {
-      title: "E-commerce",
-      img: web4,
-      desc: "Boost your online store with feature-rich mobile apps offering smooth browsing, secure payments, and order tracking.",
-    },
     {
       title: "Healthcare",
       img: web4,
-      desc: "Develop HIPAA-compliant healthcare apps with appointment booking, telemedicine, and patient record management.",
+      desc: "Enhance patient care with telemedicine, appointment scheduling, and electronic health record apps. Secure, compliant, and efficient for hospitals and wellness centersEnhance patient care and efficiency with custom healthcare mobile apps that securely integrate telemedicine, appointment scheduling, and electronic health records. Our apps meet strict healthcare regulations while improving communication between patients and providers. This strengthens patient engagement, streamlines medical workflows, and elevates overall healthcare service delivery in clinics, hospitals, and wellness centers..",
     },
     {
       title: "Education",
-      img: web4,
-      desc: "Create interactive learning apps with video lessons, quizzes, and progress tracking for students and educators.",
-    },
-    {
-      title: "Travel & Tourism",
-      img: web4,
-      desc: "Enable easy trip planning with booking, itinerary management, and in-app maps for travelers.",
+      img: edu,
+      desc: "Empower students and educators with interactive mobile learning platforms supporting virtual classrooms, course management, and progress trackingEmpower students and educators with interactive mobile learning platforms supporting virtual classrooms, course management, and progress tracking. Our custom apps facilitate engaging remote learning experiences that simplify collaboration, access to educational content, and administrative tasks. They are designed to meet the needs of modern education environments, enhancing both teaching effectiveness and learner outcomes..",
     },
     {
       title: "Food & Restaurant",
-      img: web4,
-      desc: "Build custom food delivery and restaurant apps with real-time tracking and menu management.",
+      img: restu,
+      desc: "Transform your food business with apps featuring online ordering, real-time delivery tracking, table reservations, and loyalty program Transform your restaurant or food delivery business with mobile apps featuring online ordering, real-time delivery tracking, and table reservation systems. Our tailored solutions include menu management, loyalty program integration, and push notifications to enhance customer satisfaction, optimize order accuracy, and increase repeat business through seamless user experiences on mobile devices..",
     },
     {
-      title: "Finance",
+      title: "Travel & Tours",
+      img: treval,
+      desc: "Captivate travelers with mobile apps offering booking, personalized itineraries, offline content access, and location-based recommendationsCaptivate travelers with mobile apps offering easy booking, personalized itineraries, offline content access, and location-based recommendations. Our apps improve customer engagement and brand loyalty by simplifying trip planning and fostering smooth communication. Designed for the travel industry, they provide practical tools for users and efficient management features for businesses..",
+    },
+    {
+      title: "E-commerce",
+      img: ecom,
+      desc: "Boost your online retail presence with custom e-commerce mobile apps that feature secure payment gateways, intuitive navigation, wish lists, and targeted promotions. Our apps increase shopping convenience and customer retention through personalized push notifications. Analytics capabilities provide insights to optimize your marketing and sales strategies—helping you grow revenue in the competitive e-commerce space.",
+    },
+    {
+      title: "Retail",
+      img: retail,
+      desc: "Strengthen retail customer engagement with mobile apps that include inventory management, real-time promotional offers, personalized product recommendations, and streamlined checkout processes. Our solutions integrate online and physical store experiences, enabling retailers to improve operational efficiency, increase sales conversions, and deliver superior shopping convenience to customers across platforms.",
+    },
+    {
+      title: "Banking & Finance",
+      img: banking,
+      desc: "Build customer trust with secure mobile banking apps offering fund transfers, alerts, biometric authentication, and compliance with industry regulationsBuild customer trust and convenience with secure mobile banking apps offering fund transfers, account monitoring, alerts, and biometric authentication. Our apps comply with financial industry regulations while providing easy access to services anytime, anywhere. These secure, user-friendly platforms enhance client satisfaction, promote digital adoption, and foster long-term loyalty.",
+    },
+    {
+      title: "Real Estate",
+      img: state,
+      desc: "Showcase properties effectively with interactive listings, virtual tours, search filters, and secure communication tools for agencies and Showcase properties effectively with mobile apps featuring interactive listings, virtual property tours, search filters, and secure contact forms. Our real estate solutions enhance user engagement, simplify client communication, and streamline lead generation. Designed for realtors and agencies, these apps speed up sales cycles and improve customer experience..",
+    },
+    {
+      title: "Fantasy Apps",
       img: web4,
-      desc: "Secure and scalable fintech mobile solutions for payments, lending, and investment tracking.",
+      desc: "Develop immersive fantasy sports apps with live scoring, player stats, community features, and real-time updates for an engaging experienceDevelop immersive fantasy sports and gaming apps with live scoring, comprehensive player statistics, social sharing features, and real-time updates. Our engaging designs combine interactive gameplay with community connectivity and personalized content, attracting and retaining users by delivering a dynamic and enjoyable fantasy sports experience on mobile devices..",
     },
   ];
 
+  // TECH STACK (same structure, unchanged)
   const techStacks = [
     {
       category: "Mobile Frameworks",
       items: [
-        { name: "React Native", img: "/images/react.png" },
-        { name: "Flutter", img: "/images/flutter.png" },
-        { name: "Swift", img: "/images/swift.png" },
-        { name: "Kotlin", img: "/images/kotlin.png" },
+        { name: "React Native", img: native },
+        { name: "Flutter", img: flutter},
+        { name: "Swift", img: swift},
+        { name: "Kotlin", img: kotlin },
       ],
     },
     {
       category: "Backend",
       items: [
-        { name: "Node.js", img: "/images/nodejs.png" },
-        { name: "Python", img: "/images/python.png" },
-        { name: "Java", img: "/images/java.png" },
-        { name: "PHP", img: "/images/php.png" },
+        { name: "Node.js", img: node },
+        { name: "Python", img: python },
+        { name: "Java", img: java },
+        { name: "PHP", img: php},
       ],
+  
     },
     {
       category: "Database",
       items: [
-        { name: "MySQL", img: "/images/mysql.png" },
-        { name: "MongoDB", img: "/images/mongodb.png" },
-        { name: "Firebase", img: "/images/firebase.png" },
-        { name: "PostgreSQL", img: "/images/postgresql.png" },
+        { name: "MySQL", img : my},
+        { name: "MongoDB", img: db },
+        { name: "Firebase", img: fire},
+        { name: "PostgreSQL", img: post},
       ],
     },
   ];
 
+  // FAQ SECTION
   const faqs = [
     {
-      question: "How Much Does Mobile App Development Cost?",
+      question: "What mobile app development services do you offer?",
       answer:
-        "App development costs vary depending on complexity, features, and platform. On average, costs range from $15,000 to $100,000+.",
+        "We provide native and cross-platform app development, UI/UX design, prototyping, MVP creation, enterprise apps, IoT integration, on-demand apps, e-commerce app development, and app maintenance.",
     },
     {
-      question: "How Long Does It Take to Develop a Mobile App?",
+      question: "How much does mobile app development cost?",
       answer:
-        "A basic app can take 2–4 months, while more complex apps with advanced features may take 6 months or longer.",
+        "Cost depends on app complexity, platforms, and features, typically ranging from $3000 to $25,000+. We offer customized quotes based on your project requirements.",
     },
     {
-      question: "Do You Provide App Maintenance After Launch?",
+      question: "How long does mobile app development take?",
       answer:
-        "Yes, we offer ongoing maintenance, updates, and technical support to keep your app running smoothly.",
+        "Development timelines vary from 8 to 20 weeks depending on complexity, including design, development, testing, and deployment phases.",
     },
     {
-      question: "Can You Build Apps for Both iOS and Android?",
+      question: "Can you develop apps for both iOS and Android?",
       answer:
-        "Absolutely! We develop native and cross-platform apps that work perfectly on both platforms.",
+        "Yes, we develop native iOS and Android apps as well as cross-platform solutions for broader reach and cost efficiency.",
+    },
+    {
+      question: "Do you provide post-launch support and maintenance?",
+      answer:
+        "Yes, we offer full lifecycle support including updates, bug fixes, performance monitoring, and feature enhancements.",
+    },
+    {
+      question: "Will my app be compatible with all device sizes?",
+      answer:
+        "Absolutely. We use responsive design and extensive testing to ensure compatibility across all devices and screen sizes.",
+    },
+    {
+      question: "How do you ensure app security?",
+      answer:
+        "We implement encryption, secure authentication, regular audits, and follow best practices to protect data and user privacy.",
+    },
+    {
+      question: "Can you integrate third-party APIs?",
+      answer:
+        "Yes, we integrate APIs including payment gateways, social media, analytics, and CRM tools to enhance app functionality.",
+    },
+    {
+      question: "What technologies do you use for app development?",
+      answer:
+        "We use Swift, Objective-C for iOS; Kotlin, Java for Android; and React Native, Flutter for cross-platform development.",
+    },
+    {
+      question: "How do you conduct testing and quality assurance?",
+      answer:
+        "Our QA team performs rigorous functional, usability, security, and performance testing to ensure a smooth, bug-free user experience before launch.",
     },
   ];
 
   return (
     <div id="appdevelopment">
-
       {/* HERO SECTION */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6 md:px-28 flex flex-col md:flex-row items-center gap-8">
-          {/* Left Content */}
           <div className="md:w-1/2">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Leading{" "}
               <span className="text-red-500 relative">
-                App Development
+                Mobile Application Development
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-500"></span>
               </span>{" "}
               Company
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              We create cutting-edge mobile applications that empower businesses and enhance customer experiences.
+              At SofiLoft Technologies, we craft innovative mobile applications that empower businesses to engage users and enhance customer experiences.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              Whether you need a native iOS app, Android app, or a cross-platform solution, our team is here to deliver.
+              Whether you need a native iOS app, Android app, or a versatile cross-platform solution, our expert team delivers high-quality, scalable, and user-friendly mobile applications tailored to your specific goals and industry requirements.
             </p>
             <div className="flex gap-4">
               <a href="#" className="px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-purple-500 to-purple-700">
@@ -158,15 +279,13 @@ const AppDevelopment = () => {
               </a>
             </div>
           </div>
-
-          {/* Right Image */}
           <div className="md:w-5/12 flex justify-center">
             <img src={web2} alt="App Development" className="rounded-lg object-contain" />
           </div>
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
+      {/* SERVICES */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -179,7 +298,7 @@ const AppDevelopment = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 h-[300px] flex flex-col">
+            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
@@ -190,7 +309,7 @@ const AppDevelopment = () => {
         </div>
       </section>
 
-      {/* INDUSTRY SECTION */}
+      {/* INDUSTRIES */}
       <section className="bg-gray-900 text-white py-16 px-6 md:px-20">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -203,10 +322,10 @@ const AppDevelopment = () => {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {industryServices.map((service, index) => (
             <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-              <img src={service.img} alt={service.title} className="w-full h-48 object-cover" />
+              <img src={service.img} alt={service.title} className="w-full h-48" />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-400 text-sm">{service.desc}</p>
+                <h3 className="text-xl text-white font-bold mb-3 text-center">{service.title}</h3>
+                <p className="text-[18px] leading-text-sm [28px] font-[Outfit,sans-serif] text-[rgb(255_255_255/59%)]">{service.desc}</p>
               </div>
             </div>
           ))}
@@ -235,7 +354,7 @@ const AppDevelopment = () => {
         </div>
       </section>
 
-      {/* FAQ SECTION */}
+      {/* FAQ */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
           FAQs on App Development

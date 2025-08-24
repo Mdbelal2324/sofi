@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Logo from '../assets/image/logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const dropdownItems = {
     Services: [
@@ -35,12 +36,23 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        
-        {/* Logo */}
+
+        {/* Logo + H1 */}
         <div className="flex items-center space-x-2">
           <img src={Logo} alt="Logo" className="w-10 h-10" />
           <div>
-            <h1 className="text-lg font-bold text-gray-800"> SofiLoft Technologies</h1>
+            <Link 
+              to="/"
+              onClick={() => {
+                if (location.pathname === "/") {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }
+              }}
+            >
+              <h1 className="text-lg font-bold text-gray-800 cursor-pointer">
+                SofiLoft Technologies
+              </h1>
+            </Link>
             <p className="text-xs text-gray-500">
               Beyond Code.<span className="text-orange-500"> Creating</span> <span className="italic">Value</span>
             </p>
@@ -59,9 +71,7 @@ const Header = () => {
               border: "2px solid transparent",
             }}
           >
-            <span className="flex items-center gap-2">
-              ✨ Let's talk AI
-            </span>
+            <span className="flex items-center gap-2">✨Start with  AI</span>
           </button>
 
           <Link to="/" className="text-gray-900 hover:text-orange-600 transition">Home</Link>
@@ -120,7 +130,7 @@ const Header = () => {
           {/* Mobile Let's Talk AI Button */}
           <button
             onClick={() => {
-              navigate("/lets-talk-ai");
+              navigate("/lettalkai");
               setMenuOpen(false);
             }}
             className="w-full px-4 py-2 rounded-full font-medium text-gray-900 transition-all duration-300 mb-3"
@@ -132,7 +142,12 @@ const Header = () => {
             ✨ Let's talk AI
           </button>
 
-          <Link to="/" className="block text-gray-700 hover:text-orange-600 py-2" onClick={() => setMenuOpen(false)}>
+          <Link to="/" className="block text-gray-700 hover:text-orange-600 py-2" onClick={() => {
+            setMenuOpen(false);
+            if (location.pathname === "/") {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }
+          }}>
             Home
           </Link>
 

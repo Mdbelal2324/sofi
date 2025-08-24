@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // ✅ Case-sensitive correct imports
-import ukImage from "../assets/image/uk.webp";
+import ukimage from "../assets/image/uk.png";
 import uae from "../assets/image/uae.png";
 import usa from "../assets/image/usa.png";
 import aus from "../assets/image/aus.png";
@@ -15,7 +15,7 @@ const testimonials = [
     text: "We had a fantastic experience working with SofiLoft. Their professionalism and technical expertise in website development helped us launch a responsive, SEO-friendly site that perfectly captured our brand. The results have exceeded expectations.",
     name: "James Thompson Uk",
     role: "CEO",
-    img: ukImage
+    img: ukimage,
   },
   {
     text: "SofiLoft Technologies developed a CRM solution integrated with inventory management that streamlined our stock tracking and sales processes efficiently. Our team productivity increased by 50%.",

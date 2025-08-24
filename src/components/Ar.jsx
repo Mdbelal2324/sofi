@@ -1,128 +1,161 @@
-// ArVrDevelopment.jsx
+// AiAgentsDevelopment.jsx
 import React, { useState } from "react";
-import { FaVrCardboard, FaGlasses, FaCode } from "react-icons/fa";
+import { FaRobot, FaCogs, FaChartLine } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
 
-const ArVrDevelopment = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+const AiAgentsDevelopment = () => {
+  const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // ✅ AI Agents Services
   const services = [
     {
       id: 1,
-      icon: <FaVrCardboard size={28} />,
-      title: "Custom AR/VR Application Development",
+      icon: <FaRobot size={28} />,
+      title: "Virtual Customer Assistants",
       description:
-        "We create immersive AR/VR applications that enhance user experience, from training simulations to interactive product demos.",
+        "We create AI agents that act as virtual customer service representatives, capable of handling inquiries, resolving issues, and providing personalized assistance 24/7 across web, mobile, and messaging platforms.",
       color: "bg-purple-600",
     },
     {
       id: 2,
-      icon: <FaGlasses size={28} />,
-      title: "AR/VR Strategy & Consulting",
+      icon: <FaCogs size={28} />,
+      title: "Autonomous Workflow Automation",
       description:
-        "Get expert advice on choosing the right AR/VR technology and platforms to maximize engagement and ROI.",
+        "Our AI agents automate complex business workflows, managing tasks such as appointment scheduling, document processing, and multi-step approvals, reducing manual effort and increasing operational efficiency.",
       color: "bg-blue-600",
     },
     {
       id: 3,
-      icon: <FaCode size={28} />,
-      title: "3D Modeling & Animation",
+      icon: <FaChartLine size={28} />,
+      title: "Intelligent Data Analysis Agents",
       description:
-        "Our experts design realistic 3D assets, environments, and animations for AR/VR experiences.",
+        "AI agents analyze vast datasets to uncover insights, detect patterns, and generate actionable reports. These agents support decision-making by delivering real-time analytics tailored to your business goals.",
       color: "bg-red-500",
     },
     {
       id: 4,
-      icon: <FaCode size={28} />,
-      title: "Cross-Platform AR/VR Solutions",
+      icon: <FaCogs size={28} />,
+      title: "Personalized Recommendation Agents",
       description:
-        "Deploy immersive applications on VR headsets, AR mobile apps, and mixed reality platforms.",
+        "Building on user data and behavior, these AI agents provide personalized product, content, or service recommendations, enhancing customer engagement and boosting sales conversions.",
       color: "bg-green-500",
     },
     {
       id: 5,
-      icon: <FaCode size={28} />,
-      title: "AR/VR Maintenance & Optimization",
+      icon: <FaRobot size={28} />,
+      title: "Monitoring and Alerting Agents",
       description:
-        "We keep your AR/VR apps updated, optimized, and bug-free for the best performance.",
+        "We develop AI agents that continuously monitor systems, processes, or market conditions, sending alerts and triggering automated responses to mitigate risks and maintain business continuity.",
       color: "bg-yellow-500",
     },
     {
       id: 6,
-      icon: <FaCode size={28} />,
-      title: "Training & Simulation Solutions",
+      icon: <FaCogs size={28} />,
+      title: "Conversational AI Agents",
       description:
-        "Build VR training modules and AR-based simulations for industries like healthcare, aviation, and education.",
+        "Our conversational agents conduct natural, multi-turn dialogues with users, enabling tasks like support, information retrieval, and transactional interactions with human-like understanding.",
       color: "bg-pink-500",
+    },
+    {
+      id: 7,
+      icon: <FaCogs size={28} />,
+      title: "Predictive Maintenance Agents",
+      description:
+        "AI agents forecast equipment failures and maintenance needs before issues occur, allowing proactive intervention that minimizes downtime and extends asset life in manufacturing and other sectors.",
+      color: "bg-indigo-500",
+    },
+    {
+      id: 8,
+      icon: <FaChartLine size={28} />,
+      title: "Compliance and Risk Management Agents",
+      description:
+        "These AI agents monitor compliance requirements, audit data, and flag potential risks or irregularities automatically, helping businesses adhere to regulations and avoid costly penalties.",
+      color: "bg-orange-500",
+    },
+    {
+      id: 9,
+      icon: <FaRobot size={28} />,
+      title: "Decision Support Agents",
+      description:
+        "We develop AI agents that assist executives and managers by providing scenario analysis, forecasting, and evidence-based recommendations, improving the quality and speed of key business decisions.",
+      color: "bg-teal-500",
     },
   ];
 
+  // ✅ Industry-Specific AI Solutions
   const industryServices = [
-    {
-      title: "Retail & E-commerce",
-      img: web4,
-      desc: "Allow customers to try products virtually with AR-based shopping experiences.",
-    },
     {
       title: "Healthcare",
       img: web4,
-      desc: "Enable medical simulations, VR surgeries, and AR-based patient care solutions.",
+      desc: "AI agents assist with patient data analysis, appointment scheduling, treatment recommendations, and real-time monitoring, improving clinical decision-making and operational workflows.",
     },
     {
-      title: "Education",
+      title: "Finance",
       img: web4,
-      desc: "Provide immersive learning experiences, 3D classrooms, and virtual labs.",
+      desc: "Our AI agents automate fraud detection, portfolio management, compliance monitoring, and customer engagement, enhancing security and client service in financial institutions.",
     },
     {
-      title: "Real Estate",
+      title: "Retail & E-commerce",
       img: web4,
-      desc: "Offer virtual property tours and AR-based interior visualization.",
-    },
-    {
-      title: "Gaming & Entertainment",
-      img: web4,
-      desc: "Deliver next-level immersive VR games and interactive AR entertainment apps.",
+      desc: "We develop agents that personalize shopping experiences, predict inventory demands, manage promotions, and automate customer service to increase satisfaction and sales.",
     },
     {
       title: "Manufacturing",
       img: web4,
-      desc: "Train employees with VR-based safety simulations and AR-based machine assistance.",
+      desc: "AI agents monitor production lines, predict maintenance needs, optimize supply chains, and automate quality control, boosting efficiency and reducing operational costs.",
+    },
+    {
+      title: "Education",
+      img: web4,
+      desc: "Agents support personalized learning by tracking student progress, managing assignments, and providing tutoring assistance, enriching educational outcomes.",
+    },
+    {
+      title: "Logistics & Transportation",
+      img: web4,
+      desc: "Our AI agents optimize route planning, monitor fleet status, automate scheduling, and predict delivery delays, improving supply chain reliability and reducing costs.",
+    },
+    {
+      title: "Telecommunications",
+      img: web4,
+      desc: "AI agents enhance network management, predict outages, automate customer interactions, and analyze user data to improve service quality and customer retention.",
+    },
+    {
+      title: "Real Estate",
+      img: web4,
+      desc: "Agents assist with property valuation analysis, lead qualification, market trend monitoring, and customer interactions, accelerating sales and service quality.",
+    },
+    {
+      title: "Marketing & Advertising",
+      img: web4,
+      desc: "We deploy agents that segment audiences, personalize campaigns, monitor brand sentiment, and automate customer engagement through dynamic, AI-driven strategies.",
     },
   ];
 
+  // ✅ Tech Stacks (placeholder, no new content provided)
   const techStacks = [
     {
-      category: "AR/VR SDKs",
+      category: "AI Platforms",
       items: [
-        { name: "ARKit", img: "/images/arkit.png" },
-        { name: "ARCore", img: "/images/arcore.png" },
-        { name: "Vuforia", img: "/images/vuforia.png" },
-        { name: "Wikitude", img: "/images/wikitude.png" },
+        { name: "OpenAI", img: "/images/openai.png" },
+        { name: "Google AI", img: "/images/googleai.png" },
+        { name: "IBM Watson", img: "/images/watson.png" },
+        { name: "Azure AI", img: "/images/azure.png" },
       ],
     },
     {
-      category: "Game Engines",
+      category: "Integration Tools",
       items: [
-        { name: "Unity 3D", img: "/images/unity.png" },
-        { name: "Unreal Engine", img: "/images/unreal.png" },
-        { name: "CryEngine", img: "/images/cryengine.png" },
-        { name: "Godot", img: "/images/godot.png" },
-      ],
-    },
-    {
-      category: "Devices",
-      items: [
-        { name: "Oculus Rift", img: "/images/oculus.png" },
-        { name: "HTC Vive", img: "/images/htcvive.png" },
-        { name: "HoloLens", img: "/images/hololens.png" },
-        { name: "Magic Leap", img: "/images/magicleap.png" },
+        { name: "Zapier", img: "/images/zapier.png" },
+        { name: "MuleSoft", img: "/images/mulesoft.png" },
+        { name: "REST API", img: "/images/restapi.png" },
+        { name: "GraphQL", img: "/images/graphql.png" },
       ],
     },
     {
@@ -154,58 +187,79 @@ const ArVrDevelopment = () => {
     },
   ];
 
+  // ✅ FAQs
   const faqs = [
     {
-      question: "What is the cost of AR/VR development?",
+      question: "What are AI agents?",
       answer:
-        "Cost depends on the complexity, platform, and features. Basic AR apps may start around $2,000, while complex VR simulations can go much higher.",
+        "AI agents are intelligent software programs that autonomously perform tasks, learn from data, and interact naturally with users or systems.",
     },
     {
-      question: "How long does it take to develop an AR/VR application?",
+      question: "How can AI agents benefit my business?",
       answer:
-        "A simple AR app may take 4-6 weeks, while advanced VR simulations could take 3-6 months.",
+        "They automate repetitive tasks, provide real-time insights, enhance customer interactions, and improve decision-making, increasing productivity and competitiveness.",
     },
     {
-      question: "Do AR/VR apps work on all devices?",
+      question: "Are AI agents different from chatbots?",
       answer:
-        "Yes, we build cross-platform AR/VR apps that run on mobile, desktops, and VR headsets.",
+        "Yes, AI agents are more autonomous and capable of complex workflows and decision-making, whereas chatbots primarily handle conversational interactions.",
     },
     {
-      question: "Can AR/VR be integrated with existing business systems?",
+      question: "What industries can use AI agents?",
       answer:
-        "Absolutely! We can integrate AR/VR solutions with your CRM, ERP, or e-commerce platforms.",
+        "AI agents are applicable across healthcare, finance, retail, manufacturing, education, logistics, telecom, real estate, and marketing sectors.",
+    },
+    {
+      question: "Can AI agents integrate with existing systems?",
+      answer:
+        "Absolutely, we design AI agents to connect seamlessly with your current IT infrastructure and business applications.",
+    },
+    {
+      question: "How long does it take to develop an AI agent?",
+      answer:
+        "Development timelines vary based on complexity but typically range from weeks to several months.",
+    },
+    {
+      question: "Are AI agents customizable?",
+      answer:
+        "Yes, each AI agent is tailored to meet specific business needs and operational goals.",
+    },
+    {
+      question: "Do you provide ongoing support after AI agent deployment?",
+      answer:
+        "We offer continuous monitoring, maintenance, and performance optimization to ensure your AI agents operate effectively.",
+    },
+    {
+      question: "How secure are AI agent solutions?",
+      answer:
+        "Security is integral; we follow best practices for data protection, privacy compliance, and secure system integrations.",
+    },
+    {
+      question: "How do I get started with AI agents for my business?",
+      answer:
+        "Start with a consultation to explore your needs. We then conduct feasibility studies, design strategies, and develop customized AI agent solutions aligned with your goals.",
     },
   ];
 
   return (
-    <div id="arvrdevelopment">
-      {/* FIRST SECTION */}
+    <div id="aiagentsdevelopment">
+      {/* HERO SECTION */}
       <section className="nft-main-banner-sec py-12">
         <div className="container mx-auto px-6 md:px-28">
           <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
             <div className="md:w-1/2">
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Innovative{" "}
-                <span className="relative text-red-500">
-                  AR/VR Development
-                  <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
-                </span>{" "}
-                Company
+                AI Agents Solutions by <span className="text-red-500">SofiLoft Technologies</span>
               </h1>
               <p className="text-lg text-gray-600 mb-6">
-                We design immersive AR and VR solutions to enhance business operations, training, education, and customer engagement.
+                AI agents are intelligent software programs designed to perform tasks autonomously, making business operations smarter and more efficient. At SofiLoft Technologies, we develop AI agents that understand, learn, and interact with complex environments to enhance decision-making, automate workflows, and improve customer experiences.
               </p>
-              <div className="flex gap-4">
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-purple-500 to-purple-700">
-                  Get In Touch
-                </a>
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-pink-500 to-pink-600">
-                  Book A Consultation
-                </a>
-              </div>
+              <p className="text-lg text-gray-600 mb-6">
+                Powered by advanced machine learning and cognitive technologies, our AI agents adapt to evolving data and user behavior, helping businesses unlock new levels of productivity and innovation. Whether you need virtual assistants for customer engagement, automated process managers, or intelligent data analysts, we deliver robust AI agent solutions tailored specifically to your industry and requirements.
+              </p>
             </div>
             <div className="md:w-5/12 flex justify-center pt-20">
-              <img src={web2} alt="AR/VR Development" className="rounded-lg object-contain" />
+              <img src={web2} alt="AI Agents Development" className="rounded-lg object-contain" />
             </div>
           </div>
         </div>
@@ -215,14 +269,14 @@ const ArVrDevelopment = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="flex-1 flex justify-center">
-            <img src={web3} alt="AR/VR Solutions" className="max-w-sm w-full" />
+            <img src={web3} alt="AI Agents Solutions" className="max-w-sm w-full" />
           </div>
           <div className="flex-1">
             <h2 className="text-3xl lg:text-4xl font-bold">
-              Proven <span className="text-pink-500 underline">AR/VR Solutions</span>
+              Proven <span className="text-pink-500 underline">AI Agents Solutions</span>
             </h2>
             <p className="mt-6 text-gray-600">
-              From product visualization to training simulations, our AR/VR solutions drive innovation and results.
+              Our AI agents solutions help automate workflows, enhance decision-making, and boost business efficiency.
             </p>
             <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
               Connect With Experts Now!
@@ -235,20 +289,17 @@ const ArVrDevelopment = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Top <span className="text-pink-500">AR/VR Development</span> Services
+            Our <span className="text-pink-500">AI Agents</span> Services
           </h2>
-          <p className="text-gray-600 mt-3">
-            Delivering immersive experiences through cutting-edge AR/VR development services.
-          </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 h-[320px] flex flex-col">
+            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 text-sm">{service.description}</p>
             </div>
           ))}
         </div>
@@ -258,11 +309,8 @@ const ArVrDevelopment = () => {
       <section className="bg-gray-900 text-white py-16 px-6 md:px-20">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            AR/VR Development for All Industries
+            Industries We Serve
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto">
-            Our AR/VR solutions serve industries like retail, healthcare, education, and more.
-          </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {industryServices.map((service, index) => (
@@ -280,7 +328,7 @@ const ArVrDevelopment = () => {
       {/* TECH STACK SECTION */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Latest Tech Stacks for AR/VR Development
+          Latest Tech Stacks for AI Agents
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {techStacks.map((stack, idx) => (
@@ -302,7 +350,7 @@ const ArVrDevelopment = () => {
       {/* FAQ SECTION */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          FAQs on AR/VR Development
+          Frequently Asked Questions About AI Agents
         </h2>
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
@@ -330,4 +378,4 @@ const ArVrDevelopment = () => {
   );
 };
 
-export default ArVrDevelopment;
+export default AiAgentsDevelopment;

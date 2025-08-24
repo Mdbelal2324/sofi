@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => {
   return (
-    <div className="bg-white-400 py-16">
+    <div className="bg-[#3f51b5]  py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 items-start">
         
         {/* Left Section */}
@@ -16,7 +16,7 @@ const ContactSection = () => {
           </div>
 
           <div>
-            <p className="font-semibold text-gray-600 uppercase text-sm">Call for advice now!</p>
+            <p className="font-semibold  uppercase text-sm">Call for advice now!</p>
             <p className="text-2xl font-bold text-white">1900 68668</p>
           </div>
 

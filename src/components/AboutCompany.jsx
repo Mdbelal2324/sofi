@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../assets/image/about.png"
 import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
 const AboutCompany = () => {
   return (
@@ -35,47 +36,74 @@ const AboutCompany = () => {
         <div className="w-full lg:w-1/2">
           <h3 className="text-purple-600 text-lg font-bold mb-2">About SofiLoft</h3>
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            We've Been Thriving For 25 Years.
+         
+
+Smart Software, Real Results.
           </h1>
           <p className="text-gray-600 mb-6">
-           We are your end-to-end software development partner, turning visionary ideas into high-impact digital products. From custom websites and mobile apps to AI/ML-driven platforms and CRM solutions, we combine deep technical skills with strategic insight to help organizations simplify operations, engage users, and accelerate their growth trajectory.
+We turn your ideas into high-impact digital products. From custom websites and mobile apps to AI-driven platforms and CRM solutions, we combine technical expertise with strategic insight to help you simplify operations and accelerate growth.
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center space-x-2">
-              <span className="text-blue-500 text-xl">✔️</span>
-              <span className="text-gray-700">
-               Rapid, tailored web and mobile app development for competitive advantage
-              </span>
+                 <span className="text-blue-500  text-sm">
+ <GoArrowRight   className="w-5 h-5"/>
+</span>
+       <span className="text-gray-700">
+  <span className="font-bold">
+    Rapid, tailored web and mobile app development
+  </span>{" "}
+  for competitive advantage
+</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="text-blue-500 text-xl">✔️</span>
-              <span className="text-gray-700">
-                Advanced AI and machine learning integrations unlocking business intelligence
-              </span>
+                    <span className="text-blue-500  text-sm">
+ <GoArrowRight   className="w-5 h-5"/>
+</span>
+             <span className="text-gray-700">
+  <span className="font-bold">
+    Advanced AI and machine learning
+  </span>{" "}
+  integrations unlocking business intelligence
+</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="text-blue-500 text-xl">✔️</span>
-              <span className="text-gray-700">
-               Custom CRM, ERP, and workflow automation for increased efficiency
-              </span>
+                       <span className="text-blue-500  text-sm">
+ <GoArrowRight   className="w-5 h-5"/>
+</span>
+             <span className="text-gray-700">
+  <span className="font-bold">
+    Custom CRM, ERP, and workflow
+  </span>{" "}
+  automation for increased efficiency
+</span>
             </li>
                    <li className="flex items-center space-x-2">
-              <span className="text-blue-500 text-xl">✔️</span>
+              <span className="text-blue-500  text-sm">
+ <GoArrowRight   className="w-5 h-5"/>
+</span>
               <span className="text-gray-700">
-              Cloud-based infrastructure with continuous integration and delivery
-              </span>
+  <span className="font-bold">
+    Cloud-based infrastructure
+  </span>{" "}
+  with continuous integration and delivery
+</span>
             </li>
                 
                    <li className="flex items-center space-x-2">
-              <span className="text-blue-500 text-xl">✔️</span>
-              <span className="text-gray-700">
-             Conversion-optimized UX/UI design focused on user delight and ROI
-              </span>
+                   <span className="text-blue-500  text-sm">
+ <GoArrowRight   className="w-5 h-5"/>
+</span>
+             <span className="text-gray-700">
+  <span className="font-bold">
+    Conversation to UX design
+  </span>{" "}
+  (baaki text yahan likho)
+</span>
             </li>
           </ul>
-          <Link to="/aboutMore">
+          <Link to="/about">
           <button className="bg-purple-600 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-700 transition">
-             More started→
+              About More→
           </button>
           </Link>
         </div>

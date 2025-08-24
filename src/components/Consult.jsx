@@ -3,17 +3,17 @@ import personImg from "../assets/image/girl.webp"; // replace with your image pa
 
 const Consultant = () => {
   return (
-    <section className="bg-[#3f51b5] text-white py-10">
+    <section className="bg-[#3f51b5] text-white py-6">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-10">
         
         {/* Left Image */}
-        <div className="flex justify-center lg:w-1/2">
-          <img
-            src={personImg}
-            alt="Person working"
-            className="max-w-full h-auto"
-          />
-        </div>
+       <div className="flex justify-center lg:w-1/2">
+  <img
+    src={personImg}
+    alt="Person working"
+    className="max-w-full h-64 object-contain"
+  />
+</div>
 
         {/* Right Content */}
         <div className="text-center lg:text-left lg:w-1/2">

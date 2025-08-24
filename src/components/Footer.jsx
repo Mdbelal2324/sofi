@@ -65,14 +65,12 @@ const FullFooter = () => {
             <div>
               <h4 className="font-semibold mb-3">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Insights</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Sitemap</a></li>
+                <li><a href="About">About Us</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="ContactFrom">Contact Us</a></li>
+                <li><a href=" <Testomonial/>">Testimonials</a></li>
+                <li><a href="Faq">FAQ</a></li>
+                
               </ul>
             </div>
 
@@ -80,14 +78,12 @@ const FullFooter = () => {
             <div>
               <h4 className="font-semibold mb-3">Our Industries</h4>
               <ul className="space-y-2">
-                <li><a href="#">Real Estate</a></li>
-                <li><a href="#">On-Demand</a></li>
-                <li><a href="#">Healthcare</a></li>
-                <li><a href="#">Event & Tickets</a></li>
-                <li><a href="#">Travel & Tours</a></li>
-                <li><a href="#">Ecommerce & Retail</a></li>
-                <li><a href="#">Auction</a></li>
-                <li><a href="#">Food & Restaurant</a></li>
+                <li><a> Real Estate</a></li>
+                <li><a>On-Demand</a></li>
+                <li><a>Healthcare</a></li>
+                <li><a>Travel & Tours</a></li>
+                <li><a>Ecommerce & Retail</a></li>
+                <li><a>Food & Restaurant</a></li>
               </ul>
             </div>
 
@@ -95,14 +91,15 @@ const FullFooter = () => {
             <div>
               <h4 className="font-semibold mb-3">Our Services</h4>
               <ul className="space-y-2">
-                <li><a href="#">Mobile Application Development</a></li>
-                <li><a href="#">IOT Application Development</a></li>
-                <li><a href="#">Blockchain Development</a></li>
-                <li><a href="#">POS Development Solution</a></li>
-                <li><a href="#">AI Development</a></li>
-                <li><a href="#">ICO Development</a></li>
-                <li><a href="#">Custom Web Development</a></li>
-                <li><a href="#">Web3 Development</a></li>
+                <li><a href="webdevelopment">Website  Development</a></li>
+                 <li><a href="appdevelopment">Mobile Application Development</a></li>
+                <li><a href="crmsolution"> Crm Solution</a></li>
+                 <li><a href="ecommercedevelopment"> Ecommerce Development</a></li>
+                 <li><a href="digitalmarketing"> Digital marketing</a></li>
+                <li><a href="aimldevelopment">Ai Ml development</a></li>
+                <li><a href="chatbotAiDevelopment">Chatbot Development</a></li>
+                <li><a href="ar">AR Vr Development</a></li>
+         
               </ul>
             </div>
           </div>

@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
     },
     {
       icon: <FaCheckCircle className="text-blue-500 text-3xl" />,
-      title: "Proven Track Record of Success",
+      title: " Proven Track Record of Success",
       desc: "We showcase a curated selection of our best projects across various industries, demonstrating our ability."
     },
     {
@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
 
           {/* Right Content */}
           <div>
-            <span className="flex items-center text-blue-600 font-semibold uppercase tracking-wide mb-2">
+            <span className="flex items-center text-black-600 font-semibold uppercase tracking-wide mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5 mr-2"
@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
               </svg>
               Why Choose Us
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-yellow-300 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-black-300 b-4">
               Your Trusted Partner For IT Success
             </h2>
             <p className="text-gray-200 mb-6">
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
                 <div key={index} className="flex items-start">
                   <div className="flex-shrink-0 mr-4">{feature.icon}</div>
                   <div>
-                    <h3 className="text-lg font-semibold text-yellow-300">
+                    <h3 className="text-lg font-semibold text-black-300">
                       {feature.title}
                     </h3>
                     <p className="text-gray-200">{feature.desc}</p>

@@ -10,63 +10,72 @@ import Services3 from "../assets/image/Services3.png";
 
 const Services = () => {
   const servicesData = [
-    {
-      id: "Website Development",
-      title: "Website Development",
-      description:
-        "Elevate your brand with customized, responsive websites designed for seamless performance and user engagement..",
-      image: Services1,
-    },
-    {
-      id: "Mobile App Development",
-      title: "Mobile App Development",
-      description:
-        "Build intuitive mobile applications that deliver top-tier experiences and functionality across iOS and Android platforms..",
-      image: Services2,
-    },
-    {
-      id: "E-commerce Development",
-      title: "E-commerce Development",
-      description:
-        "Launch scalable online stores with secure payment integration and conversion-focused interfaces to drive sales.",
-      image: Services3,
-    },
-      {
-      id: "CRM Solutions",
-      title: "CRM Solutions",
-      description:
-        "Streamline your customer management with tailored CRM platforms that automate workflows and enhance client relationships.",
-      image: Services3,
-    },
-      {
-      id: "Digital Marketing",
-      title: "Digital Marketing",
-      description:
-        "Boost your online visibility with data-driven digital marketing strategies that attract, engage, and convert your target audience.",
-      image: Services3,
-    },
-      {
-      id: "AI/ML Development",
-      title: "AI/ML Development",
-      description:
-        "Transform operations using artificial intelligence and machine learning models built to automate tasks and uncover actionable insights..",
-      image: Services3,
-    },
-     {
-      id: "Chatbot Development",
-      title: "Chatbot Development",
-      description:
-        "Enhance customer service with intelligent chatbots designed for real-time engagement, lead generation, and 24/7 support.",
-      image: Services3,
-    },
-      {
-      id: "AR/VR Development",
-      title: "AR/VR Development",
-      description:
-        "Deliver immersive user experiences with augmented and virtual reality solutions crafted for training, marketing, and entertainment.",
-      image: Services3,
-    },
-  ];
+  {
+    id: 1,
+    title: "Website Development",
+    description:
+      "Elevate your brand with customized, responsive websites designed for seamless performance and user engagement..",
+    image: Services1,
+    link: "/webdevelopment",
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    description:
+      "Build intuitive mobile applications that deliver top-tier experiences and functionality across iOS and Android platforms..",
+    image: Services2,
+    link: "/appdevelopment",
+  },
+  {
+    id: 3,
+    title: "E-commerce Development",
+    description:
+      "Launch scalable online stores with secure payment integration and conversion-focused interfaces to drive sales.",
+    image: Services3,
+    link: "/ecommercedevelopment",
+  },
+  {
+    id: 4,
+    title: "CRM Solutions",
+    description:
+      "Streamline your customer management with tailored CRM platforms that automate workflows and enhance client relationships.",
+    image: Services3,
+    link: "/crmsolution",
+  },
+  {
+    id: 5,
+    title: "Digital Marketing",
+    description:
+      "Boost your online visibility with data-driven digital marketing strategies that attract, engage, and convert your target audience.",
+    image: Services3,
+    link: "/digitalmarketing",
+  },
+  {
+    id: 6,
+    title: "AI/ML Development",
+    description:
+      "Transform operations using artificial intelligence and machine learning models built to automate tasks and uncover actionable insights..",
+    image: Services3,
+    link: "/aimldevelopment",
+  },
+  {
+    id: 7,
+    title: "Chatbot Development",
+    description:
+      "Enhance customer service with intelligent chatbots designed for real-time engagement, lead generation, and 24/7 support.",
+    image: Services3,
+    link: "/ChatbotAIDevelopment",
+  },
+  {
+    id: 8,
+    title: "AR/VR Development",
+    description:
+      "Deliver immersive user experiences with augmented and virtual reality solutions crafted for training, marketing, and entertainment.",
+    image: Services3,
+    link: "/ar",
+  },
+];
+
 
   const settings = {
     dots: true,
@@ -126,12 +135,12 @@ const Services = () => {
                     </p>
                   </div>
                   <div className="text-center mt-auto">
-                    <Link
-                      to={`/service-details/${service.id}`}
-                      className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
-                    >
-                      READ MORE →
-                    </Link>
+                  <Link
+  to={service.link}
+  className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+>
+  READ MORE →
+</Link>
                   </div>
                 </div>
               </div>

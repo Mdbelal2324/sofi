@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import AboutCompany from './components/AboutCompany';
 import ContactSection from './components/ContactSection.jsx';
 import Footer from './components/Footer';
@@ -28,7 +29,8 @@ import LetTalkAi from "./components/LetTalkAi.jsx";
 import Consult from "./components/Consult.jsx";
 import Testomonial from "./components/Testomonial.jsx";
 import Faq from "./components/Faq.jsx"
-import Ar from "./components/Ar.jsx"
+import Ar from "./components/Ar.jsx";
+
 
 
 
@@ -36,9 +38,11 @@ function App() {
   return (
     <Router>
       <Header1 />
+       <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <>
+           
             <HeroSection />
             <AboutCompany />
             
@@ -52,6 +56,8 @@ function App() {
             
             
             <ContactSection />
+      
+                  
           
             
           </>

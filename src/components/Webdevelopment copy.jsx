@@ -30,9 +30,9 @@ const WebDevelopment = () => {
     {
       id: 1,
       icon: <FaLaptopCode size={28} />,
-      title: "Custom Website Application Development",
+      title: "Custom Website Design and Development",
       description:
-        "From creating simple web pages to complex solutions, our custom web development company has experience developing the perfect solution for your business from as a developer and the text and telegram website wnd the lorem yh yjyu mmnnjhjjhjhjdgjgfj .",
+        "Unlock a distinctive online identity with tailored website design and development from SofiLoft Technologies. We craft every site to reflect your brand, focusing on mobile responsiveness, intuitive navigation, fast load times, and robust SEO. Our expert team combines creative vision and technical skill to deliver websites that captivate visitors and convert them into loyal customers—driving measurable growth for your business",
       color: "bg-purple-600",
     },
     {
@@ -213,11 +213,11 @@ const WebDevelopment = () => {
   Company
 </h1>
 <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
-  Break the ordinary with a unique and tailor-made business website specially
-  developed to suit all your business needs and requirements. Team of this
-  custom website development company strives to deliver the best custom web
-  development solutions. Every website we develop is unique and adheres to all
-  the users’ needs.
+Are you searching for a top-rated custom web development company to elevate your business 
+online? SofiLoft Technologies specializes in building unique, tailor-made websites that fit
+ your exact business needs and industry requirements. Our skilled team of web developers is committed to
+  delivering high-performance, fully responsive websites that ensure exceptional user
+   experience and drive measurable results.
 </p>
 
             <p className="text-lg text-gray-600 leading-8 mb-8 font-outfit">
@@ -323,7 +323,7 @@ const WebDevelopment = () => {
             Custom Web Development Services for All Industries!
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            Mark your no. 1 spot with feature-packed customized software in today's market. From healthcare to education and fintech, we offer the top custom web development services for various industries.
+          cked customized software in today's market. From healthcare to education and fintech, we offer the top custom web development services for various industries.
           </p>
         </div>
 

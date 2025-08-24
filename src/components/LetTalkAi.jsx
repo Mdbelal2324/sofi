@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaUsers, FaLightbulb, FaBrain } from "react-icons/fa";
 import { Search, ChevronRight, ArrowUpRight } from "lucide-react";
-import web4 from "../assets/image/web3.png";
+import edu from "../assets/image/Education.jpg";
 
 export default function AIDevelopmentPage() {
   const tech = [
@@ -17,82 +17,113 @@ export default function AIDevelopmentPage() {
   ];
 
   const faqs = [
-    {
-      q: "How do you handle data privacy?",
-      a: "We implement RBAC, encryption, redaction and audit trails per project needs.",
-    },
-    {
-      q: "Can you integrate with our product?",
-      a: "Yes — we build microservices/APIs and connectors for CRM, web and mobile apps.",
-    },
-    {
-      q: "Typical PoC timeline?",
-      a: "2–4 weeks for a lightweight PoC depending on data readiness.",
-    },
+
+  {
+    q: "Which industries benefit the most from AI/ML?",
+    a: "AI/ML is beneficial across healthcare, finance, retail, manufacturing, education, logistics, telecom, real estate, and marketing, transforming business operations with automation and data insights."
+  },
+  {
+    q: "How does AI improve business efficiency?",
+    a: "AI automates repetitive tasks, predicts trends for better planning, optimizes processes, and enables data-driven decisions, leading to improved productivity and cost savings."
+  },
+  {
+    q: "What is a Proof of Concept (PoC), and why is it important?",
+    a: "A PoC is a small-scale project designed to test an AI solution’s feasibility and effectiveness before full-scale rollout, minimizing risks and ensuring strategic alignment."
+  },
+  {
+    q: "Why is data quality critical in AI projects?",
+    a: "Accurate, complete, and relevant data is essential to train AI models effectively and produce reliable, actionable output."
+  },
+  {
+    q: "Can AI solutions work with my existing IT systems?",
+    a: "Yes, AI systems can be customized to integrate seamlessly with your current infrastructure, ensuring smooth adoption and minimal disruption."
+  },
+  {
+    q: "What is the typical timeline for AI implementation?",
+    a: "Implementation can vary from a few weeks for initial prototypes to several months for fully developed and deployed solutions, depending on complexity."
+  },
+  {
+    q: "Are AI/ML solutions fully customizable?",
+    a: "Absolutely; each AI solution is tailored specifically to address the unique problems and objectives of your business."
+  },
+  {
+    q: "What post-deployment support do you offer?",
+    a: "Our support includes continuous monitoring, regular performance optimization, maintenance, and timely updates to keep your AI solution effective."
+  },
+  {
+    q: "Is AI technology secure and compliant with privacy laws?",
+    a: "Security and compliance are top priorities. We follow strict data protection standards and ensure adherence to all relevant privacy regulations."
+  },
+  {
+    q: "How do I start implementing AI/ML in my business?",
+    a: "Begin with a consultation to assess your needs and data readiness. We then create a customized AI adoption roadmap aligned with your business goals for successful deployment."
+  }
+
+
   ];
 
   const services = [
     {
       icon: <FaUsers className="text-white text-3xl" />,
-      title: "AI/ML Strategy Consulting",
+      title: "Chatbots & Conversational AI",
       description:
-        "You can count on the top experts to help you through the difficulties of utilizing AI consulting services by using efficient methods, giving strategic advice, and doing research.",
+        "We develop intelligent chatbots and virtual assistants capable of understanding natural language, handling customer inquiries, and providing instant 24/7 support. These AI-powered systems reduce response times, improve customer satisfaction, and automate routine interactions for websites, mobile apps, and social platforms..",
       color: "bg-purple-600",
     },
     {
       icon: <FaLightbulb className="text-white text-3xl" />,
-      title: "PoC and MVP Development",
+      title: "AI Agents & Intelligent Automation",
       description:
-        "Our specialists create Proof of Concepts to showcase potential AI apps with smaller versions, ensuring the idea works before moving to a complete MVP.",
+        "Our AI agents automate repetitive and rule-based tasks across various departments like customer service, HR, and finance. By leveraging intelligent automation, businesses can save time, reduce operational errors, and shift focus towards strategic activities that enhance growth and innovation..",
       color: "bg-blue-500",
     },
     {
       icon: <FaBrain className="text-white text-3xl" />,
-      title: "Custom AI App Development",
+      title: "Predictive Analytics",
       description:
-        "We create AI-powered apps tailored to your business needs, from algorithm to interface, ensuring top performance and security.",
+        "Using advanced machine learning models, we analyze historical and real-time data to forecast trends, customer behavior, and potential risks. These insights empower businesses to make proactive decisions, optimize resource allocation, and improve forecasting accuracy across sales, inventory, and finance.",
       color: "bg-red-500",
     },
     {
       icon: <FaUsers className="text-white text-3xl" />,
-      title: "AI Model Optimization",
+      title: "Natural Language Processing (NLP)",
       description:
-        "Enhance AI models for better accuracy, speed, and efficiency, ensuring they meet your project goals.",
+        "Our NLP solutions enable machines to understand, interpret, and generate human language. This technology powers sentiment analysis, automated content creation, language translation, and document summarization, helping businesses gain deeper insights into customer feedback and automate language-based tasks.",
       color: "bg-green-500",
     },
     {
       icon: <FaLightbulb className="text-white text-3xl" />,
-      title: "AI Integration Services",
+      title: "Computer Visions",
       description:
-        "Seamlessly integrate AI into your existing systems for automation, analytics, and improved decision-making.",
+        "We use computer vision techniques to analyze images and videos for applications such as facial recognition, object detection, and quality control. This technology is widely used in security systems, manufacturing inspection, retail analytics, and healthcare diagnostics to enhance accuracy and automate visual tasks.",
       color: "bg-yellow-500",
     },
     {
       icon: <FaBrain className="text-white text-3xl" />,
-      title: "AI Data Analysis",
+      title: "Recommendation Systems",
       description:
-        "Unlock insights from your data with advanced AI analytics and reporting tools.",
+        "Our AI-powered recommendation engines analyze user behavior and preferences to deliver personalized product, service, or content suggestions. These systems increase user engagement, enhance customer satisfaction, and drive higher conversion rates for e-commerce, media, and entertainment platforms.",
       color: "bg-pink-500",
     },
     {
       icon: <FaUsers className="text-white text-3xl" />,
-      title: "Natural Language Processing",
+      title: "Speech Recognition",
       description:
-        "Build AI solutions that understand, interpret, and generate human language naturally.",
+        "We create voice-enabled applications using advanced speech recognition technology. These solutions convert spoken language into text and enable voice commands for virtual assistants, transcription services, call centers, and accessibility tools, improving user experience and operational efficiency.",
       color: "bg-indigo-500",
     },
     {
       icon: <FaLightbulb className="text-white text-3xl" />,
-      title: "AI Chatbot Development",
+      title: "AI-Powered Fraud Detection",
       description:
-        "Create intelligent chatbots to enhance customer engagement and automate responses.",
+        "Our AI-driven fraud detection systems monitor transactions and user behavior to identify suspicious activity in real time. By detecting potential fraud early, organizations in finance, insurance, and e-commerce can safeguard assets, maintain compliance, and protect customer trust.",
       color: "bg-orange-500",
     },
     {
       icon: <FaBrain className="text-white text-3xl" />,
-      title: "AI Security Solutions",
+      title: "AI Strategy Consulting",
       description:
-        "Leverage AI to detect threats, prevent fraud, and secure your business systems.",
+        "LOur AI strategy consulting services guide businesses through successful adoption of AI/ML technologies. We assess your current capabilities, identify opportunities, and develop tailored AI roadmaps that align with your business objectives to ensure maximum impact and sustainable growth.",
       color: "bg-teal-500",
     },
   ];
@@ -124,40 +155,58 @@ export default function AIDevelopmentPage() {
   const industryServices = [
     {
       title: "Education",
-      img: web4,
+      img: edu,
       desc:
-        "AI tutors, automated grading, learning analytics, and personalized content to improve student outcomes.",
-    },
-    {
-      title: "Food and Restaurant",
-      img: web4,
-      desc:
-        "Demand forecasting, dynamic pricing, smart recommendations, and automated review sentiment tracking.",
-    },
-    {
-      title: "Travel and Tours",
-      img: web4,
-      desc:
-        "Smart itinerary suggestions, price prediction, personalization, and customer service chatbots.",
+        "We develop AI systems that personalize learning experiences through adaptive platforms, AI tutors, automated grading, and detailed analytics on student performance. These innovations help educators tailor lessons to learner needs and improve engagement and academic success.",
     },
     {
       title: "Healthcare",
-      img: web4,
+      img: edu,
       desc:
-        "Clinical NLP, triage assistants, imaging diagnostics support, and patient risk prediction with compliance focus.",
+        "Our AI solutions in healthcare include advanced diagnostics, patient monitoring systems, medical imaging analysis, and personalized treatment planning. By leveraging AI, healthcare providers can improve accuracy, speed up diagnoses, and offer tailored care plans, ultimately enhancing patient outcomes while optimizing operational workflows.",
     },
     {
-      title: "E-commerce",
-      img: web4,
+      title: "Finance",
+      img: edu,
       desc:
-        "Recommendation engines, search relevance, fraud detection, and customer support automation.",
+        "We apply machine learning to detect fraud, assess risks accurately, automate trading algorithms, and predict customer behavior. These AI-driven capabilities help financial institutions improve security, reduce losses, increase profitability, and deliver personalized financial products and services to their clients..",
     },
     {
-      title: "Fintech",
-      img: web4,
+      title: "Retail & E-commerce",
+      img: edu,
       desc:
-        "Credit scoring, anomaly detection, KYC automation, and real-time risk monitoring with explainable AI.",
+        "AI boosts retail and e-commerce by enabling personalized product recommendations, accurate inventory forecasting, targeted customer segmentation, and automated support systems like chatbots. These technologies improve customer experiences, streamline operations, reduce overstock, and increase sales conversions..",
     },
+    {
+      title: "Manufacturing",
+      img: edu,
+      desc:
+        "Our AI-powered manufacturing solutions include predictive maintenance to foresee equipment failures, computer vision for quality assurance, supply chain optimization, and automating routine tasks. This reduces downtime, enhances product quality, lowers costs, and improves overall factory efficiency.",
+    },
+    {
+      title: "Logistics & Transportation",
+      img: edu,
+      desc:
+        "AI streamlines logistics and transportation by optimizing routing, forecasting demand, managing fleets, and scheduling deliveries automatically. These solutions reduce operational costs, improve delivery speeds, maximize vehicle utilization, and enhance customer satisfaction.",
+    },
+     {
+      title: "Telecommunications",
+      img: edu,
+      desc:
+        "In telecom, AI enhances network performance, predicts customer churn, powers AI-driven customer support bots, and analyzes data for smarter business decisions. These applications increase service reliability and improve subscriber retention.",
+     },
+     {
+      title:"Real Estate",
+      img: edu,
+      desc:
+      "Our AI tools provide property valuation predictions, interactive virtual tours, lead scoring systems, and market forecasting. These solutions accelerate the sales process, improve client targeting, and provide data-driven insights to both agents and buyers.",
+     },
+     {
+      title: "Marketing & Advertising",
+      img: edu,
+      desc:
+      "We help optimize marketing efforts through customer segmentation, personalized campaign delivery, sentiment analysis, and AI-powered chatbots. These services increase ROI by ensuring marketing messages effectively reach and engage the right audience."
+     }
   ];
   
 const techStack = [
@@ -219,11 +268,11 @@ const techStack = [
 
 
   const process = [
-    { step: "Understanding Your Needs", text: "We start by analyzing your business challenges and AI opportunities." },
-    { step: "Data Assessment", text: "We evaluate your existing data sources and requirements." },
-    { step: "PoC Development", text: "We build a Proof of Concept to validate the idea quickly." },
-    { step: "Full-scale Development", text: "We develop and integrate AI solutions into your systems." },
-    { step: "Monitoring & Optimization", text: "We ensure continuous performance improvement and maintenance." },
+    { step: "Understanding Your Needs", text: "We begin by carefully studying your business challenges and identifying where AI can make the biggest impact.." },
+    { step: "Data Assessment", text: " we review your existing data and determine what’s needed to create effective AI models.." },
+    { step: "Proof of Concept (PoC) Development", text: "We create a small-scale prototype to quickly test and validate the AI solution’s feasibility." },
+    { step: "Full-scale Development", text: "Once proven, we build and integrate the AI system fully into your business processes." },
+    { step: "Monitoring & Optimization", text: "After deployment, we continuously monitor performance and make improvements to keep your solution running at its best.." },
   ];
 
   return (
@@ -257,10 +306,13 @@ const techStack = [
       
             </span>
             <h1 className="mt-6 text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-              AI Development & Consulting — <span className="text-indigo-600">From PoC to Production</span>
+              AI/ML Solutions <span className="text-indigo-600">by SofiLoft Technologies</span>
             </h1>
             <p className="mt-4 text-gray-600 max-w-xl">
-              We build custom AI products — chatbots, LLM apps, vision systems and analytics — with enterprise-grade security, MLOps and measurable KPIs.
+              Artificial Intelligence (AI) and Machine Learning (ML) are revolutionizing industries by enabling smarter, faster, and more efficient business processes. Our AI/ML solutions empower organizations to harness the power of data, automate complex tasks, and deliver personalized experiences that drive growth. By integrating advanced algorithms and intelligent systems, we help businesses unlock valuable insights, improve operational efficiency, and make predictive decisions with confidence. 
+            </p>
+               <p className="mt-4 text-gray-600 max-w-xl">
+            Transform your business with our tailored AI/ML solutions. From chatbots and fraud detection to supply chain optimization and customer insights, we design scalable, transparent, and ethical AI systems that drive real impact. Our expert team ensures customized automation that aligns with your goals—empowering your digital transformation with measurable results.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#contact" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-2xl font-semibold shadow">
@@ -275,9 +327,9 @@ const techStack = [
       {/* Services */}
       <section id="services" className="py-16 bg-white">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Future-Proof AI Development Services</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            To help your business fully utilize artificial intelligence, we provide a full range of AI development services.
+          <h2 className="text-4xl font-bold mb-4">Our Key AI/ML Services</h2>
+          <p className="text-gray-600 max-w-5xl mx-auto">
+                Explore our range of powerful AI and Machine Learning solutions designed to automate processes, extract valuable insights, and enhance customer experiences. Each service is tailored to help your business innovate and stay ahead in a competitive landscape.
           </p>
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -313,9 +365,9 @@ const techStack = [
       {/* Industries */}
       <section id="industries" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Industries We Serve</h2>
+          <h2 className="text-3xl font-bold mb-4">Industry-Specific AI/ML Solutions</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            We provide AI solutions tailored for various industries to improve efficiency, productivity, and customer experience.
+          We tailor intelligent AI solutions to fit any industry’s unique challenges, helping businesses automate processes, gain data-driven insights, and innovate for lasting competitive advantage.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {industryServices.map((item, index) => (

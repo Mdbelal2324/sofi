@@ -16,54 +16,7 @@ const AIMLDevelopment = () => {
   };
 
   const services = [
-    {
-      id: 1,
-      icon: <FaLaptopCode size={28} />,
-      title: "Custom AI & ML Solutions",
-      description:
-        "From intelligent chatbots to predictive analytics and computer vision, we build AI/ML solutions tailored to your business goals and data.",
-      color: "bg-purple-600",
-    },
-    {
-      id: 2,
-      icon: <FaUserTie size={28} />,
-      title: "AI Strategy & Consulting",
-      description:
-        "Validate use-cases, select the right models, estimate ROI, and design a clear roadmap to operationalize AI safely and at scale.",
-      color: "bg-blue-600",
-    },
-    {
-      id: 3,
-      icon: <FaCode size={28} />,
-      title: "Model Development & Training",
-      description:
-        "End-to-end model lifecycle: data pipelines, feature engineering, training, evaluation, and MLOps for reliable deployments.",
-      color: "bg-red-500",
-    },
-    {
-      id: 4,
-      icon: <FaCode size={28} />,
-      title: "Generative AI (LLMs)",
-      description:
-        "RAG, fine-tuning, prompt engineering, and domain adapters to build chat, summarization, and automation copilots.",
-      color: "bg-emerald-600",
-    },
-    {
-      id: 5,
-      icon: <FaCode size={28} />,
-      title: "Computer Vision",
-      description:
-        "Image/video analytics: quality inspection, object detection, OCR, and face/blurring pipelines with real-time inference.",
-      color: "bg-orange-600",
-    },
-    {
-      id: 6,
-      icon: <FaCode size={28} />,
-      title: "MLOps & Monitoring",
-      description:
-        "CI/CD for models, model registry, drift detection, observability, and scalable serving on cloud or on-prem.",
-      color: "bg-indigo-600",
-    },
+    
   ];
 
   const industryServices = [

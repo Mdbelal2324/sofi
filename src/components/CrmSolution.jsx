@@ -13,90 +13,132 @@ const CrmSolutions = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // ✅ Updated CRM Services
   const services = [
     {
       id: 1,
       icon: <FaUsers size={28} />,
       title: "Custom CRM Development",
       description:
-        "We build scalable CRM systems tailored to your business processes, ensuring efficiency and growth.",
+        "We build bespoke CRM systems tailored to your specific business processes, enabling personalized customer management, efficient sales tracking, and enhanced data analysis.",
       color: "bg-purple-600",
     },
     {
       id: 2,
       icon: <FaCogs size={28} />,
-      title: "CRM Strategy & Consulting",
+      title: "CRM Implementation",
       description:
-        "Our experts help you define CRM strategies, choose the right platform, and maximize ROI.",
+        "Seamlessly deploy your CRM solution with expert implementation services, integration, workflow configuration, and team training.",
       color: "bg-blue-600",
     },
     {
       id: 3,
       icon: <FaChartLine size={28} />,
-      title: "CRM Integration",
+      title: "CRM System Integration",
       description:
-        "Seamlessly integrate CRM with ERP, marketing tools, and third-party applications.",
+        "Connect your CRM with ERP, marketing automation, and communication tools for unified data flow and streamlined processes.",
       color: "bg-red-500",
     },
     {
       id: 4,
       icon: <FaCogs size={28} />,
-      title: "Sales & Marketing Automation",
+      title: "CRM Consulting",
       description:
-        "Automate lead tracking, sales pipelines, and marketing campaigns to drive conversions.",
+        "Leverage our CRM consulting expertise to strategize, assess current systems, identify gaps, and plan solutions aligned with industry best practices.",
       color: "bg-green-500",
     },
     {
       id: 5,
       icon: <FaUsers size={28} />,
-      title: "CRM Migration & Upgrades",
+      title: "CRM Customization",
       description:
-        "Migrate from legacy systems to modern CRM platforms without data loss.",
+        "Enhance your CRM with tailored features, workflows, and UI. We customize Salesforce, Microsoft Dynamics, and HubSpot for your needs.",
       color: "bg-yellow-500",
     },
     {
       id: 6,
       icon: <FaCogs size={28} />,
+      title: "CRM Migration & Upgrade",
+      description:
+        "Transition seamlessly to a new CRM or upgrade your existing system with secure migration and optimized features.",
+      color: "bg-pink-500",
+    },
+    {
+      id: 7,
+      icon: <FaCogs size={28} />,
       title: "CRM Maintenance & Support",
       description:
-        "We provide ongoing support, bug fixes, and updates for smooth CRM operations.",
-      color: "bg-pink-500",
+        "Keep your CRM system secure and efficient with updates, troubleshooting, monitoring, and long-term support.",
+      color: "bg-indigo-500",
+    },
+    {
+      id: 8,
+      icon: <FaChartLine size={28} />,
+      title: "CRM Module Development",
+      description:
+        "Add specific functionalities to your CRM with custom modules for automation, reporting, and better user experience.",
+      color: "bg-orange-500",
+    },
+    {
+      id: 9,
+      icon: <FaUsers size={28} />,
+      title: "Standard CRM Software Customization",
+      description:
+        "We tailor Salesforce, Dynamics, and Zoho CRM to perfectly fit your business processes and strategic objectives.",
+      color: "bg-teal-500",
     },
   ];
 
+  // ✅ Updated Industry-Specific Solutions
   const industryServices = [
     {
-      title: "Retail & E-commerce",
+      title: "Retail",
       img: web4,
-      desc: "Track customer purchases, manage loyalty programs, and improve customer retention.",
+      desc: "Enhance customer loyalty and personalize marketing efforts with CRM tailored for retail businesses.",
     },
     {
       title: "Healthcare",
       img: web4,
-      desc: "Manage patient data, appointments, and communication effectively with CRM.",
+      desc: "Streamline patient management, appointment scheduling, and communication with secure CRM systems.",
     },
     {
-      title: "Education",
+      title: "Financial Services",
       img: web4,
-      desc: "Streamline student enrollment, communication, and course management.",
-    },
-    {
-      title: "Real Estate",
-      img: web4,
-      desc: "Track leads, manage property listings, and automate client follow-ups.",
-    },
-    {
-      title: "Finance & Banking",
-      img: web4,
-      desc: "Manage client relationships, transactions, and personalized banking services.",
+      desc: "Secure CRM solutions for banking, insurance, and finance with automated workflows and compliance support.",
     },
     {
       title: "Manufacturing",
       img: web4,
-      desc: "Integrate sales, production, and distribution processes in a unified CRM system.",
+      desc: "Optimize supply chain, order tracking, and client interactions with CRM designed for manufacturing.",
+    },
+    {
+      title: "Education",
+      img: web4,
+      desc: "Improve student recruitment, engagement, and alumni relations with CRM for educational institutions.",
+    },
+    {
+      title: "Hospitality & Travel",
+      img: web4,
+      desc: "Streamline bookings and enhance guest experiences with CRM for hotels, travel, and tourism.",
+    },
+    {
+      title: "Real Estate",
+      img: web4,
+      desc: "Boost property sales, manage leads, and automate marketing with CRM tailored for real estate.",
+    },
+    {
+      title: "E-commerce",
+      img: web4,
+      desc: "Create seamless online shopping experiences with CRM for customer data, campaigns, and personalization.",
+    },
+    {
+      title: "Telecommunications",
+      img: web4,
+      desc: "Manage large customer bases with telecom-specific CRM for subscriptions, support, and issue tracking.",
     },
   ];
 
+  // ✅ Tech Stacks (same rakha but heading/content aligned)
   const techStacks = [
     {
       category: "CRM Platforms",
@@ -145,46 +187,77 @@ const CrmSolutions = () => {
     },
   ];
 
+  // ✅ Updated FAQs
   const faqs = [
     {
-      question: "How much does CRM development cost?",
+      question: "What is CRM development and why is it important for my business?",
       answer:
-        "It depends on features, integrations, and customization. A basic CRM may cost $3,000+, while enterprise-grade CRMs cost more.",
+        "CRM development involves creating customized systems to manage customer relationships efficiently. It improves sales, customer service, and workflows.",
     },
     {
-      question: "How long does it take to implement a CRM?",
+      question: "How much does custom CRM development cost?",
       answer:
-        "A simple CRM may take 4-6 weeks, while a complex system with integrations may take 3-6 months.",
+        "Costs vary between $5,000 and $40,000 depending on complexity, features, and integrations. We provide tailored quotes.",
     },
     {
-      question: "Can CRM be integrated with my existing tools?",
+      question: "How long does it take to develop a custom CRM system?",
       answer:
-        "Yes, we integrate CRMs with marketing tools, ERP systems, payment gateways, and more.",
+        "Typically, 8 to 20 weeks depending on customization, integrations, and testing requirements.",
     },
     {
-      question: "Do you provide CRM training and support?",
+      question: "Can you integrate CRM with existing business tools?",
       answer:
-        "Absolutely! We provide onboarding, training, and long-term support for your team.",
+        "Yes, we integrate CRMs with ERP, marketing automation, customer support, and third-party tools.",
+    },
+    {
+      question: "Do you customize existing CRM platforms like Salesforce or HubSpot?",
+      answer:
+        "Absolutely. We tailor Salesforce, Microsoft Dynamics, Zoho, and HubSpot to your workflows.",
+    },
+    {
+      question: "What support do you provide after deployment?",
+      answer:
+        "We offer maintenance, monitoring, troubleshooting, updates, and user training for smooth operations.",
+    },
+    {
+      question: "Can CRM help improve sales and marketing efficiency?",
+      answer:
+        "Yes, CRM automates lead tracking, segmentation, and campaign management to boost conversions.",
+    },
+    {
+      question: "Is my data safe with custom CRM solutions?",
+      answer:
+        "We ensure encryption, access controls, compliance, and regular audits for complete data security.",
+    },
+    {
+      question: "Can I migrate data from my old CRM to a new system?",
+      answer:
+        "Yes, we provide secure CRM migration services with no data loss and minimal disruption.",
+    },
+    {
+      question: "How do I choose the right CRM solution for my business?",
+      answer:
+        "Our experts analyze your processes, goals, and budget to recommend or build the ideal CRM solution.",
     },
   ];
 
   return (
     <div id="crmsolutions">
-      {/* FIRST SECTION */}
+      {/* HERO SECTION */}
       <section className="nft-main-banner-sec py-12">
         <div className="container mx-auto px-6 md:px-28">
           <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
             <div className="md:w-1/2">
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Powerful{" "}
+                Customized{" "}
                 <span className="relative text-red-500">
-                  CRM Solutions
+                  CRM Development
                   <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
                 </span>{" "}
-                Company
+                Services
               </h1>
               <p className="text-lg text-gray-600 mb-6">
-                Manage customer relationships, streamline sales processes, and improve business growth with our custom CRM solutions.
+                At SofiLoft Technologies, we specialize in customized CRM development and implementation services that transform how businesses manage relationships and streamline operations.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-purple-500 to-purple-700">
@@ -213,7 +286,7 @@ const CrmSolutions = () => {
               Proven <span className="text-pink-500 underline">CRM Solutions</span>
             </h2>
             <p className="mt-6 text-gray-600">
-              From customer management to automation, our CRM solutions help businesses boost productivity and sales.
+              Our tailored CRM solutions help you enhance customer engagement, improve sales workflows, and boost overall efficiency.
             </p>
             <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
               Connect With Experts Now!
@@ -226,20 +299,20 @@ const CrmSolutions = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Top <span className="text-pink-500">CRM Development</span> Services
+            Our <span className="text-pink-500">CRM Development</span> Services
           </h2>
           <p className="text-gray-600 mt-3">
-            We help businesses manage customers better with customized CRM solutions.
+            Transform your business operations with custom CRM development solutions that drive growth.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 h-[320px] flex flex-col">
+            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 text-sm">{service.description}</p>
             </div>
           ))}
         </div>
@@ -249,10 +322,10 @@ const CrmSolutions = () => {
       <section className="bg-gray-900 text-white py-16 px-6 md:px-20">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            CRM Solutions for All Industries
+            Industry-Specific CRM Solutions
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            Our CRM systems support industries like retail, healthcare, education, and more.
+            We provide CRM systems designed for retail, healthcare, finance, manufacturing, education, hospitality, real estate, e-commerce, and telecommunications.
           </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -293,7 +366,7 @@ const CrmSolutions = () => {
       {/* FAQ SECTION */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          FAQs on CRM Solutions
+          Frequently Asked Questions
         </h2>
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
