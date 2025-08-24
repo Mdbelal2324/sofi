@@ -3,52 +3,55 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import UK from  "../assets/image/Uk.jpg"
-import UAE  from "../assets/image/UAE.png"
-import USA from "../assets/image/USA.png"
-import AUS from  "../assets/image/Aus.png"
+
+// ✅ Case-sensitive correct imports
+import ukImage from "../assets/image/uk.webp";
+import uae from "../assets/image/uae.png";
+import usa from "../assets/image/usa.png";
+import aus from "../assets/image/aus.png";
+
 const testimonials = [
   {
     text: "We had a fantastic experience working with SofiLoft. Their professionalism and technical expertise in website development helped us launch a responsive, SEO-friendly site that perfectly captured our brand. The results have exceeded expectations.",
-    name: "James Thompson UK",
+    name: "James Thompson Uk",
     role: "CEO",
-    img: UK
+    img: ukImage
   },
   {
     text: "SofiLoft Technologies developed a CRM solution integrated with inventory management that streamlined our stock tracking and sales processes efficiently. Our team productivity increased by 50%.",
     name: "Abdullah Hassan",
     role: "UAE, Owner",
-    img: UAE
+    img: uae,
   },
   {
     text: "SofiLoft's AI agents provide intelligent social media monitoring and engagement, keeping our brand responsive and top-of-mind with our audience..",
     name: "Andrew Chen,",
-    role: " Social Media Head  USA",
-    img: USA
+    role: "Social Media Head USA",
+    img: usa,
   },
   {
-    text: "Sofiloft Technologies delivered a Mobile Application that is not only feature-rich but also offers a user-friendly experience to our customers across both iOS and Android platformsTheir team was proactive and communicative throughout the development cycle",
+    text: "Sofiloft Technologies delivered a Mobile Application that is not only feature-rich but also offers a user-friendly experience to our customers across both iOS and Android platforms. Their team was proactive and communicative throughout the development cycle",
     name: "Lisa Rodriguez.",
     role: "Founder",
-    img: USA
+    img: usa,
   },
-    {
+  {
     text: "Their custom chatbot automation has freed up our support team to focus on complex issues, while providing customers with 24/7 assistance and immediate resolutions. Thanks to SofiLoft Technologies.",
     name: "Nathan Cooper,",
     role: "CTO Australia",
-    img: AUS
+    img: aus,
   },
-     {
+  {
     text: "Thanks to Sofiloft's e-commerce expertise, our luxury watch collection now shines online with smooth navigation and seamless checkout.",
-    name: "Michelle Davis, ,",
-    role: " USA, Founder",
-    img: USA
+    name: "Michelle Davis",
+    role: "USA, Founder",
+    img: usa,
   },
-    {
+  {
     text: "Sofiloft developed a stylish and intuitive fashion mobile app that offers seamless browsing, personalized recommendations, and an effortless checkout process, significantly enhancing our customers' shopping experience and engagement.",
-    name: "Yasin Al-Balushi ,",
+    name: "Yasin Al-Balushi",
     role: "Kuwait, Director",
-    img: AUS
+    img: aus,
   },
 ];
 
@@ -65,7 +68,7 @@ const Testimonial = () => {
         </h2>
 
         {/* Swiper Slider with Cards */}
-        <div className="mt-12">
+        <div className="mt-12 relative">
           <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={30}
@@ -76,21 +79,20 @@ const Testimonial = () => {
               1024: { slidesPerView: 3 },
             }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination", // custom container
+            }}
             loop={true}
           >
             {testimonials.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between text-left relative h-full">
-                  <p className="text-gray-600 leading-relaxed">{item.text}</p>
+              <SwiperSlide key={index} className="flex">
+                <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between text-left w-full h-[350px]">
+                  <p className="text-gray-600 leading-relaxed overflow-hidden line-clamp-5">
+                    {item.text}
+                  </p>
 
-                  {/* Quote Icon */}
-                  <span className="text-orange-500 text-5xl absolute bottom-4 right-6">
-                    ❞
-                  </span>
-
-                  {/* Profile */}
-                  <div className="flex items-center mt-6">
+                  <div className="flex items-center mt-4">
                     <img
                       src={item.img}
                       alt={item.name}
@@ -105,6 +107,9 @@ const Testimonial = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          {/* Pagination dots - card ke bilkul neeche */}
+          <div className="custom-pagination mt-6"></div>
         </div>
       </div>
     </section>
