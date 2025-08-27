@@ -1,45 +1,140 @@
 // src/components/PortfolioHero.jsx
 import React, { useState } from "react";
-import development from "../assets/image/development.png";
+import development from "../assets/image/Fn7.png";
 
 const projects = [
   // Existing
   {
     id: 1,
-    title: "Defiswap",
+    title: "Fn7",
     category: "WEB",
     description:
-      "DeFi Swap is a decentralized exchange by Crypto.com for token swapping, staking, and farming with secure, non-custodial access....",
-    link: "#",
+      "Agent-powered social listening that surfaces live buying-intent conversations across Reddit, LinkedIn, and X, with drafted replies and GTM agents like Muse to turn discussions into qualified traffic and signups.",
+    link: "https://www.fn7.io/",
     image: development,
   },
+
   {
     id: 2,
-    title: "RV Camping",
-    category: "APP",
+    title: "Task Drive",
+    category: "WEB",
     description:
-      "With Harvest Hosts and Boondockers Welcome, enjoy free overnight RV stays at 8,000+ unique spots like wineries, farms, breweries, golf courses, and private properties....",
-    link: "#",
-    image: "/images/rv-camping.jpg",
+      " Global talent recruiting powered by the Love Not Fear framework. Structured sourcing, screening, and selection with six‑month replacement guarantee; places mission‑aligned hires across support, sales, PM, and technical roles.",
+    link: "https://taskdrive.com/",
+    image: "/images/fantasy-sports.jpg",
   },
   {
     id: 3,
-    title: "Fantasy Sports",
+    title: "Audience Plan",
     category: "WEB",
     description:
-      "Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
-    link: "#",
+      " Growth platform for creators and brands. Connects YouTube, TikTok, and Spotify content with real audiences, not bots—campaigns optimize visibility, engagement, credibility, and transparent analytics for sustainable channel growth.",
+    link: " https://www.audienceplan.com/",
     image: "/images/fantasy-sports.jpg",
   },
-  {
+    {
     id: 4,
-    title: "Fantasy Sports",
+    title: "Fleetx",
     category: "WEB",
     description:
-      "Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
-    link: "#",
+      " AI-powered fleet and logistics OS. Connects assets, workflows, and IoT for real-time visibility, predictive maintenance, transport ERP, TMS, and analytics that reduce costs and improve safety and uptime.e—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://www.fleetx.io/",
     image: "/images/fantasy-sports.jpg",
   },
+    {
+    id: 5,
+    title: "Hira Fragrances",
+    category: "WEB",
+    description:
+      "Modern fragrance storefront with editorial storytelling. Curated collections, bold visuals, and social proof deliver premium D2C shopping experience with secure checkout and streamlined product discovery across devices.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: " https://hirafragrances.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+    {
+    id: 6,
+    title: "Yuminu Trition",
+    category: "WEB",
+    description:
+      "Trusted wellness brand storefront offering vitamin gummies and supplements. Optimized PDPs, subscriptions, and reviews drive conversions, with fast mobile experience and clear benefits messaging across categories.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://www.yuminutrition.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+    {
+    id: 7,
+    title: "Ship Clues",
+    category: "WEB",
+    description:
+      "Shipping intelligence and logistics platform. Enables consignment management, dispatch planning, and ERP features with tracking and analytics for transporters and 3PLs to digitize daily operations end‑to‑end.nleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://www.shipclues.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+    {
+    id: 8,
+    title: "Rentn Drive",
+    category: "WEB",
+    description:
+      "Self‑drive car rental platform for India. Simple search, pricing transparency, and booking flow with location filters and mobile-first design to improve discovery, availability, and checkout speed.ltimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://rentndrive.co.in/",
+    image: "/images/fantasy-sports.jpg",
+  },  {
+    id: 9,
+    title: "Crust Pizzaco",
+    category: "WEB",
+    description:
+      "Restaurant website showcasing menus, locations, and online ordering. Location finder, mouth‑watering imagery, and promotions increase table bookings and delivery conversions seamlessly across devices.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://www.crustpizzaco.com/home",
+    image: "/images/fantasy-sports.jpg",
+  },
+    {
+    id: 10,
+    title: "Retik",
+    category: "WEB",
+    description:
+      "Web3 ecosystem brand presence. Token, roadmap, and utility sections highlight vision and community with clear calls to action for whitepaper, staking, and exchange listings.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://retik.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+    {
+    id: 11,
+    title: "Paved",
+    category: "WEB",
+    description:
+      " Premium newsletter sponsorship marketplace. Brands book placements with verified publishers; creators monetize inventory with transparent pricing, audience data, and streamlined campaign management.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: " https://www.paved.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+    {
+    id: 12,
+    title: "Ekam Yoga Academy",
+    category: "WEB",
+    description:
+      "Education site for yoga teacher training and workshops. Program outlines, schedules, and application forms with testimonials and resources to support enrollment decisions and student onboarding.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: " https://ekamyogaacademy.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+   {
+    id: 13,
+    title: "Magnolia jewellery",
+    category: "WEB",
+    description:
+      " Elegant online boutique for fine jewellery. High‑resolution product imagery, collection storytelling, secure checkout, and size guides deliver a refined, trust‑centric shopping experience.Education site for yoga teacher training and workshops. Program outlines, schedules, and application forms with testimonials and resources to support enrollment decisions and student onboarding.Unleash the ultimate fantasy experience—built for champions, by champions, and completely FREE! Ditch ESPN & Yahoo—switch to Fantrax today!...",
+    link: "https://www.magnolia-jewellery.com/",
+    image: "/images/fantasy-sports.jpg",
+  },
+
+    {
+    id: 14,
+    title: "Task Drive",
+    category: "APP",
+    description:
+      " Global talent recruiting powered by the Love Not Fear framework. Structured sourcing, screening, and selection with six‑month replacement guarantee; places mission‑aligned hires across support, sales, PM, and technical roles.",
+    link: " https://taskdrive.com/",
+    image: "/images/rv-camping.jpg",
+  },
+
+  
+  
+
 
   // Salesforce category
   {
@@ -189,7 +284,7 @@ export default function PortfolioHero() {
       <div className="px-4 py-14 max-w-7xl mx-auto">
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {["ALL", "WEB", "Ai", "APP", "Salesforce", "WordPress", "Shopify"].map(
+          {["ALL", "WEB", "Ai", "APP",  "WordPress", "Shopify"].map(
             (cat) => (
               <button
                 key={cat}
@@ -221,12 +316,14 @@ export default function PortfolioHero() {
                 <p className="text-gray-600 text-base flex-grow">
                   {project.description}
                 </p>
-                <a
-                  href={project.link}
-                  className="text-blue-600 font-medium mt-6 hover:underline inline-flex items-center gap-1"
-                >
-                  View Project <span>↗</span>
-                </a>
+                 <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-blue-600 hover:underline"
+            >
+             View project
+            </a>
               </div>
 
               {/* Image */}
@@ -234,7 +331,7 @@ export default function PortfolioHero() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 "
                 />
               </div>
             </div>

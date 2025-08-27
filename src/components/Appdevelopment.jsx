@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import { FaMobileAlt, FaUserTie, FaCode } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
-import web4 from "../assets/image/Healthcare.png";
+import web4 from "../assets/image/Healthcare.jpg";
 import edu from "../assets/image/Education.jpg";
-import restu from "../assets/image/Resturant.png"
-import ecom from "../assets/image/E-commerce.png";
-import retail from "../assets/image/Retail.png";
-import banking from "../assets/image/Banking.png";
-import state from "../assets/image/Real.png";
-import treval from "../assets/image/Travel.png";
+import restu from "../assets/image/Resturant.jpg"
+import ecom from "../assets/image/Retail1.jpg";
+import retail from "../assets/image/Retail.jpg";
+import banking from "../assets/image/Banking.jpg";
+import state from "../assets/image/State.jpg";
+import treval from "../assets/image/Travel.jpg";
 
 
 import native from "../assets/image/native.png"

@@ -7,6 +7,16 @@ import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
 import web5 from "../assets/image/web4.png";
 import porto1 from "../assets/image/E-commerce.png";
+import restu from "../assets/image/Resturant.jpg";
+import fine from "../assets/image/fine.jpg";
+import helt from "../assets/image/Healthcare.jpg";
+
+
+import edu from "../assets/image/Education.jpg";
+import ecom from "../assets/image/Retail1.jpg";
+
+import treval from "../assets/image/Travel.jpg";
+
 
 const AIMLDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -22,37 +32,37 @@ const AIMLDevelopment = () => {
   const industryServices = [
     {
       title: "Education",
-      img: web4,
+      img: edu,
       desc:
         "AI tutors, automated grading, learning analytics, and personalized content to improve student outcomes.",
     },
     {
       title: "Food and Restaurant",
-      img: web4,
+      img: restu,
       desc:
         "Demand forecasting, dynamic pricing, smart recommendations, and automated review sentiment tracking.",
     },
     {
       title: "Travel and Tours",
-      img: web4,
+      img: treval,
       desc:
         "Smart itinerary suggestions, price prediction, personalization, and customer service chatbots.",
     },
     {
       title: "Healthcare",
-      img: web4,
+      img: helt,
       desc:
         "Clinical NLP, triage assistants, imaging diagnostics support, and patient risk prediction with compliance focus.",
     },
     {
       title: "E-commerce",
-      img: web4,
+      img: ecom,
       desc:
         "Recommendation engines, search relevance, fraud detection, and customer support automation.",
     },
     {
       title: "Fintech",
-      img: web4,
+      img: fine,
       desc:
         "Credit scoring, anomaly detection, KYC automation, and real-time risk monitoring with explainable AI.",
     },

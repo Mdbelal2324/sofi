@@ -4,6 +4,15 @@ import { FaShoppingCart, FaUserTie, FaCode } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web4 from "../assets/image/web3.png";
+import food from "../assets/image/Food.jpg";
+import fashion from "../assets/image/fashion.jpg";
+import web5 from "../assets/image/Healthcare.jpg";
+
+import electronic from "../assets/image/Electornic.jpg";
+import home from "../assets/image/Home.jpg";
+ import sport from "../assets/image/Sport.jpg";
+ import beauty from "../assets/image/Beauty.jpg";
+ import automative from "../assets/image/Automative.jpg"
 
 import java from "../assets/image/java.png";
 import php from "../assets/image/php3.png";
@@ -74,42 +83,42 @@ const EcommerceDevelopment = () => {
   const industryServices = [
     {
       title: "Retail & Fashion",
-      img: web4,
+      img: fashion,
       desc: "Drive sales with beautifully designed e-commerce platforms tailored for retail and fashion brands. We support product showcases, size guides, personalized recommendations, and flash sales, helping your store stand out in a crowded market and deliver a superior shopping experience.",
     },
     {
       title: "Food and Beverage",
-      img: web4,
+      img: food,
       desc: "Enhance your food and beverage business with customized online ordering, menu management, and delivery tracking systems. Our e-commerce solutions include loyalty programs and targeted promotions that keep customers coming back for more.",
     },
     {
       title: "Healthcare & Wellness",
-      img: web4,
+      img: web5,
       desc: "Enable easy browsing and secure purchasing of healthcare and wellness products online. Our e-commerce development addresses regulatory compliance, personal data security, and smooth UX for pharmacies, wellness brands, and medical equipment suppliers.",
     },
     {
       title: "Electronics & Technology",
-      img: web4,
+      img: electronic,
       desc: "Power your electronics store with feature-rich e-commerce platforms that highlight product specifications, reviews, and warranty options. We help you showcase complex catalogs in an organized and customer-friendly way to drive informed purchases.",
     },
     {
       title: "Home & Furniture",
-      img: web4,
+      img: home,
       desc: "Showcase your home and furniture collection through highly visual and interactive e-commerce websites and apps. Our solutions facilitate easy browsing, customization options, and seamless checkout to enhance customer satisfaction and boost sales.",
     },
     {
       title: "Sports & Fitness",
-      img: web4,
+      img: sport,
       desc: "Offer a tailored shopping experience for sports equipment, fitness gear, and apparel. We create e-commerce stores that integrate detailed product info, customer reviews, and personalized recommendations to support healthy lifestyles and active communities.",
     },
     {
       title: "Beauty & Personal Care",
-      img: web4,
+      img: beauty,
       desc: "Build engaging online stores for beauty and personal care brands featuring rich media content, subscription services, product bundles, and customer reviews. Our platforms focus on immersive experiences to attract and retain loyal customers.",
     },
     {
       title: "Automotive Parts & Accessories",
-      img: web4,
+      img: automative,
       desc: "Simplify the purchase of automotive parts with user-friendly e-commerce platforms that include detailed catalogs, fitment guides, and secure transactions. Our solutions help automotive businesses reach enthusiasts and service providers efficiently.",
     },
     {

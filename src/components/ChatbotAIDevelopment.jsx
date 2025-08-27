@@ -5,7 +5,14 @@ import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
-import web5 from "../assets/image/web4.png";
+import web5 from "../assets/image/Healthcare.jpg";
+import retail from "../assets/image/Retail.jpg";
+import edu from "../assets/image/Education.jpg";
+import ecom from "../assets/image/Retail1.jpg";
+import state from "../assets/image/State.jpg";
+import tele from "../assets/image/Tele.jpg";
+import travel3 from "../assets/image/Travel3.jpg";
+import finance2 from "../assets/image/Finance2.jpg";
 
 const ChatbotDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -94,37 +101,37 @@ const ChatbotDevelopment = () => {
   const industryServices = [
     {
       title: "Retail & E-commerce",
-      img: web4,
+      img: retail,
       desc: "Our chatbots enhance customer journeys in retail by offering personalized product recommendations, handling order tracking, managing returns, and answering common queries, which leads to improved user experience and higher sales conversions.",
     },
     {
       title: "Healthcare",
-      img: web4,
+      img: web5,
       desc: "We build secure chatbots that assist patients with appointment scheduling, symptom screening, medication reminders, and answering medical FAQs, improving accessibility and efficiency in patient care while maintaining privacy compliance.",
     },
     {
       title: "Banking & Finance",
-      img: web4,
+      img: finance2,
       desc: "Chatbots streamline banking interactions by providing instant access to account balances, transaction history, loan information, fraud alerts, and personalized financial advice, significantly enhancing customer service and operational speed.",
     },
     {
       title: "Travel & Hospitality",
-      img: web4,
+      img: travel3 ,
       desc: "Our chatbots help travelers book flights, hotels, and tours, provide itinerary updates, answer travel-related questions, and offer destination recommendations, creating seamless and engaging travel experiences.",
     },
     {
       title: "Education",
-      img: web4,
+      img: edu,
       desc: "We develop chatbots for educational institutions that support admissions queries, course information, exam schedules, campus updates, and online learning assistance, helping students and staff find information quickly and easily.",
     },
     {
       title: "Real Estate",
-      img: web4,
+      img: state,
       desc: "Our chatbots assist real estate agencies in capturing leads, scheduling property visits, offering virtual tours, and answering client questions, thereby improving lead management and accelerating the buying process.",
     },
     {
       title: "Telecommunications",
-      img: web4,
+      img: tele,
       desc: "Telecom chatbots handle billing inquiries, service troubleshooting, plan upgrades, and appointment scheduling automatically, reducing wait times and supporting customer retention.",
     },
     {

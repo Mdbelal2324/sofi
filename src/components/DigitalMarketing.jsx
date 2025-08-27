@@ -5,6 +5,17 @@ import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
+import web5 from "../assets/image/Healthcare.jpg";
+import restu from "../assets/image/Resturant.jpg";
+import start from "../assets/image/Starttup.jpg";
+
+
+import edu from "../assets/image/Education.jpg";
+import ecom from "../assets/image/Retail1.jpg";
+import state from "../assets/image/State.jpg";
+import banking from "../assets/image/Banking.jpg";
+import treval from "../assets/image/Travel.jpg";
+import retail1 from "../assets/image/Retail1.jpg";
 
 const DigitalMarketing = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -139,15 +150,15 @@ const DigitalMarketing = () => {
 
   // ✅ Industry-Specific Solutions (Updated)
   const industryServices = [
-    { title: "Retail", img: web4, desc: "Our digital marketing strategies for retail businesses focus on driving online and in-store traffic through targeted ad campaigns, personalized email marketing, and social media engagement. We help retailers build brand loyalty, promote seasonal offers, and increase conversions by reaching the right customers with compelling messaging." },
-    { title: "Healthcare", img: web4, desc: "We provide healthcare providers with compliant digital marketing solutions that enhance patient engagement and improve service visibility. Our strategies include content marketing, SEO for medical services, social media education campaigns, and reputation management to help build trust and grow patient bases.." },
-    { title: "Real Estate", img: web4, desc: "Our real estate digital marketing solutions focus on lead generation, listing promotion, and brand building. We optimize websites for local SEO, run targeted paid ads, and engage prospective buyers and renters via social media and email marketing to speed up sales cycles." },
-    { title: "Education", img: web4, desc: "Our education marketing services help institutions attract and retain students through targeted digital campaigns. We develop content-rich websites, optimize SEO for local and niche searches, manage social media outreach, and create lead generation funnels that simplify the enrollment process." },
-    { title: "Travel & Tourism", img: web4, desc: "We help travel companies reach global audiences by promoting destinations, packages, and experiences through search engine marketing, immersive social media content, and personalized email marketing. Our campaigns are designed to inspire travelers and encourage bookings year-round." },
-    { title: "Finance & Banking", img: web4, desc: "We assist finance firms in building trust and visibility through content marketing, social media campaigns focused on financial literacy, and targeted ads. Our comprehensive approach supports lead generation, client engagement, and reputation management in highly regulated industries." },
-    { title: "Food & Restaurant", img: web4, desc: "We create appetizing digital marketing campaigns for food and restaurant businesses that drive reservations, online orders, and customer loyalty. Our tactics include localized SEO, social media promotions, influencer marketing, and email marketing to keep customers coming back." },
-    { title: "Technology & Startups", img: web4, desc: "For tech companies and startups, we deliver agile digital marketing strategies that build brand awareness, attract investors, and shorten sales cycles. Our services range from product launches and viral campaigns to content marketing and targeted paid ads that fuel growth"},
-    { title: "E-commerce", img: web4, desc: "For e-commerce businesses, we focus on driving sales and increasing customer retention through strategies including paid advertising, social media marketing, email campaigns, and influencer collaborations. Our goal is to boost traffic, enhance user experience, and convert visitors into loyal customers." },
+    { title: "Retail", img:retail1 , desc: "Our digital marketing strategies for retail businesses focus on driving online and in-store traffic through targeted ad campaigns, personalized email marketing, and social media engagement. We help retailers build brand loyalty, promote seasonal offers, and increase conversions by reaching the right customers with compelling messaging." },
+    { title: "Healthcare", img: web5, desc: "We provide healthcare providers with compliant digital marketing solutions that enhance patient engagement and improve service visibility. Our strategies include content marketing, SEO for medical services, social media education campaigns, and reputation management to help build trust and grow patient bases.." },
+    { title: "Real Estate", img: state, desc: "Our real estate digital marketing solutions focus on lead generation, listing promotion, and brand building. We optimize websites for local SEO, run targeted paid ads, and engage prospective buyers and renters via social media and email marketing to speed up sales cycles." },
+    { title: "Education", img: edu, desc: "Our education marketing services help institutions attract and retain students through targeted digital campaigns. We develop content-rich websites, optimize SEO for local and niche searches, manage social media outreach, and create lead generation funnels that simplify the enrollment process." },
+    { title: "Travel & Tourism", img: treval, desc: "We help travel companies reach global audiences by promoting destinations, packages, and experiences through search engine marketing, immersive social media content, and personalized email marketing. Our campaigns are designed to inspire travelers and encourage bookings year-round." },
+    { title: "Finance & Banking", img: banking, desc: "We assist finance firms in building trust and visibility through content marketing, social media campaigns focused on financial literacy, and targeted ads. Our comprehensive approach supports lead generation, client engagement, and reputation management in highly regulated industries." },
+    { title: "Food & Restaurant", img: restu, desc: "We create appetizing digital marketing campaigns for food and restaurant businesses that drive reservations, online orders, and customer loyalty. Our tactics include localized SEO, social media promotions, influencer marketing, and email marketing to keep customers coming back." },
+    { title: "Technology & Startups", img: start, desc: "For tech companies and startups, we deliver agile digital marketing strategies that build brand awareness, attract investors, and shorten sales cycles. Our services range from product launches and viral campaigns to content marketing and targeted paid ads that fuel growth"},
+    { title: "E-commerce", img: ecom, desc: "For e-commerce businesses, we focus on driving sales and increasing customer retention through strategies including paid advertising, social media marketing, email campaigns, and influencer collaborations. Our goal is to boost traffic, enhance user experience, and convert visitors into loyal customers." },
   ];
 
   // ✅ Tech Stacks (Unchanged)

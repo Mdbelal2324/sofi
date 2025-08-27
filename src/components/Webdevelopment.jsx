@@ -3,17 +3,17 @@ import { FaLaptopCode, FaUserTie, FaServer,FaCode,FaGlobe,FaPlug, } from "react-
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
-import web4 from "../assets/image/Healthcare.png";
+import web4 from "../assets/image/Healthcare.jpg";
 import web5 from "../assets/image/web4.png"
 import porto1 from "../assets/image/E-commerce.png";
 import edu from "../assets/image/Education.jpg";
-import restu from "../assets/image/Resturant.png"
-import treval from "../assets/image/Travel.png";
-import ecom from "../assets/image/E-commerce.png";
-import retail from "../assets/image/Retail.png";
-import banking from "../assets/image/Banking.png";
-import state from "../assets/image/Real.png";
-import event  from "../assets/image/event.png";
+import restu from "../assets/image/Resturant.jpg";
+import treval from "../assets/image/Travel.jpg";
+import ecom from "../assets/image/Retail1.jpg";
+import retail from "../assets/image/Retail.jpg";
+import banking from "../assets/image/Banking.jpg";
+import State from "../assets/image/State.jpg";
+import event  from "../assets/image/event.jpg";
 // tecch image 
 import  react from "../assets/image/React.png";
 import angularImg from "../assets/image/angular.png";
@@ -39,6 +39,7 @@ import  mac  from "../assets/image/mac.png";
 import google from "../assets/image/google.png";
 import aws from "../assets/image/aws.png";
 import  devops from"../assets/image/devops.png";
+
 
 function FAQAccordion() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -173,7 +174,7 @@ const WebDevelopment = () => {
     },
      {
       title: "Real Estate",
-      img:  state,
+      img:  State,
       desc: "Showcase properties effectively with custom web solutions tailored for the real estate sector. SofiLoft creates interactive listing platforms featuring virtual tours, advanced search filters, dynamic maps, and secure payment processing. Our websites facilitate client engagement and simplify property management, empowering real estate professionals to reach more buyers and streamline their sales and rental operations.",
     },
      {

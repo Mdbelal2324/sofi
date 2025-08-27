@@ -5,6 +5,18 @@ import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
+import web5 from "../assets/image/Healthcare.jpg";
+import retail from "../assets/image/Retail.jpg";
+import edu from "../assets/image/Education.jpg";
+import ecom from "../assets/image/Retail1.jpg";
+import state from "../assets/image/State.jpg";
+import tele from "../assets/image/Tele.jpg";
+import travel3 from "../assets/image/Travel3.jpg"
+import manfactur1 from "../assets/image/Manufactur1.jpg";
+import finance2 from "../assets/image/Finance2.jpg";
+
+
+
 
 const CrmSolutions = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -93,47 +105,47 @@ const CrmSolutions = () => {
   const industryServices = [
     {
       title: "Retail",
-      img: web4,
+      img: retail,
       desc: "Enhance customer loyalty and personalize marketing efforts with CRM tailored for retail businesses.",
     },
     {
       title: "Healthcare",
-      img: web4,
+      img: web5,
       desc: "Streamline patient management, appointment scheduling, and communication with secure CRM systems.",
     },
     {
       title: "Financial Services",
-      img: web4,
+      img: finance2,
       desc: "Secure CRM solutions for banking, insurance, and finance with automated workflows and compliance support.",
     },
     {
       title: "Manufacturing",
-      img: web4,
+      img: manfactur1,
       desc: "Optimize supply chain, order tracking, and client interactions with CRM designed for manufacturing.",
     },
     {
       title: "Education",
-      img: web4,
+      img: edu,
       desc: "Improve student recruitment, engagement, and alumni relations with CRM for educational institutions.",
     },
     {
       title: "Hospitality & Travel",
-      img: web4,
+      img: travel3,
       desc: "Streamline bookings and enhance guest experiences with CRM for hotels, travel, and tourism.",
     },
     {
       title: "Real Estate",
-      img: web4,
+      img: state,
       desc: "Boost property sales, manage leads, and automate marketing with CRM tailored for real estate.",
     },
     {
       title: "E-commerce",
-      img: web4,
+      img: ecom,
       desc: "Create seamless online shopping experiences with CRM for customer data, campaigns, and personalization.",
     },
     {
       title: "Telecommunications",
-      img: web4,
+      img: tele,
       desc: "Manage large customer bases with telecom-specific CRM for subscriptions, support, and issue tracking.",
     },
   ];

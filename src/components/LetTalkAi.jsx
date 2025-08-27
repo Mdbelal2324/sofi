@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 import { FaUsers, FaLightbulb, FaBrain } from "react-icons/fa";
 import { Search, ChevronRight, ArrowUpRight } from "lucide-react";
 import edu from "../assets/image/Education.jpg";
+import Health from "../assets/image/Healthcare.jpg";
+import Finance from "../assets/image/Finance.jpg";
+import Retail1 from "../assets/image/Retail1.jpg";
+import Manu from "../assets/image/Manu.jpg";
+import Logistic from "../assets/image/Logistic.jpg";
+import Tele from "../assets/image/Tele.jpg";
+import State from "../assets/image/State.jpg";
+import Marketing from "../assets/image/Marketing.jpg"
 
 export default function AIDevelopmentPage() {
   const tech = [
@@ -161,49 +169,49 @@ export default function AIDevelopmentPage() {
     },
     {
       title: "Healthcare",
-      img: edu,
+      img: Health,
       desc:
         "Our AI solutions in healthcare include advanced diagnostics, patient monitoring systems, medical imaging analysis, and personalized treatment planning. By leveraging AI, healthcare providers can improve accuracy, speed up diagnoses, and offer tailored care plans, ultimately enhancing patient outcomes while optimizing operational workflows.",
     },
     {
       title: "Finance",
-      img: edu,
+      img: Finance,
       desc:
         "We apply machine learning to detect fraud, assess risks accurately, automate trading algorithms, and predict customer behavior. These AI-driven capabilities help financial institutions improve security, reduce losses, increase profitability, and deliver personalized financial products and services to their clients..",
     },
     {
       title: "Retail & E-commerce",
-      img: edu,
+      img: Retail1,
       desc:
         "AI boosts retail and e-commerce by enabling personalized product recommendations, accurate inventory forecasting, targeted customer segmentation, and automated support systems like chatbots. These technologies improve customer experiences, streamline operations, reduce overstock, and increase sales conversions..",
     },
     {
       title: "Manufacturing",
-      img: edu,
+      img: Manu,
       desc:
         "Our AI-powered manufacturing solutions include predictive maintenance to foresee equipment failures, computer vision for quality assurance, supply chain optimization, and automating routine tasks. This reduces downtime, enhances product quality, lowers costs, and improves overall factory efficiency.",
     },
     {
       title: "Logistics & Transportation",
-      img: edu,
+      img: Logistic,
       desc:
         "AI streamlines logistics and transportation by optimizing routing, forecasting demand, managing fleets, and scheduling deliveries automatically. These solutions reduce operational costs, improve delivery speeds, maximize vehicle utilization, and enhance customer satisfaction.",
     },
      {
       title: "Telecommunications",
-      img: edu,
+      img: Tele,
       desc:
         "In telecom, AI enhances network performance, predicts customer churn, powers AI-driven customer support bots, and analyzes data for smarter business decisions. These applications increase service reliability and improve subscriber retention.",
      },
      {
       title:"Real Estate",
-      img: edu,
+      img: State,
       desc:
       "Our AI tools provide property valuation predictions, interactive virtual tours, lead scoring systems, and market forecasting. These solutions accelerate the sales process, improve client targeting, and provide data-driven insights to both agents and buyers.",
      },
      {
       title: "Marketing & Advertising",
-      img: edu,
+      img: Marketing,
       desc:
       "We help optimize marketing efforts through customer segmentation, personalized campaign delivery, sentiment analysis, and AI-powered chatbots. These services increase ROI by ensuring marketing messages effectively reach and engage the right audience."
      }
@@ -334,7 +342,7 @@ const techStack = [
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`${service.color} w-14 h-14 flex items-center justify-center rounded-full mb-4`}>{service.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 text-sm">{service.description}</p>
@@ -344,9 +352,9 @@ const techStack = [
       </section>
 
       {/* Process */}
-      <section id="process" className="bg-gradient-to-b from-gray-50 to-white py-16">
+      <section id="process" className="bg-[#7045ae] from-gray-50 to-white py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl font-extrabold mb-6">Our Approach</h2>
+          <h2 className="text-3xl font-extrabold mb-6 text-white">Our Approach</h2>
           <div className="grid md:grid-cols-5 gap-4">
             {process.map((p, i) => (
               <motion.div key={i} whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 10 }} className="p-4 rounded-2xl bg-white border border-gray-100 shadow text-center">
@@ -371,7 +379,7 @@ const techStack = [
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {industryServices.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+              <div key={index} className="bg-[#fbfbfb]  rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
                 <img src={item.img} alt={item.title} className="w-full h-48 object-cover" />
                 <div className="p-6 text-left">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -456,8 +464,8 @@ const techStack = [
         <div className="bg-white rounded-2xl border border-gray-100 shadow divide-y">
           {faqs.map((f, i) => (
             <details key={i} className="p-5">
-              <summary className="cursor-pointer font-semibold">{f.q}</summary>
-              <div className="mt-3 text-gray-600">{f.a}</div>
+              <summary className="cursor-pointer text-shadow font-bold">{f.q}</summary>
+              <div className="mt-3  text-gray-600">{f.a}</div>
             </details>
           ))}
         </div>
