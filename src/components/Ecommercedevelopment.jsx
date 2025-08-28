@@ -5,7 +5,7 @@ import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web4 from "../assets/image/web3.png";
 import food from "../assets/image/Food.jpg";
-import fashion from "../assets/image/fashion.jpg";
+import fashion from "../assets/image/Fashion.jpg";
 import web5 from "../assets/image/Healthcare.jpg";
 
 import electronic from "../assets/image/Electornic.jpg";
