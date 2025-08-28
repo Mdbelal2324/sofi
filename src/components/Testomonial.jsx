@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 // ✅ Case-sensitive correct imports
 import ukimage from "../assets/image/uk.png";
-import uae from "../assets/image/uae.png";
+import uae from "../assets/image/UAE.png";
 import usa from "../assets/image/usa.png";
 import aus from "../assets/image/aus.png";
 
