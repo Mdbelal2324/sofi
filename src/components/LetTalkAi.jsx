@@ -4,7 +4,7 @@ import { FaUsers, FaLightbulb, FaBrain } from "react-icons/fa";
 import { Search, ChevronRight, ArrowUpRight } from "lucide-react";
 import edu from "../assets/image/Education.jpg";
 import Health from "../assets/image/Healthcare.jpg";
-import Finance from "../assets/image/Finance.jpg";
+import Finance from "../assets/image/finance.jpg";
 import Retail1 from "../assets/image/Retail1.jpg";
 import Manu from "../assets/image/Manu.jpg";
 import Logistic from "../assets/image/Logistic.jpg";
