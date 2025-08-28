@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import ukimage from "../assets/image/uk.png";
 import uae from "../assets/image/UAE.png";
 import usa from "../assets/image/USA.png";
-import aus from "../assets/image/AUS.png";
+
 
 const testimonials = [
   {
@@ -39,7 +39,7 @@ const testimonials = [
     text: "Their custom chatbot automation has freed up our support team to focus on complex issues, while providing customers with 24/7 assistance and immediate resolutions. Thanks to SofiLoft Technologies.",
     name: "Nathan Cooper,",
     role: "CTO Australia",
-    img: aus,
+    img: usa,
   },
   {
     text: "Thanks to Sofiloft's e-commerce expertise, our luxury watch collection now shines online with smooth navigation and seamless checkout.",
