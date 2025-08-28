@@ -4,7 +4,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// ✅ Case-sensitive correct imports
+// Case-sensitive correct imports
 import ukimage from "../assets/image/uk.png";
 import uae from "../assets/image/UAE.png";
 import usa from "../assets/image/USA.png";
