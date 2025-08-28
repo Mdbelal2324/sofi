@@ -4,7 +4,7 @@ import { FaUsers, FaCogs, FaChartLine } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
-import web4 from "../assets/image/web3.png";
+
 import web5 from "../assets/image/Healthcare.jpg";
 import retail from "../assets/image/Retail.jpg";
 import edu from "../assets/image/Education.jpg";
@@ -12,7 +12,7 @@ import ecom from "../assets/image/Retail1.jpg";
 import state from "../assets/image/State.jpg";
 import tele from "../assets/image/Tele.jpg";
 import travel3 from "../assets/image/Travel3.jpg"
-import manfactur1 from "../assets/image/Manufactur1.jpg";
+import manfactur1 from "../assets/image/manufactur1.jpg";
 import finance2 from "../assets/image/Finance2.jpg";
 
 
