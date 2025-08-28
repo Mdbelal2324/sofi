@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import ukimage from "../assets/image/uk.png";
 import uae from "../assets/image/UAE.png";
 import usa from "../assets/image/USA.png";
-import aus from "../assets/image/aus.png";
+import aus from "../assets/image/AUS.png";
 
 const testimonials = [
   {
