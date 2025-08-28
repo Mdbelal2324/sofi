@@ -51,7 +51,7 @@ const testimonials = [
     text: "Sofiloft developed a stylish and intuitive fashion mobile app that offers seamless browsing, personalized recommendations, and an effortless checkout process, significantly enhancing our customers' shopping experience and engagement.",
     name: "Yasin Al-Balushi",
     role: "Kuwait, Director",
-    img: aus,
+    img: usa,
   },
 ];
 
