@@ -12,7 +12,7 @@ import ecom from "../assets/image/Retail1.jpg";
 import state from "../assets/image/State.jpg";
 import tele from "../assets/image/Tele.jpg";
 import travel3 from "../assets/image/Travel3.jpg";
-import finance2 from "../assets/image/Finance2.jpg";
+import finance2 from "../assets/image/finance2.jpg";
 
 const ChatbotDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
