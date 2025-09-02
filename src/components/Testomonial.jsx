@@ -8,50 +8,52 @@ import "swiper/css/pagination";
 import ukimage from "../assets/image/uk.png";
 import uae from "../assets/image/UAE.png";
 import usa from "../assets/image/USA.png";
+import aus from "../assets/image/aus.png";
+import ku from "../assets/image/Ku.png";
 
 
 const testimonials = [
   {
-    text: "We had a fantastic experience working with SofiLoft. Their professionalism and technical expertise in website development helped us launch a responsive, SEO-friendly site that perfectly captured our brand. The results have exceeded expectations.",
-    name: "James Thompson Uk",
+    text: "We had a fantastic experience working with SofiLoft. Their professionalism and technical expertise in website development helped us launch a responsive, SEO-friendly site that perfectly captured our brand. The results have exceeded expectations",
+    name: "James Thompson",
     role: "CEO",
     img: ukimage,
   },
   {
-    text: "SofiLoft Technologies developed a CRM solution integrated with inventory management that streamlined our stock tracking and sales processes efficiently. Our team productivity increased by 50%.",
+    text: "SofiLoft Technologies developed a CRM solution integrated with inventory management that streamlined our stock tracking and sales processes efficiently. Our team productivity increased by 50%",
     name: "Abdullah Hassan",
-    role: "UAE, Owner",
+    role: "Owner",
     img: uae,
   },
   {
-    text: "SofiLoft's AI agents provide intelligent social media monitoring and engagement, keeping our brand responsive and top-of-mind with our audience..",
-    name: "Andrew Chen,",
-    role: "Social Media Head USA",
+    text: "SofiLoft's AI agents provide intelligent social media monitoring and engagement, keeping our brand responsive and top-of-mind with our audience.",
+    name: "Andrew Chen",
+    role: "Social Media Head",
     img: usa,
   },
   {
     text: "Sofiloft Technologies delivered a Mobile Application that is not only feature-rich but also offers a user-friendly experience to our customers across both iOS and Android platforms. Their team was proactive and communicative throughout the development cycle",
-    name: "Lisa Rodriguez.",
+    name: "Lisa Rodriguez",
     role: "Founder",
     img: usa,
   },
   {
     text: "Their custom chatbot automation has freed up our support team to focus on complex issues, while providing customers with 24/7 assistance and immediate resolutions. Thanks to SofiLoft Technologies.",
-    name: "Nathan Cooper,",
-    role: "CTO Australia",
-    img: usa,
+    name: "Nathan Cooper",
+    role: "CTO",
+    img: aus,
   },
   {
     text: "Thanks to Sofiloft's e-commerce expertise, our luxury watch collection now shines online with smooth navigation and seamless checkout.",
     name: "Michelle Davis",
-    role: "USA, Founder",
+    role: "Founder",
     img: usa,
   },
   {
     text: "Sofiloft developed a stylish and intuitive fashion mobile app that offers seamless browsing, personalized recommendations, and an effortless checkout process, significantly enhancing our customers' shopping experience and engagement.",
     name: "Yasin Al-Balushi",
-    role: "Kuwait, Director",
-    img: usa,
+    role: "Director",
+    img: ku,
   },
 ];
 
@@ -62,9 +64,9 @@ const Testimonial = () => {
         <p className="text-orange-500 uppercase font-medium tracking-wide">
           Testimonial
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold mt-2">
+        <h2 className="text-3xl sm:text-4xl font-extrabold mt-2">
           Why do people praise{" "}
-          <span className="text-orange-500">Web Info Software?</span>
+          <span className="text-orange-500">SofiLoft Technologies?</span>
         </h2>
 
         {/* Swiper Slider with Cards */}
@@ -88,7 +90,7 @@ const Testimonial = () => {
             {testimonials.map((item, index) => (
               <SwiperSlide key={index} className="flex">
                 <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between text-left w-full h-[350px]">
-                  <p className="text-gray-600 leading-relaxed overflow-hidden line-clamp-5">
+                  <p className="text-gray-600 leading-relaxed overflow-hidden ">
                     {item.text}
                   </p>
 

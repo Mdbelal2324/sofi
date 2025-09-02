@@ -3,59 +3,57 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowLeft, FaArrowRight, FaArrowRightLong } from 'react-icons/fa6';
-import Project1 from '../assets/image/Project1.jpg';
-import Project2 from '../assets/image/Project2.jpg';
-import Project3 from '../assets/image/Project3.jpg';
+import Project1 from '../assets/image/Project1.png';
+import Project2 from '../assets/image/Project2.png';
+import Project3 from '../assets/image/Project3.png';
+import Project4 from '../assets/image/Project4.png';
+import Project5 from '../assets/image/Project5.png';
+import Project6 from '../assets/image/Project6.png';
 
 const Portfolio = () => {
   const portfolioItems = [
     {
-      title: 'Web Development',
+      title: 'Fn7',
       category: 'Technology',
       image: Project1,
-      date: 'May 26th 2025',
-      description: 'Web development services to build robust, scalable digital platforms.',
-      link: '/web-development'
+      description: 'Agent-powered social listening that surfaces live buying-intent conversations across Reddit, LinkedIn, and X, with drafted replies and GTM agents like Muse to turn discussions into qualified traffic and signups',
+      link: 'https://www.fn7.io/'
     },
     {
-      title: 'Website Design',
+      title: 'Audience-plan',
       category: 'Technology',
       image: Project2,
-      date: 'May 25th 2025',
-      description: 'Creative UI/UX and responsive design to engage your audience.',
-      link: '/website-design'
+      description: 'Growth platform for creators and brands. Connects YouTube, TikTok, and Spotify content with real audiences, not bots—campaigns optimize visibility, engagement, credibility, and transparent analytics for sustainable.',
+      link: 'https://www.audienceplan.com/'
     },
     {
-      title: 'SEO Optimization',
+      title: 'Fleetx',
       category: 'Marketing',
       image: Project3,
-      date: 'May 24th 2025',
-      description: 'Rank higher on search engines and increase traffic organically.',
-      link: '/seo-optimization'
+      description: 'AI-powered fleet and logistics OS. Connects assets, workflows, and IoT for real-time visibility, predictive maintenance, transport ERP, TMS, and analytics that reduce costs and improve safety and uptime.',
+      link: ' https://www.fleetx.io/'
     },
      {
-      title: 'SEO Optimization',
+      title: 'Hira-fragrances',
       category: 'Marketing',
-      image: Project3,
-      date: 'May 24th 2025',
-      description: 'Rank higher on search engines and increase traffic organically.',
-      link: '/seo-optimization'
+      image: Project4,
+      description: 'Modern fragrance storefront with editorial storytelling. Curated collections, bold visuals, and social proof deliver premium D2C shopping experience with secure checkout and streamlined product discovery across.',
+
+      link: 'https://hirafragrances.com/'
     },
      {
-      title: 'SEO Optimization',
+      title: 'Yuminutrition',
       category: 'Marketing',
-      image: Project3,
-      date: 'May 24th 2025',
-      description: 'Rank higher on search engines and increase traffic organically.',
-      link: '/seo-optimization'
+      image: Project5,
+      description: 'Trusted wellness brand storefront offering vitamin gummies and supplements. Optimized PDPs, subscriptions, and reviews drive conversions, with fast mobile experience and clear benefits messaging across.',
+      link: ' https://www.yuminutrition.com/'
     },
      {
-      title: 'SEO Optimization',
+      title: 'Retik',
       category: 'Marketing',
-      image: Project3,
-      date: 'May 24th 2025',
-      description: 'Rank higher on search engines and increase traffic organically.',
-      link: '/seo-optimization'
+      image: Project6,
+      description: 'Web3 ecosystem brand presence. Token, roadmap, and utility sections highlight vision and community with clear calls to action for whitepaper, staking, and exchange listings.',
+      link: 'https://retik.com/'
     },
   ];
 
@@ -98,14 +96,14 @@ const Portfolio = () => {
         
         {/* Heading + Button */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-            Our Portfolio / Works
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800">
+            Our Works
           </h2>
           <a
             href="#"
-            className="bg-purple-500 hover:bg-purple-700 text-white font-semibold py-2 px-5 rounded transition duration-300 text-sm"
+            className="bg-green-500 hover:bg-purple-700 text-white font-extrabold py-2 px-5 rounded transition duration-300 text-sm"
           >
-            View Projects →
+            View Portfolio→
           </a>
         </div>
 
@@ -128,17 +126,20 @@ const Portfolio = () => {
                   </a>
 
                   {/* Date */}
-                  <div className="absolute top-[170px] left-1/2 transform -translate-x-1/2 bg-white px-6 py-2 shadow-md rounded-md text-gray-700 text-sm font-medium z-10">
-                    {item.date}
-                  </div>
+                
 
                   {/* Content */}
                   <div className="p-6 mt-6 text-center">
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
                     <p className="text-gray-500 text-sm mb-4">{item.description}</p>
-                    <a href={item.link} className="text-orange-600 font-medium hover:underline inline-flex items-center gap-2">
-                      Read More <FaArrowRightLong />
-                    </a>
+             <a 
+  href={item.link} 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-orange-500 font-medium hover:underline inline-flex items-center gap-2"
+>
+  View Project <FaArrowRightLong />
+</a>
                   </div>
 
                 </div>

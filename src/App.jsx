@@ -11,7 +11,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Header1 from './components/Header1';
 import Portfolio1 from "./components/Portfolio1";
 
-import ContactFrom from "./components/ContactFrom";
+import ContactForm from "./components/ContactForm";
 import  OurTeam from "./components/OurTeam";
 import Mission from "./components/Mission";
 import About from "./components/About";
@@ -30,6 +30,7 @@ import Consult from "./components/Consult.jsx";
 import Testomonial from "./components/Testomonial.jsx";
 import Faq from "./components/Faq.jsx"
 import Ar from "./components/Ar.jsx";
+import HowWeWork from "./components/HowWeWork.jsx"
 
 
 
@@ -50,6 +51,7 @@ function App() {
             <WhyChooseUs />
             
             <Portfolio />
+            <HowWeWork />
             <Consult />
             <Testomonial/>
             <Faq/>
@@ -65,7 +67,7 @@ function App() {
         
         {/* Portfolio Page */}
         <Route path="/Portfolio1" element={<Portfolio1/>} />
-        <Route path="/ContactFrom" element={<ContactFrom/>} />
+        <Route path="/ContactForm" element={<ContactForm/>} />
         <Route path="/OurTeam"   element={<OurTeam/>} />
         <Route path="/About"     element={<About/>}  />
         

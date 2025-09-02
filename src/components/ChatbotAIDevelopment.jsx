@@ -13,6 +13,11 @@ import state from "../assets/image/State.jpg";
 import tele from "../assets/image/Tele.jpg";
 import travel3 from "../assets/image/Travel3.jpg";
 import finance2 from "../assets/image/finance2.jpg";
+import Logistic from "../assets/image/Logistic.jpg";
+import java from "../assets/image/java.png";
+import node from "../assets/image/node2.png";
+import python from "../assets/image/python2.png";
+
 
 const ChatbotDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -141,10 +146,44 @@ const ChatbotDevelopment = () => {
     },
     {
       title: "Logistics & Transportation",
-      img: web4,
+      img: Logistic,
       desc: "Chatbots in logistics offer shipment tracking, delivery status notifications, route information, and customer support, improving communication transparency and operational efficiency.",
     },
   ];
+
+  const techStacks = [
+    {
+      category: "Programming Languages",
+      items: [
+        { name: "JavaScript", img:"/assets/node.png"},
+        { name: "Python", img:python},
+        { name: "Java", img :java},
+    
+      ],
+    },
+    {
+      category: "Frameworks & Libraries",
+      items: [
+        { name: "Node.js", img:node},
+        { name: "Flask", img:"/assets/node.png"},
+        { name: "Spring Boot", img:"/assets/node.png"},
+        
+      ],
+    },
+    {
+      category: "Natural Language Processing",
+      items: [
+        { name: "Rasa", img:"/assets/node.png"},
+        { name: "Dialogflow", img:"/assets/node.png"},
+        { name: "spaCy", img:"/assets/node.png"},
+        
+      ]
+    },
+   
+
+  
+  ];
+
 
   // ✅ FAQs
   const faqs = [
@@ -203,54 +242,54 @@ const ChatbotDevelopment = () => {
   return (
     <div id="chatbotdevelopment">
       {/* HERO SECTION */}
-      <section className="nft-main-banner-sec py-12">
-        <div className="container mx-auto px-6 md:px-28">
-          <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
-            <div className="md:w-1/2">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Chatbot Development Services by <span className="relative text-red-500">SofiLoft Technologies</span>
-              </h1>
-              <p className="text-lg text-gray-600 mb-6">
-                Chatbots are transforming customer interaction by providing instant, personalized, and scalable support 24/7. At SofiLoft Technologies, we craft intelligent chatbot solutions that enhance user experience, automate routine queries, and improve operational efficiency. Leveraging state-of-the-art AI and natural language processing, our chatbots can understand complex queries, engage users seamlessly, and integrate with your existing systems.
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Whether for customer support, lead generation, or internal automation, our flexible chatbot solutions are tailor-made to fit your specific business needs and industry demands.
-              </p>
-              <div className="flex gap-4">
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-purple-500 to-purple-700">
-                  Get In Touch
-                </a>
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-pink-500 to-pink-600">
-                  Book A Consultation
-                </a>
-              </div>
-            </div>
-            <div className="md:w-5/12 flex justify-center pt-20">
-              <img src={web2} alt="Chatbot Development" className="rounded-lg object-contain" />
-            </div>
-          </div>
+   <section className="nft-main-banner-sec pt-24 pb-12">
+  <div className="container mx-auto px-6 md:px-28">
+    <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
+      
+      {/* Left Content */}
+      <div className="md:w-1/2">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          Chatbot Development Services by{" "}
+          <span className="relative text-orange-500">SofiLoft Technologies</span>
+        </h1>
+        <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+          Chatbots are transforming customer interaction by providing instant,
+          personalized, and scalable support 24/7. At SofiLoft Technologies, we
+          craft intelligent chatbot solutions that enhance user experience,
+          automate routine queries, and improve operational efficiency.
+          Leveraging state-of-the-art AI and natural language processing, our
+          chatbots can understand complex queries, engage users seamlessly, and
+          integrate with your existing systems.
+        </p>
+        <p className="text-lg text-gray-600 mb-6">
+          Whether for customer support, lead generation, or internal automation,
+          our flexible chatbot solutions are tailor-made to fit your specific
+          business needs and industry demands.
+        </p>
+        <div className="flex gap-4">
+          <a
+            href="/ContactForm"
+            className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:bg-orange-600 transition"
+          >
+            Book A Consultation
+          </a>
         </div>
-      </section>
+      </div>
 
-      {/* SECOND SECTION */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          <div className="flex-1 flex justify-center">
-            <img src={web3} alt="Chatbot Solutions" className="max-w-sm w-full" />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Proven <span className="text-pink-500 underline">Chatbot Solutions</span>
-            </h2>
-            <p className="mt-6 text-gray-600">
-              From customer support automation to lead generation, our chatbot solutions drive results across industries.
-            </p>
-            <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
-              Connect With Experts Now!
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* Right Image */}
+      <div className="md:w-5/12 flex justify-center hidden md:flex">
+        <img
+          src={web2}
+          alt="Chatbot Development"
+          className="rounded-lg object-contain relative top-8"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+     
 
       {/* SERVICES SECTION */}
       <section className="bg-white py-12 px-4 md:px-16">
@@ -261,12 +300,12 @@ const ChatbotDevelopment = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 h-[320px] flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="leading-[28px] text-[#616b80]">{service.description}</p>
             </div>
           ))}
         </div>
@@ -294,6 +333,28 @@ const ChatbotDevelopment = () => {
           ))}
         </div>
       </section>
+       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Tools & Tech We Use
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {techStacks.map((stack, idx) => (
+            <div key={idx} className="bg-white shadow-md rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold mb-4">{stack.category}</h3>
+              <div className="grid grid-cols-2 gap-4">
+                {stack.items.map((item, i) => (
+                  <div key={i} className="flex flex-col items-center justify-center bg-black rounded-lg p-3">
+                    <img src={item.img} alt={item.name} className="w-14 h-14 mb-2" />
+                    <p className="text-white text-sm">{item.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      
+      
 
       {/* FAQ SECTION */}
       <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">

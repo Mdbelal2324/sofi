@@ -14,6 +14,20 @@ import tele from "../assets/image/Tele.jpg";
 import travel3 from "../assets/image/Travel3.jpg"
 import manfactur1 from "../assets/image/manufactur1.jpg";
 import finance2 from "../assets/image/finance2.jpg";
+import micro from "../assets/image/micro.png";
+import sales from "../assets/image/sales.png";
+import hub from "../assets/image/hub.png";
+import zoho from "../assets/image/zoho.png";
+import mule from "../assets/image/mule.png";
+import zap from "../assets/image/zap.png";
+import rest from "../assets/image/rest2.png";
+import gap from "../assets/image/grap.png";
+import node from "../assets/image/node2.png";
+import python from "../assets/image/python2.png";
+import flask  from "../assets/image/flask.png";
+import fast from "../assets/image/fast.png";
+import  react from "../assets/image/React.png";
+
 
 
 
@@ -33,7 +47,7 @@ const CrmSolutions = () => {
       icon: <FaUsers size={28} />,
       title: "Custom CRM Development",
       description:
-        "We build bespoke CRM systems tailored to your specific business processes, enabling personalized customer management, efficient sales tracking, and enhanced data analysis.",
+        "We build bespoke CRM systems tailored to your specific business processes, enabling personalized customer management, efficient sales tracking, and enhanced data analysis. Our custom CRMs adapt as your business grows, providing flexibility and competitive advantage.",
       color: "bg-purple-600",
     },
     {
@@ -41,7 +55,7 @@ const CrmSolutions = () => {
       icon: <FaCogs size={28} />,
       title: "CRM Implementation",
       description:
-        "Seamlessly deploy your CRM solution with expert implementation services, integration, workflow configuration, and team training.",
+        "Seamlessly deploy your CRM solution with expert implementation services. We ensure smooth adoption by integrating your CRM with existing tools, configuring workflows, and training your team for maximum productivity from day one.",
       color: "bg-blue-600",
     },
     {
@@ -49,7 +63,7 @@ const CrmSolutions = () => {
       icon: <FaChartLine size={28} />,
       title: "CRM System Integration",
       description:
-        "Connect your CRM with ERP, marketing automation, and communication tools for unified data flow and streamlined processes.",
+        "Connect your CRM with third-party applications such as ERP, marketing automation, and communication tools. Our integration services enable unified data flow and streamlined business processes across platforms, boosting operational efficiency.",
       color: "bg-red-500",
     },
     {
@@ -57,7 +71,7 @@ const CrmSolutions = () => {
       icon: <FaCogs size={28} />,
       title: "CRM Consulting",
       description:
-        "Leverage our CRM consulting expertise to strategize, assess current systems, identify gaps, and plan solutions aligned with industry best practices.",
+        "Leverage our CRM consulting expertise to strategize and plan the best customer relationship management approach for your business. We assess your current systems, identify gaps, and recommend solutions that align with your goals and industry best practices.",
       color: "bg-green-500",
     },
     {
@@ -65,7 +79,7 @@ const CrmSolutions = () => {
       icon: <FaUsers size={28} />,
       title: "CRM Customization",
       description:
-        "Enhance your CRM with tailored features, workflows, and UI. We customize Salesforce, Microsoft Dynamics, and HubSpot for your needs.",
+        "Enhance your CRM’s functionality with tailored features, workflows, and user interfaces. We customize standard CRM platforms like Salesforce, Microsoft Dynamics, and HubSpot to meet your unique requirements and improve user adoption.",
       color: "bg-yellow-500",
     },
     {
@@ -73,7 +87,7 @@ const CrmSolutions = () => {
       icon: <FaCogs size={28} />,
       title: "CRM Migration & Upgrade",
       description:
-        "Transition seamlessly to a new CRM or upgrade your existing system with secure migration and optimized features.",
+        "Transition effortlessly to a new CRM or upgrade your existing system with minimal disruption. Our migration services ensure secure data transfer, system optimization, and feature-enhanced upgrades that keep your business connected and competitive.",
       color: "bg-pink-500",
     },
     {
@@ -81,7 +95,7 @@ const CrmSolutions = () => {
       icon: <FaCogs size={28} />,
       title: "CRM Maintenance & Support",
       description:
-        "Keep your CRM system secure and efficient with updates, troubleshooting, monitoring, and long-term support.",
+        "Keep your CRM system secure, efficient, and up-to-date with ongoing maintenance and support. We provide regular updates, troubleshooting, performance monitoring, and user support to ensure your CRM delivers consistent value.",
       color: "bg-indigo-500",
     },
     {
@@ -89,7 +103,7 @@ const CrmSolutions = () => {
       icon: <FaChartLine size={28} />,
       title: "CRM Module Development",
       description:
-        "Add specific functionalities to your CRM with custom modules for automation, reporting, and better user experience.",
+        "Add specific functionalities to your CRM by developing custom modules tailored to unique business needs. Our modular approach allows scalable enhancements that improve process automation, reporting, and user experience.",
       color: "bg-orange-500",
     },
     {
@@ -97,7 +111,7 @@ const CrmSolutions = () => {
       icon: <FaUsers size={28} />,
       title: "Standard CRM Software Customization",
       description:
-        "We tailor Salesforce, Dynamics, and Zoho CRM to perfectly fit your business processes and strategic objectives.",
+        "We tailor popular CRM solutions like Salesforce, Microsoft Dynamics, and Zoho CRM to fit your business processes perfectly, enhancing usability and aligning features with your strategic objectives for better customer management.",
       color: "bg-teal-500",
     },
   ];
@@ -107,47 +121,47 @@ const CrmSolutions = () => {
     {
       title: "Retail",
       img: retail,
-      desc: "Enhance customer loyalty and personalize marketing efforts with CRM tailored for retail businesses.",
+      desc: "Enhance customer loyalty and personalize marketing efforts with CRM tailored for retail businesses. Our solutions help manage customer data, track purchase histories, and automate promotions, enabling you to deliver targeted campaigns and improve sales performance.",
     },
     {
       title: "Healthcare",
       img: web5,
-      desc: "Streamline patient management, appointment scheduling, and communication with secure CRM systems.",
+      desc: "Streamline patient management and communication using specialized CRM systems for healthcare providers. These solutions support appointment scheduling, patient records, and follow-up reminders while ensuring compliance with healthcare regulations and data security standards.",
     },
     {
       title: "Financial Services",
       img: finance2,
-      desc: "Secure CRM solutions for banking, insurance, and finance with automated workflows and compliance support.",
+      desc: "Manage client relationships and regulatory compliance with CRM solutions customized for banking, insurance, and finance sectors. Our CRMs enable secure data handling, automated workflows, and detailed reporting to improve customer service and operational efficiency.",
     },
     {
       title: "Manufacturing",
       img: manfactur1,
-      desc: "Optimize supply chain, order tracking, and client interactions with CRM designed for manufacturing.",
+      desc: "Optimize supply chain and customer interactions with CRM systems designed for manufacturing businesses. Track orders, manage client accounts, and coordinate sales and support teams efficiently for better business continuity and growth.",
     },
     {
       title: "Education",
       img: edu,
-      desc: "Improve student recruitment, engagement, and alumni relations with CRM for educational institutions.",
+      desc: "Improve student recruitment, engagement, and alumni relations with education-focused CRM solutions. Our systems help educational institutions track inquiries, manage communications, and streamline administrative tasks for enhanced operational effectiveness.",
     },
     {
       title: "Hospitality & Travel",
       img: travel3,
-      desc: "Streamline bookings and enhance guest experiences with CRM for hotels, travel, and tourism.",
+      desc: "Enhance guest experience and streamline bookings with CRM tailored for the hospitality and travel industry. Manage customer profiles, preferences, and loyalty programs to deliver personalized services and increase repeat business."
     },
     {
       title: "Real Estate",
       img: state,
-      desc: "Boost property sales, manage leads, and automate marketing with CRM tailored for real estate.",
+      desc: "Boost property sales and client relationships with CRM designed for real estate professionals. Track leads, manage listings, and automate marketing efforts to close deals faster and nurture lasting client connections.",
     },
     {
       title: "E-commerce",
       img: ecom,
-      desc: "Create seamless online shopping experiences with CRM for customer data, campaigns, and personalization.",
+      desc: "Create seamless customer experiences using CRM systems designed for online retailers. Manage customer data, automate marketing campaigns, and provide personalized service that drives engagement and increases sales..",
     },
     {
       title: "Telecommunications",
       img: tele,
-      desc: "Manage large customer bases with telecom-specific CRM for subscriptions, support, and issue tracking.",
+      desc: "Manage large customer bases with telecom-specific CRM solutions focused on service personalization, issue tracking, and subscription management. Improve customer satisfaction and reduce churn with streamlined communication and support.",
     },
   ];
 
@@ -156,48 +170,48 @@ const CrmSolutions = () => {
     {
       category: "CRM Platforms",
       items: [
-        { name: "Salesforce", img: "/images/salesforce.png" },
-        { name: "Zoho CRM", img: "/images/zoho.png" },
-        { name: "HubSpot", img: "/images/hubspot.png" },
-        { name: "Microsoft Dynamics", img: "/images/dynamics.png" },
+        { name: "Salesforce", img:sales},
+        { name: "Zoho CRM", img:zoho},
+        { name: "HubSpot", img:hub},
+        { name: "Microsoft Dynamics", img: micro},
       ],
     },
     {
       category: "Integration Tools",
       items: [
-        { name: "Zapier", img: "/images/zapier.png" },
-        { name: "MuleSoft", img: "/images/mulesoft.png" },
-        { name: "REST API", img: "/images/restapi.png" },
-        { name: "GraphQL", img: "/images/graphql.png" },
+        { name: "Zapier", img:zap},
+        { name: "MuleSoft", img:mule },
+        { name: "REST API", img:rest  },
+        { name: "GraphQL", img:gap },
       ],
     },
     {
       category: "Backend",
       items: [
-        { name: "Node.js", img: "/images/nodejs.png" },
-        { name: "Python", img: "/images/python.png" },
-        { name: "Flask", img: "/images/flask.png" },
-        { name: "FastAPI", img: "/images/fastapi.png" },
+        { name: "Node.js", img:node },
+        { name: "Python", img:python},
+        { name: "Flask", img:flask },
+        { name: "FastAPI", img:fast},
       ],
     },
-    {
-      category: "Frontend",
-      items: [
-        { name: "React", img: "/images/react.png" },
-        { name: "Vue.js", img: "/images/vue.png" },
-        { name: "Angular", img: "/images/angular.png" },
-        { name: "HTML/CSS", img: "/images/htmlcss.png" },
-      ],
-    },
-    {
-      category: "Cloud",
-      items: [
-        { name: "AWS", img: "/images/aws.png" },
-        { name: "Google Cloud", img: "/images/googlecloud.png" },
-        { name: "Azure", img: "/images/azure.png" },
-        { name: "Heroku", img: "/images/heroku.png" },
-      ],
-    },
+    // {
+    //   category: "Frontend",
+    //   items: [
+    //     { name: "React", img: react},
+    //     { name: "Vue.js", img: "/images/vue.png" },
+    //     { name: "Angular", img: "/images/angular.png" },
+    //     { name: "HTML/CSS", img: "/images/htmlcss.png" },
+    //   ],
+    // },
+    // {
+    //   category: "Cloud",
+    //   items: [
+    //     { name: "AWS", img: "/images/aws.png" },
+    //     { name: "Google Cloud", img: "/images/googlecloud.png" },
+    //     { name: "Azure", img: "/images/azure.png" },
+    //     { name: "Heroku", img: "/images/heroku.png" },
+    //   ],
+    // },
   ];
 
   // ✅ Updated FAQs
@@ -257,62 +271,53 @@ const CrmSolutions = () => {
   return (
     <div id="crmsolutions">
       {/* HERO SECTION */}
-      <section className="nft-main-banner-sec py-12">
-        <div className="container mx-auto px-6 md:px-28">
-          <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
-            <div className="md:w-1/2">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Customized{" "}
-                <span className="relative text-red-500">
-                  CRM Development
-                  <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
-                </span>{" "}
-                Services
-              </h1>
-              <p className="text-lg text-gray-600 mb-6">
-                At SofiLoft Technologies, we specialize in customized CRM development and implementation services that transform how businesses manage relationships and streamline operations.
-              </p>
-              <div className="flex gap-4">
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-purple-500 to-purple-700">
-                  Get In Touch
-                </a>
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-pink-500 to-pink-600">
-                  Book A Consultation
-                </a>
-              </div>
-            </div>
-            <div className="md:w-5/12 flex justify-center pt-20">
-              <img src={web2} alt="CRM Solutions" className="rounded-lg object-contain" />
-            </div>
-          </div>
+      <section className="nft-main-banner-sec pt-24 pb-12">
+  <div className="container mx-auto px-6 md:px-28">
+    <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
+      {/* Left Content */}
+      <div className="md:w-1/2">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          Customized{" "}
+          <span className="relative text-red-500">
+            CRM Development
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
+          </span>{" "}
+          Services
+        </h1>
+        <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+          At SofiLoft Technologies, we specialize in customized CRM development and implementation services that transform how businesses manage relationships and streamline operations. Our tailored CRM solutions help you enhance customer engagement, improve sales workflows, and boost overall efficiency. Whether you need a fully custom platform or want to optimize an existing system, we deliver scalable, secure, and user-friendly CRM software designed to meet your unique business goals.
+        </p>
+        <div className="flex gap-4">
+          <a
+            href="/ContactForm"
+            className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:to-pink-700 transition"
+          >
+            Book A Consultation
+          </a>
         </div>
-      </section>
+      </div>
 
-      {/* SECOND SECTION */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          <div className="flex-1 flex justify-center">
-            <img src={web3} alt="CRM Services" className="max-w-sm w-full" />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Proven <span className="text-pink-500 underline">CRM Solutions</span>
-            </h2>
-            <p className="mt-6 text-gray-600">
-              Our tailored CRM solutions help you enhance customer engagement, improve sales workflows, and boost overall efficiency.
-            </p>
-            <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
-              Connect With Experts Now!
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* Right Image (hidden on mobile) */}
+      <div className="hidden md:flex md:w-5/12 justify-center pt-20">
+        <img
+          src={web2}
+          alt="CRM Solutions"
+          className="rounded-lg object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+     
 
       {/* SERVICES SECTION */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Our <span className="text-pink-500">CRM Development</span> Services
+            Our <span className="text-orange-500">CRM Development</span> Services
           </h2>
           <p className="text-gray-600 mt-3">
             Transform your business operations with custom CRM development solutions that drive growth.
@@ -320,12 +325,12 @@ const CrmSolutions = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="leading-[28px] text-[#616b80]">{service.description}</p>
             </div>
           ))}
         </div>
@@ -366,7 +371,7 @@ const CrmSolutions = () => {
               <div className="grid grid-cols-2 gap-4">
                 {stack.items.map((item, i) => (
                   <div key={i} className="flex flex-col items-center justify-center bg-black rounded-lg p-3">
-                    <img src={item.img} alt={item.name} className="w-10 h-10 mb-2" />
+                    <img src={item.img} alt={item.name} className="w-14 h-14 mb-2" />
                     <p className="text-white text-sm">{item.name}</p>
                   </div>
                 ))}

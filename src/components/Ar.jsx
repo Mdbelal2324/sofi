@@ -4,7 +4,18 @@ import { FaRobot, FaCogs, FaChartLine } from "react-icons/fa";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
-import web4 from "../assets/image/web3.png";
+
+import edu from "../assets/image/Education.jpg";
+import retail from "../assets/image/Retail.jpg";
+import banking from "../assets/image/Banking.jpg";
+import State from "../assets/image/State.jpg";
+import web4 from "../assets/image/Healthcare.jpg";
+import manfactur1 from "../assets/image/manufactur1.jpg";
+import Logistic from "../assets/image/Logistic.jpg";
+import Tele from "../assets/image/Tele.jpg";
+import Marketing from "../assets/image/Marketing.jpg";
+
+
 
 const AiAgentsDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -98,42 +109,42 @@ const AiAgentsDevelopment = () => {
     },
     {
       title: "Finance",
-      img: web4,
+      img: banking,
       desc: "Our AI agents automate fraud detection, portfolio management, compliance monitoring, and customer engagement, enhancing security and client service in financial institutions.",
     },
     {
       title: "Retail & E-commerce",
-      img: web4,
+      img: retail,
       desc: "We develop agents that personalize shopping experiences, predict inventory demands, manage promotions, and automate customer service to increase satisfaction and sales.",
     },
     {
       title: "Manufacturing",
-      img: web4,
+      img: manfactur1,
       desc: "AI agents monitor production lines, predict maintenance needs, optimize supply chains, and automate quality control, boosting efficiency and reducing operational costs.",
     },
     {
       title: "Education",
-      img: web4,
+      img: edu,
       desc: "Agents support personalized learning by tracking student progress, managing assignments, and providing tutoring assistance, enriching educational outcomes.",
     },
     {
       title: "Logistics & Transportation",
-      img: web4,
+      img:  Logistic ,
       desc: "Our AI agents optimize route planning, monitor fleet status, automate scheduling, and predict delivery delays, improving supply chain reliability and reducing costs.",
     },
     {
       title: "Telecommunications",
-      img: web4,
+      img: Tele,
       desc: "AI agents enhance network management, predict outages, automate customer interactions, and analyze user data to improve service quality and customer retention.",
     },
     {
       title: "Real Estate",
-      img: web4,
+      img: State,
       desc: "Agents assist with property valuation analysis, lead qualification, market trend monitoring, and customer interactions, accelerating sales and service quality.",
     },
     {
       title: "Marketing & Advertising",
-      img: web4,
+      img: Marketing,
       desc: "We deploy agents that segment audiences, personalize campaigns, monitor brand sentiment, and automate customer engagement through dynamic, AI-driven strategies.",
     },
   ];
@@ -244,46 +255,56 @@ const AiAgentsDevelopment = () => {
   return (
     <div id="aiagentsdevelopment">
       {/* HERO SECTION */}
-      <section className="nft-main-banner-sec py-12">
-        <div className="container mx-auto px-6 md:px-28">
-          <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
-            <div className="md:w-1/2">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                AI Agents Solutions by <span className="text-red-500">SofiLoft Technologies</span>
-              </h1>
-              <p className="text-lg text-gray-600 mb-6">
-                AI agents are intelligent software programs designed to perform tasks autonomously, making business operations smarter and more efficient. At SofiLoft Technologies, we develop AI agents that understand, learn, and interact with complex environments to enhance decision-making, automate workflows, and improve customer experiences.
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Powered by advanced machine learning and cognitive technologies, our AI agents adapt to evolving data and user behavior, helping businesses unlock new levels of productivity and innovation. Whether you need virtual assistants for customer engagement, automated process managers, or intelligent data analysts, we deliver robust AI agent solutions tailored specifically to your industry and requirements.
-              </p>
-            </div>
-            <div className="md:w-5/12 flex justify-center pt-20">
-              <img src={web2} alt="AI Agents Development" className="rounded-lg object-contain" />
-            </div>
-          </div>
+   <section className="nft-main-banner-sec pt-24 pb-12">
+  <div className="container mx-auto px-6 md:px-28">
+    <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
+      
+      {/* Left Content */}
+      <div className="md:w-1/2">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          AI Agents Solutions by{" "}
+          <span className="text-red-500">SofiLoft Technologies</span>
+        </h1>
+        <p className="text-lg text-gray-600 mb-6">
+          AI agents are intelligent software programs designed to perform tasks
+          autonomously, making business operations smarter and more efficient.
+          At SofiLoft Technologies, we develop AI agents that understand, learn,
+          and interact with complex environments to enhance decision-making,
+          automate workflows, and improve customer experiences.
+        </p>
+        <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+          Powered by advanced machine learning and cognitive technologies, our AI
+          agents adapt to evolving data and user behavior, helping businesses
+          unlock new levels of productivity and innovation. Whether you need
+          virtual assistants for customer engagement, automated process managers,
+          or intelligent data analysts, we deliver robust AI agent solutions
+          tailored specifically to your industry and requirements.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="/ContactForm"
+            className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:bg-orange-600 transition"
+          >
+            Book A Consultation
+          </a>
         </div>
-      </section>
+      </div>
+
+      {/* Right Image */}
+      <div className="md:w-5/12 flex justify-center hidden md:flex">
+        <img
+          src={web2}
+          alt="AI Agents Development"
+          className="rounded-lg object-contain relative top-8"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* SECOND SECTION */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          <div className="flex-1 flex justify-center">
-            <img src={web3} alt="AI Agents Solutions" className="max-w-sm w-full" />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Proven <span className="text-pink-500 underline">AI Agents Solutions</span>
-            </h2>
-            <p className="mt-6 text-gray-600">
-              Our AI agents solutions help automate workflows, enhance decision-making, and boost business efficiency.
-            </p>
-            <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md">
-              Connect With Experts Now!
-            </button>
-          </div>
-        </div>
-      </section>
+    
 
       {/* SERVICES SECTION */}
       <section className="bg-white py-12 px-4 md:px-16">
@@ -294,12 +315,12 @@ const AiAgentsDevelopment = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="leading-[28px] text-[#616b80]">{service.description}</p>
             </div>
           ))}
         </div>

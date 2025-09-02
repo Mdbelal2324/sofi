@@ -10,7 +10,34 @@ import Manu from "../assets/image/manu.jpg";
 import Logistic from "../assets/image/Logistic.jpg";
 import Tele from "../assets/image/Tele.jpg";
 import State from "../assets/image/State.jpg";
-import Marketing from "../assets/image/Marketing.jpg"
+import Marketing from "../assets/image/Marketing.jpg";
+import py from "../assets/image/Py.jpg";
+import mx from "../assets/image/mx.jpg";
+import nv from "../assets/image/Nv.jpg";
+import ch from "../assets/image/Ch.png";
+import vgg from "../assets/image/Vgg.jpg";
+import inc from "../assets/image/Inc.png";
+import eff from "../assets/image/Eff.png";
+import gg from "../assets/image/Gg.png";
+import post from "../assets/image/post.png";
+import or from "../assets/image/or.png";
+import db from "../assets/image/db.png";
+import my from "../assets/image/my.png";
+import  and  from "../assets/image/and.png";
+import flut from "../assets/image/flut.png";
+import xml from "../assets/image/xml.png";
+import md from"../assets/image/md.png";
+import opp from "../assets/image/Opp.jpg";
+import neu from "../assets/image/Neu.jpg";
+import so from "../assets/image/So.png";
+import ten from "../assets/image/Ten.png";
+import swift from  "../assets/image/swift.png";
+import kotlin from "../assets/image/kotlin.png";
+import java from "../assets/image/java.png";
+import ai  from "../assets/image/Ai2.png"
+
+
+
 
 export default function AIDevelopmentPage() {
   const tech = [
@@ -221,55 +248,55 @@ const techStack = [
   {
     category: "Frameworks",
     items: [
-      { name: "PyTorch", img: "/images/pytorch.png" },
-      { name: "MXNet", img: "/images/mxnet.png" },
-      { name: "NvidiaCaffe", img: "/images/nvidiacaffe.png" },
-      { name: "Chainer", img: "/images/chainer.png" },
+      { name: "PyTorch", img:py},
+      { name: "MXNet", img: mx },
+      { name: "NvidiaCaffe", img :nv},
+      { name: "Chainer", img :ch},
     ],
   },
   {
     category: "Modules",
     items: [
-      { name: "VGG-16", img: "/images/vgg16.png" },
-      { name: "ResNet50", img: "/images/resnet50.png" },
-      { name: "Inceptionv3", img: "/images/inceptionv3.png" },
-      { name: "EfficientNet", img: "/images/efficientnet.png" },
+      { name: "VGG-16", img: vgg},
+      { name: "ResNet50", img:gg},
+      { name: "Inceptionv3", img:inc},
+      { name: "EfficientNet", img:eff},
     ],
   },
   {
     category: "Database",
     items: [
-      { name: "MySQL", img: "/images/mysql.png" },
-      { name: "PostgreSQL", img: "/images/postgresql.png" },
-      { name: "ORACLE", img: "/images/oracle.png" },
-      { name: "MongoDB", img: "/images/mongodb.png" },
+      { name: "MySQL", img:my},
+      { name: "PostgreSQL", img:post},
+      { name: "ORACLE", img:or},
+      { name: "MongoDB", img:db},
     ],
   },
   {
     category: "Libraries",
     items: [
-      { name: "OpenNN", img: "/images/opennn.png" },
-      { name: "Neuroph", img: "/images/neuroph.png" },
-      { name: "Sonnet", img: "/images/sonnet.png" },
-      { name: "TensorFlow", img: "/images/tensorflow.png" },
+      { name: "OpenNN", img:opp},
+      { name: "Neuroph", img:neu},
+      { name: "Sonnet", img:so},
+      { name: "TensorFlow", img:ten},
     ],
   },
   {
     category: "User Interface",
     items: [
-      { name: "Android Native", img: "/images/android.png" },
-      { name: "Flutter", img: "/images/flutter.png" },
-      { name: "XML", img: "/images/xml.png" },
-      { name: "Material Design", img: "/images/materialdesign.png" },
+      { name: "Android Native", img: and},
+      { name: "Flutter", img:flut},
+      { name: "XML", img:xml},
+      { name: "Material Design", img:md},
     ],
   },
   {
     category: "Others",
     items: [
-      { name: "Swift", img: "/images/swift.png" },
+      { name: "Swift", img:swift},
       { name: "AWS", img: "/images/aws.png" },
-      { name: "Kotlin", img: "/images/kotlin.png" },
-      { name: "Java", img: "/images/java.png" },
+      { name: "Kotlin", img:kotlin},
+      { name: "Java", img:java},
     ],
   },
 ];
@@ -307,35 +334,61 @@ const techStack = [
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-r from-indigo-50 via-white to-pink-50 py-20">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-            <span className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm"> 
-      
-            </span>
-            <h1 className="mt-6 text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-              AI/ML Solutions <span className="text-indigo-600">by SofiLoft Technologies</span>
-            </h1>
-            <p className="mt-4 text-gray-600 max-w-xl">
-              Artificial Intelligence (AI) and Machine Learning (ML) are revolutionizing industries by enabling smarter, faster, and more efficient business processes. Our AI/ML solutions empower organizations to harness the power of data, automate complex tasks, and deliver personalized experiences that drive growth. By integrating advanced algorithms and intelligent systems, we help businesses unlock valuable insights, improve operational efficiency, and make predictive decisions with confidence. 
-            </p>
-               <p className="mt-4 text-gray-600 max-w-xl">
-            Transform your business with our tailored AI/ML solutions. From chatbots and fraud detection to supply chain optimization and customer insights, we design scalable, transparent, and ethical AI systems that drive real impact. Our expert team ensures customized automation that aligns with your goals—empowering your digital transformation with measurable results.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#contact" className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-2xl font-semibold shadow">
-                Get a Free Consultation <ChevronRight className="w-4 h-4"/>
-              </a>
-           
-            </div>
-          </motion.div>
-        </div>
-      </section>
+<section className="bg-gradient-to-r from-indigo-50 via-white to-pink-50 pt-8 pb-12">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+    
+    {/* Left Side Content */}
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <span className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm"> 
+        AI/ML Services
+      </span>
+      <h1 className="mt-6 text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        AI/ML Solutions <span className="text-indigo-600">by SofiLoft Technologies</span>
+      </h1>
+      <p className="mt-4 text-gray-600 max-w-xl">
+        Artificial Intelligence (AI) and Machine Learning (ML) are revolutionizing industries by enabling smarter, faster, and more efficient business processes. Our AI/ML solutions empower organizations to harness the power of data, automate complex tasks, and deliver personalized experiences that drive growth.
+      </p>
+      <p className="mt-4 text-gray-600 max-w-xl">
+        Transform your business with our tailored AI/ML solutions. From chatbots and fraud detection to supply chain optimization and customer insights, we design scalable, transparent, and ethical AI systems that drive real impact.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/ContactForm"
+          className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-2xl font-semibold shadow"
+        >
+          Get a Free Consultation <ChevronRight className="w-4 h-4" />
+        </a>
+      </div>
+    </motion.div>
+
+    {/* Right Side Image (hidden on mobile) */}
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+      className="hidden md:flex justify-center"
+    >
+      <img
+        src={ai}
+        alt="AI/ML Illustration"
+        className="relative top-12"
+      />
+    </motion.div>
+  </div>
+</section>
+
+
+
+
 
       {/* Services */}
       <section id="services" className="py-16 bg-white">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Our Key AI/ML Services</h2>
+          <h2 className="text-4xl font-extrabold mb-4">Our Key AI/ML Services</h2>
           <p className="text-gray-600 max-w-5xl mx-auto">
                 Explore our range of powerful AI and Machine Learning solutions designed to automate processes, extract valuable insights, and enhance customer experiences. Each service is tailored to help your business innovate and stay ahead in a competitive landscape.
           </p>
@@ -373,13 +426,13 @@ const techStack = [
       {/* Industries */}
       <section id="industries" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Industry-Specific AI/ML Solutions</h2>
+          <h2 className="text-3xl font-extrabold mb-4">Industry-Specific AI/ML Solutions</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           We tailor intelligent AI solutions to fit any industry’s unique challenges, helping businesses automate processes, gain data-driven insights, and innovate for lasting competitive advantage.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {industryServices.map((item, index) => (
-              <div key={index} className="bg-[#fbfbfb]  rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+              <div key={index} className="bg-[#fbfbfb] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
                 <img src={item.img} alt={item.title} className="w-full h-48 object-cover" />
                 <div className="p-6 text-left">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -393,7 +446,7 @@ const techStack = [
           <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
           Technology Stack We Use for AI Development
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto mb-12">
@@ -422,7 +475,7 @@ const techStack = [
                     <img
                       src={item.img}
                       alt={item.name}
-                      className="w-10 h-10 object-contain mb-2"
+                      className="w-16 h-16 object-contain mb-2"
                     />
                     <span className="text-sm">{item.name}</span>
                   </div>
@@ -437,7 +490,7 @@ const techStack = [
       {/* Portfolio */}
       <section id="case-studies" className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Our Portfolio</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900">Our Portfolio</h2>
           <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
             Check out our broad selection of effective AI Projects that have helped companies grow.
           </p>

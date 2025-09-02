@@ -110,7 +110,7 @@ const AppDevelopment = () => {
       icon: <FaUserTie size={28} />,
       title: "Mobile App Testing and QA",
       description:
-        "Our rigorous testing and quality assurance services ensure your mobile app operates flawlessly across devices with maximum security and performancConnect, monitor, and control IoT devices through custom-built mobile applications designed for industries such as smart homes, healthcare, and manufacturing. We develop secure, intuitive apps that provide real-time device status, alerts, and remote control features—helping users interact effortlessly with their Internet of Things ecosystems and enhancing operational efficiency.e.",
+        "Our rigorous testing and quality assurance services ensure your mobile app operates flawlessly across devices with maximum security and Performance Connect, monitor, and control IoT devices through custom-built mobile applications designed for industries such as smart homes, healthcare, and manufacturing. We develop secure, intuitive apps that provide real-time device status, alerts, and remote control features—helping users interact effortlessly with their Internet of Things ecosystems and enhancing operational efficiency.e.",
       color: "bg-gray-700",
     },
   ];
@@ -253,44 +253,51 @@ const AppDevelopment = () => {
   return (
     <div id="appdevelopment">
       {/* HERO SECTION */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-6 md:px-28 flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Leading{" "}
-              <span className="text-red-500 relative">
-                Mobile Application Development
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-500"></span>
-              </span>{" "}
-              Company
-            </h1>
-            <p className="text-lg text-gray-600 mb-6">
-              At SofiLoft Technologies, we craft innovative mobile applications that empower businesses to engage users and enhance customer experiences.
-            </p>
-            <p className="text-lg text-gray-600 mb-8">
-              Whether you need a native iOS app, Android app, or a versatile cross-platform solution, our expert team delivers high-quality, scalable, and user-friendly mobile applications tailored to your specific goals and industry requirements.
-            </p>
-            <div className="flex gap-4">
-              <a href="#" className="px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-purple-500 to-purple-700">
-                Get In Touch
-              </a>
-              <a href="#" className="px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-pink-500 to-pink-600">
-                Book A Consultation
-              </a>
-            </div>
-          </div>
-          <div className="md:w-5/12 flex justify-center">
-            <img src={web2} alt="App Development" className="rounded-lg object-contain" />
-          </div>
-        </div>
-      </section>
+     <section className="pt-24 pb-16 bg-gray-50">
+  <div className="container mx-auto px-6 md:px-28 flex flex-col md:flex-row items-center gap-8">
+    {/* Left Content */}
+    <div className="md:w-1/2">
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Leading{" "}
+        <span className="text-orange-500 relative">
+          Mobile Application Development
+          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-500"></span>
+        </span>{" "}
+        Company
+      </h1>
+      <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+        At SofiLoft Technologies, we craft innovative mobile applications that empower businesses to engage users and enhance customer experiences.
+      </p>
+      <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+        Whether you need a native iOS app, Android app, or a versatile cross-platform solution, our expert team delivers high-quality, scalable, and user-friendly mobile applications tailored to your specific goals and industry requirements.
+      </p>
+      <div className="flex gap-4">
+        <a
+          href="/ContactForm"
+          className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:to-pink-700 transition"
+        >
+          Book A Consultation
+        </a>
+      </div>
+    </div>
+
+    {/* Right Image (hidden on mobile) */}
+    <div className="hidden md:flex md:w-5/12 justify-center mt-20">
+      <img
+        src={web2}
+        alt="App Development"
+        className="rounded-lg object-contain"
+      />
+    </div>
+  </div>
+</section>
 
       {/* SERVICES */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
             Our{" "}
-            <span className="text-pink-500">App Development</span> Services
+            <span className="text-orange-500">App Development</span> Services
           </h2>
           <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
             We deliver mobile solutions that match your business goals and user needs.
@@ -298,12 +305,12 @@ const AppDevelopment = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="leading-[28px] text-[#616b80]">{service.description}</p>
             </div>
           ))}
         </div>

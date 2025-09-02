@@ -22,6 +22,11 @@ import post from "../assets/image/post.png";
 import fire from "../assets/image/fire.png";
 import db from "../assets/image/db.png";
 import my from "../assets/image/my.png";
+import sho from "../assets/image/sho.png";
+import big from  "../assets/image/big.png";
+import wo from  "../assets/image/wo.png";
+import maganto from "../assets/image/maganto.png";
+
 
 const EcommerceDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -132,10 +137,10 @@ const EcommerceDevelopment = () => {
     {
       category: "E-Commerce Platforms",
       items: [
-        { name: "Shopify", img: "/images/shopify.png" },
-        { name: "Magento", img: "/images/magento.png" },
-        { name: "WooCommerce", img: "/images/woocommerce.png" },
-        { name: "BigCommerce", img: "/images/bigcommerce.png" },
+        { name: "Shopify", img:sho},
+        { name: "Magento", img: maganto},
+        { name: "WooCommerce", img: wo },
+        { name: "BigCommerce", img: big},
       ],
     },
     {
@@ -214,49 +219,62 @@ const EcommerceDevelopment = () => {
   return (
     <div id="ecommercedevelopment">
       {/* HERO SECTION */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-6 md:px-28 flex flex-col md:flex-row items-center gap-8">
-          {/* Left Content */}
-          <div className="md:w-1/2">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Professional {" "}
-              <span className="text-red-500 relative">
-                E-Commerce Development
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-500"></span>
-              </span>{" "}
-              Services
-            </h1>
-            <p className="text-lg text-gray-600 mb-6">
-              SofiLoft Technologies offers comprehensive, professional e-commerce development services designed to help your business succeed in the competitive online marketplace. Whether you’re launching a new store or enhancing an existing platform, our custom e-commerce solutions deliver seamless shopping experiences, robust performance, and scalable growth—tailored to meet your unique business needs and customer expectations.
-            </p>
-          </div>
+     <section className="pt-24 pb-12 bg-gray-50">
+  <div className="container mx-auto px-6 md:px-28 flex flex-col md:flex-row items-center gap-8">
+    {/* Left Content */}
+    <div className="md:w-1/2">
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Professional{" "}
+        <span className="text-red-500 relative">
+          E-Commerce Development
+          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-500"></span>
+        </span>{" "}
+        Services
+      </h1>
+      <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+        SofiLoft Technologies offers comprehensive, professional e-commerce development services designed to help your business succeed in the competitive online marketplace. Whether you’re launching a new store or enhancing an existing platform, our custom e-commerce solutions deliver seamless shopping experiences, robust performance, and scalable growth—tailored to meet your unique business needs and customer expectations.
+      </p>
+      <div className="flex flex-wrap gap-4">
+        <a
+          href="/ContactForm"
+          className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:to-pink-700 transition"
+        >
+          Book A Consultation
+        </a>
+      </div>
+    </div>
 
-          {/* Right Image */}
-          <div className="md:w-5/12 flex justify-center">
-            <img src={web2} alt="E-Commerce Development" className="rounded-lg object-contain" />
-          </div>
-        </div>
-      </section>
+    {/* Right Image (hidden on mobile) */}
+    <div className="hidden md:flex md:w-5/12 justify-center">
+      <img
+        src={web2}
+        alt="E-Commerce Development"
+        className="rounded-lg object-contain"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* SERVICES SECTION */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
             Our {" "}
-            <span className="text-pink-500">E-Commerce</span> Development Services
+            <span className="text-orange-500">E-Commerce</span> Development Services
           </h2>
-          <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
             Comprehensive, reliable services to expertly launch and scale your online store successfully with seamless growth and enduring customer engagement.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 h-[320px] flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="heading-[28px] text-[#616b80]">{service.description}</p>
             </div>
           ))}
         </div>
@@ -297,8 +315,8 @@ const EcommerceDevelopment = () => {
               <div className="grid grid-cols-2 gap-4">
                 {stack.items.map((item, i) => (
                   <div key={i} className="flex flex-col items-center justify-center bg-black rounded-lg p-3">
-                    <img src={item.img} alt={item.name} className="w-10 h-10 object-contain mb-2" />
-                    <p className="text-white text-sm">{item.name}</p>
+                    <img src={item.img} alt={item.name} className="w-14 h-14 object-contain mb-2" />
+                    <p className="leading-[28px] text-[#616b80]">{item.name}</p>
                   </div>
                 ))}
               </div>

@@ -1,155 +1,163 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Check, Globe } from "lucide-react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Services1 from "../assets/image/Services1.png";
-import Services2 from "../assets/image/Services2.png";
-import Services3 from "../assets/image/Services3.png";
 
-const Services = () => {
-  const servicesData = [
+import { Lightbulb, Smartphone, ShoppingCart, Users, Megaphone, Brain, Bot, Cpu } from "lucide-react";
+
+const services = [
   {
     id: 1,
+    tag: "Web",
+    icon: <Lightbulb className="w-10 h-10 text-white" />,
     title: "Website Development",
-    description:
-      "Elevate your brand with customized, responsive websites designed for seamless performance and user engagement..",
-    image: Services1,
-    link: "/webdevelopment",
+    desc: "Professional websites designed to engage visitors and support business goals.",
+    points: ["Responsive Design", "CMS Integration", "Performance Optimization", "Maintenance & Support"],
+    btnColor: "from-green-500 to-teal-500",
   },
   {
     id: 2,
+    tag: "Mobile",
+    icon: <Smartphone className="w-10 h-10 text-white" />,
     title: "Mobile App Development",
-    description:
-      "Build intuitive mobile applications that deliver top-tier experiences and functionality across iOS and Android platforms..",
-    image: Services2,
-    link: "/appdevelopment",
+    desc: "Custom mobile apps built to deliver smooth user experiences and functionality.",
+    points: ["Android & iOS Apps", "UI/UX Design", "Cross-Platform Solutions", "App Maintenance"],
+    btnColor: "from-green-500 to-teal-500",
   },
   {
     id: 3,
-    title: "E-commerce Development",
-    description:
-      "Launch scalable online stores with secure payment integration and conversion-focused interfaces to drive sales.",
-    image: Services3,
-    link: "/ecommercedevelopment",
+    tag: "E-com",
+    icon: <ShoppingCart className="w-10 h-10 text-white" />,
+    title: "E-Commerce Development",
+    desc: "E-commerce platforms developed to increase sales and streamline operations.",
+    points: ["Online Store Setup", "Payment Integration", "Shopping Cart", "Product Management"],
+    btnColor: "from-green-500 to-teal-500",
   },
   {
     id: 4,
+    tag: "CRM",
+    icon: <Users className="w-10 h-10 text-white" />,
     title: "CRM Solutions",
-    description:
-      "Streamline your customer management with tailored CRM platforms that automate workflows and enhance client relationships.",
-    image: Services3,
-    link: "/crmsolution",
+    desc: "CRM systems that help manage leads, clients, and business workflows efficiently.",
+    points: ["Lead Tracking", "Sales Automation", "Custom Dashboard", "Reporting Tools"],
+    btnColor: "from-green-500 to-teal-500",
   },
   {
     id: 5,
+    tag: "DM",
+    icon: <Megaphone className="w-10 h-10 text-white" />,
     title: "Digital Marketing",
-    description:
-      "Boost your online visibility with data-driven digital marketing strategies that attract, engage, and convert your target audience.",
-    image: Services3,
-    link: "/digitalmarketing",
+    desc: "Digital strategies crafted to grow your online presence and maximize reach.",
+    points: ["SEO Optimization", "Content Strategy", "Paid Ads", "Social Media Marketing"],
+    btnColor: "from-green-400 to-teal-500",
   },
   {
     id: 6,
-    title: "AI/ML Development",
-    description:
-      "Transform operations using artificial intelligence and machine learning models built to automate tasks and uncover actionable insights..",
-    image: Services3,
-    link: "/aimldevelopment",
+    tag: "AI/ML",
+    icon: <Brain className="w-10 h-10 text-white" />,
+    title: "AI/ML Solutions",
+    desc: "AI-powered tools for automation, analytics, and smarter decision-making.",
+    points: ["Predictive Analytics", "Data Modeling", "AI Integration", "Process Automation"],
+    btnColor: "from-green-500 to-teal-500",
   },
   {
     id: 7,
+    tag: "ChatBot",
+    icon: <Bot className="w-10 h-10 text-white" />,
     title: "Chatbot Development",
-    description:
-      "Enhance customer service with intelligent chatbots designed for real-time engagement, lead generation, and 24/7 support.",
-    image: Services3,
-    link: "/ChatbotAIDevelopment",
+    desc: "Chatbots that automate support, boost engagement, and handle inquiries effectively.",
+    points: ["Customer Support", "Lead Generation", "Multi-Platform Bots", "Custom Conversation Flows"],
+    btnColor: "from-green-500 to-teal-500",
   },
   {
     id: 8,
-    title: "AR/VR Development",
-    description:
-      "Deliver immersive user experiences with augmented and virtual reality solutions crafted for training, marketing, and entertainment.",
-    image: Services3,
-    link: "/ar",
+    tag: "AI Agents",
+    icon: <Cpu className="w-10 h-10 text-white" />,
+    title: "AI Agents Development",
+    desc: "Intelligent agents that perform complex tasks and automate workflows.",
+    points: ["Virtual Assistants", "Autonomous Bots", "Workflow Automation", "Data Analysis"],
+    btnColor: "from-green-500 to-teal-500",
   },
 ];
 
 
+
+export default function ServicesCard() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // ek row me 3 card
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+        settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+        breakpoint: 640,
+        settings: { slidesToShow: 1 },
       },
     ],
   };
 
   return (
-    <section className="pt-16 pb-24 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="text-center mb-12">
-          <p className="text-3xl font-bold text-gray-800 mb-2">Our Services</p>
-          <h2 className="text-gray-600 text-lg font-bold">
-            We Provide Exclusive Services
-          </h2>
-        </div>
+    <section className="py-16 bg-white">
+      {/* ======= Heading Section ======= */}
+      <div className="text-center mb-12">
+        <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-100 text-gray-800 font-medium shadow-sm">
+          <Globe className="w-5 h-5 text-green-600" />
+          Our Expertise
+        </span>
+        <h2 className="text-4xl font-extrabold text-gray-900 mt-6">Services We Excel</h2>
+        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Comprehensive digital solutions engineered to transform your vision into reality
+        </p>
+      </div>
 
-        {/* FIX: Wrap slider in div with bottom margin */}
-        <div className="mb-20">
-          <Slider {...settings}>
-            {servicesData.map((service) => (
-              <div key={service.id} className="px-4">
-                <div className="bg-white rounded-lg mb-4 shadow-md p-6 hover:shadow-lg transition duration-300 h-full flex flex-col justify-between">
-                  <div>
-                    <div className="flex justify-center mb-4">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-24 h-24 object-contain"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 text-center mb-4">
-                      {service.description}
-                    </p>
-                  </div>
-                  <div className="text-center mt-auto">
-                  <Link
-  to={service.link}
-  className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
->
-  READ MORE →
-</Link>
-                  </div>
-                </div>
+      {/* ======= Card Slider Section ======= */}
+      <div className="max-w-7xl mx-auto px-6">
+        <Slider {...settings}>
+          {services.map((service) => (
+            <div key={service.id} className="px-4">
+              <div
+                className="relative bg-white rounded-2xl p-8 border border-gray-200 
+                           transition-all duration-300 hover:border-blue-400 hover:shadow-lg"
+              >
+                {/* Tag */}
+                <span className="px-3 py-1 text-sm rounded-lg bg-gray-100 text-gray-600 mb-4 inline-block">
+                  {service.tag}
+                </span>
+
+                {/* Title & Desc */}
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">{service.title}</h3>
+                <p className="text-gray-500 mb-5">{service.desc}</p>
+
+                {/* Points */}
+                <ul className="space-y-2 mb-6">
+                  {service.points.map((point, index) => (
+                    <li key={index} className="flex items-center gap-2 text-gray-700">
+                      <Check className="text-green-500 w-5 h-5" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Button */}
+                <button
+                  className={`bg-gradient-to-r ${service.btnColor} text-white px-6 py-2 rounded-lg font-semibold flex items-center gap-2 hover:opacity-90 transition`}
+                >
+                  Learn more →
+                </button>
               </div>
-            ))}
-          </Slider>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );
-};
-
-export default Services;
+}

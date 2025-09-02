@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { FaLaptopCode, FaUserTie, FaServer,FaCode,FaGlobe,FaPlug, } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Portfolio from '../components/Portfoio';
+import { FaLaptopCode,FaServer,FaCode,FaGlobe,FaPlug, FaReact,FaCogs} from "react-icons/fa";
+import {  MdSupportAgent, MdSystemUpdateAlt  } from "react-icons/md"
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import web2 from "../assets/image/web1.webp";
 import web3 from "../assets/image/web2.webp";
@@ -39,6 +42,8 @@ import  mac  from "../assets/image/mac.png";
 import google from "../assets/image/google.png";
 import aws from "../assets/image/aws.png";
 import  devops from"../assets/image/devops.png";
+
+ 
 
 
 function FAQAccordion() {
@@ -103,35 +108,35 @@ const WebDevelopment = () => {
     },
     {
       id: 6,
-      icon: <FaCode size={28} />,
+      icon: < MdSystemUpdateAlt  size={28} />,
       title: "Upgrade & Migration",
       description:
         "Transition to the latest technology with zero hassle through our upgrade and migration services. SofiLoft securely moves your website or data to modern platforms, cloud servers, or new hosting environments. We preserve SEO rankings, guarantee data integrity, and implement enhanced features—ensuring a smooth, reliable migration so your business stays ahead.",
-      color: "bg-red-500",
+      color: "bg--500",
     },
        {
       id: 6,
-      icon: <FaCode size={28} />,
+      icon: <MdSupportAgent size={28} />,
       title: "Maintenance & Support",
       description:
         "Keep your website performing at its best with ongoing maintenance and support from SofiLoft Technologies. Our team handles regular updates, bug fixes, backups, security monitoring, and speed optimization. You benefit from peace of mind knowing your site is always secure, up-to-date, and delivering an exceptional experience for users—all year long.",
-    color: "bg-red-500",
+    color: "bg-blue-500",
       },
        {
       id: 6,
-      icon: <FaCode size={28} />,
+      icon: <FaReact size={28} />,
       title: "UI/UX Design Services",
       description:
         "Increase user satisfaction and engagement with expert UI/UX design from SofiLoft. We create visually stunning and intuitive interfaces focused on accessibility and conversion. Our user-centered design approach ensures your website is easy to navigate, looks professional across all devices, and encourages customers to take positive action—transforming visitors into brand advocates. ",
-      color: "bg-red-500",
+      color: "bg-green-500",
     },
        {
       id: 6,
-      icon: <FaCode size={28} />,
+      icon: <FaCogs size={28} />,
       title: " Low-Code Development",
       description:
         "Accelerate project delivery and reduce development costs using low-code web solutions. SofiLoft leverages leading low-code platforms for rapid deployment of scalable, flexible websites and apps. This approach enables faster updates, easy integrations, and customizable features, making it ideal for businesses seeking speed and adaptability without compromising quality.",
-      color: "bg-red-500",
+      color: "bg-yellow-500",
     },
   ];
 
@@ -310,101 +315,76 @@ const WebDevelopment = () => {
     <div id="webdevelopment">
 
       {/* ========= FIRST SECTION ========= */}
-      <section className="nft-main-banner-sec py-12">
-         <div className="container mx-auto px-6 md:px-28">
+    <section className="nft-main-banner-sec pt-24 pb-12">
+  <div className="container mx-auto px-6 md:px-28">
     <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
       {/* Left Content */}
       <div className="md:w-1/2">
         <div className="nft-banner-head-info">
           <div className="nft-banner-text-in">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 font-outfit">
-  Custom{" "}
-  <span className="relative text-red-500">
-    Web Development
-    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
-  </span>{" "}
-  Company
-</h1>
-<p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
-  Are you looking for a top custom web development company to boost your online presence? SofiLoft Technologies creates tailor-made, high-performance websites designed to meet your unique business needs. Our responsive sites are optimized for speed, security, and scalability to deliver an outstanding user experience and improve search engine rankings.
-</p>
+              Custom{" "}
+              <span className="relative text-orange-500">
+                Web Development
+                <span className="absolute left-0 bottom-0 w-full h-[2px] bg-orange-500"></span>
+              </span>{" "}
+              Company
+            </h1>
+            <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit ">
+              Are you looking for a top custom web development company to boost
+              your online presence? SofiLoft Technologies creates tailor-made,
+              high-performance websites designed to meet your unique business
+              needs. Our responsive sites are optimized for speed, security, and
+              scalability to deliver an outstanding user experience and improve
+              search engine rankings.
+            </p>
 
             <p className="text-lg text-gray-600 leading-8 mb-8 font-outfit">
-            Partner with SofiLoft Technologies to build a website that attracts and converts visitors into loyal customers. Share your project requirements today and discover how our expert developers can help grow your business and enhance your digital visibility.
+              Partner with SofiLoft Technologies to build a website that
+              attracts and converts visitors into loyal customers. Share your
+              project requirements today and discover how our expert developers
+              can help grow your business and enhance your digital visibility.
             </p>
-            
           </div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="javascript:;"
-              className="px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 transition"
-            >
-              Get In Touch
-            </a>
-            <a
-              href="https://devtechnosys.com/request-a-quote.php"
-              className="px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 transition"
+              href="/ContactForm"
+              className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:to-pink-700 transition"
             >
               Book A Consultation
             </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="md:w-5/12 flex justify-center pt-20">
-            <div className="banner-inner-1">
-              <img
-                width="444"
-                height="532"
-                alt="Progressive Web App Development Company"
-                className="rounded-lg object-contain"
-                src={web2}
-              />
-            </div>
           </div>
         </div>
       </div>
-    </section>
 
-      {/* ========= SECOND SECTION ========= */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          {/* Left Image */}
-          <div className="flex-1 flex justify-center">
-            <img src={web3} 
-            alt="Custom Web Development" 
-            className="max-w-sm w-full" />
-          </div>
-
-          {/* Right Content */}
-          <div className="flex-1">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              <span className="text-black">
-Reliable
- </span>
-              <span className="text-pink-500 underline decoration-pink-500"> Custom Web Development</span>
-              <span className="text-black"> Solutions</span>
-            </h2>
-            <p className="mt-6 text-gray-600 leading-relaxed">
-           Boost your business with SofiLoft Technologies’ custom web development. We build unique, high-performing websites using the latest tech and SEO strategies, helping your brand engage customers and grow online. Get secure, scalable, and visually striking solutions—tailored for your goals—with ongoing support every step of the way.
-            </p>
-           
-            <button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-md font-semibold shadow-lg hover:opacity-90 transition">
-              Connect With Experts Now!
-            </button>
-          </div>
+      {/* Right Image (Hidden on mobile) */}
+      <div className="hidden md:flex md:w-5/12 justify-center pt-20">
+        <div className="banner-inner-1">
+          <img
+            width="444"
+            height="532"
+            alt="Progressive Web App Development Company"
+            className="rounded-lg object-contain"
+            src={web2}
+          />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
 
       {/* ========= THIRD SECTION ========= */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
             Top{" "}
-            <span className="text-pink-500">Web Development</span>{" "}
+            <span className="text-orange-500">Web Development</span>{" "}
             Services
           </h2>
           <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
@@ -416,7 +396,7 @@ Transform your business with SofiLoft Technologies’ comprehensive website deve
 
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-3xl p-6 h-full flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4 shadow-lg`}>
                 {service.icon}
               </div>
@@ -465,9 +445,12 @@ Gain a competitive edge with customized web development designed specifically fo
            Need Help with Custom Website Development?
 
           </h1>
-          <button className="mt-6 bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
-            Get In Touch
-          </button>
+        
+         <Link to="/contactform">
+  <button className="mt-6 bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
+    Get In Touch
+  </button>
+</Link>
         </div>
 
         {/* Image Section */}
@@ -481,41 +464,8 @@ Gain a competitive edge with customized web development designed specifically fo
       </section>
 
       {/* ========= PORTFOLIO HERO APPENDED ========= */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Our Portfolio
-          </h2>
-          <p className="text-gray-600 mt-2">
-            Take a look at some of our best work and successful projects.
-          </p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="rounded-lg shadow-lg overflow-hidden">
-            <img src={porto1}
-            alt="Portfolio 1"
-             className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="font-bold text-lg">E-commerce Platform</h3>
-              <p className="text-gray-600 text-sm mt-2">A complete online shopping solution with secure payment integration.</p>
-            </div>
-          </div>
-          <div className="rounded-lg shadow-lg overflow-hidden">
-            <img src={porto1} alt="Portfolio 2" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="font-bold text-lg">Healthcare Portal</h3>
-              <p className="text-gray-600 text-sm mt-2">A patient-friendly healthcare management system with telemedicine features.</p>
-            </div>
-          </div>
-          <div className="rounded-lg shadow-lg overflow-hidden">
-            <img src={porto1} alt="Portfolio 3" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="font-bold text-lg">Education Platform</h3>
-              <p className="text-gray-600 text-sm mt-2">An engaging learning management system with virtual classrooms.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+       <Portfolio /> 
+
         <section className="py-12 px-4 md:px-12 lg:px-20 bg-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Latest Tech Stacks for Custom Web Development

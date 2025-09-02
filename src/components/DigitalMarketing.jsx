@@ -7,7 +7,7 @@ import web3 from "../assets/image/web2.webp";
 import web4 from "../assets/image/web3.png";
 import web5 from "../assets/image/Healthcare.jpg";
 import restu from "../assets/image/Resturant.jpg";
-import start from "../assets/image/Starttup.jpg";
+import start from "../assets/image/Starttup.jpg"
 
 
 import edu from "../assets/image/Education.jpg";
@@ -16,6 +16,20 @@ import state from "../assets/image/State.jpg";
 import banking from "../assets/image/Banking.jpg";
 import treval from "../assets/image/Travel.jpg";
 import retail1 from "../assets/image/Retail1.jpg";
+import google from "../assets/image/ads.png";
+import facebook from "../assets/image/fb.png";
+import hub  from "../assets/image/Hu.png";
+import mail from "../assets/image/mail.png";
+import ana from "../assets/image/Analytics.png";
+import sem from "../assets/image/sem.png";
+import ahr from "../assets/image/ahr.png";
+import moz from "../assets/image/moz.png";
+import hoo from "../assets/image/hoo.png";
+import buffer from "../assets/image/buffer.png";
+import canva  from "../assets/image/canva.jpg";
+import later from "../assets/image/Later.png";
+
+
 
 const DigitalMarketing = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -166,39 +180,31 @@ const DigitalMarketing = () => {
     {
       category: "Marketing Platforms",
       items: [
-        { name: "Google Ads", img: "/images/googleads.png" },
-        { name: "Facebook Ads", img: "/images/facebookads.png" },
-        { name: "HubSpot", img: "/images/hubspot.png" },
-        { name: "Mailchimp", img: "/images/mailchimp.png" },
+        { name: "Google Ads", img:google},
+        { name: "Facebook Ads", img: facebook},
+        { name: "HubSpot", img: hub },
+        { name: "Mailchimp", img:mail },
       ],
     },
     {
       category: "Analytics & SEO Tools",
       items: [
-        { name: "Google Analytics", img: "/images/ga.png" },
-        { name: "SEMrush", img: "/images/semrush.png" },
-        { name: "Ahrefs", img: "/images/ahrefs.png" },
-        { name: "Moz", img: "/images/moz.png" },
+        { name: "Google Analytics", img: ana },
+        { name: "SEMrush", img: sem },
+        { name: "Ahrefs", img: ahr},
+        { name: "Moz", img: moz },
       ],
     },
     {
       category: "Social Media Tools",
       items: [
-        { name: "Hootsuite", img: "/images/hootsuite.png" },
-        { name: "Buffer", img: "/images/buffer.png" },
-        { name: "Canva", img: "/images/canva.png" },
-        { name: "Later", img: "/images/later.png" },
+        { name: "Hootsuite", img: hoo },
+        { name: "Buffer", img:buffer },
+        { name: "Canva", img:canva },
+        { name: "Later", img: later },
       ],
     },
-    {
-      category: "Automation Tools",
-      items: [
-        { name: "Zapier", img: "/images/zapier.png" },
-        { name: "ActiveCampaign", img: "/images/activecampaign.png" },
-        { name: "HubSpot Automation", img: "/images/hubspot.png" },
-        { name: "Marketo", img: "/images/marketo.png" },
-      ],
-    },
+
   ];
 
   // ✅ FAQs (Updated)
@@ -259,62 +265,53 @@ const DigitalMarketing = () => {
   return (
     <div id="digitalmarketing">
       {/* HERO SECTION (Updated) */}
-      <section className="nft-main-banner-sec py-12">
-        <div className="container mx-auto px-6 md:px-28">
-          <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
-            <div className="md:w-1/2">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                SofiLoft Technologies – Expert {" "}
-                <span className="relative text-red-500">
-                  Digital Marketing
-                  <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
-                </span>{" "}
-                Services
-              </h1>
-              <p className="text-lg text-gray-600 mb-6">
-                At SofiLoft Technologies, we understand that in today’s digital world, a strong online presence is crucial for business success. Our comprehensive digital marketing solutions are crafted to help brands of all sizes connect with their target audiences, increase visibility, and drive meaningful engagement. Leveraging the latest tools and strategies, we deliver customized campaigns that optimize your marketing budget to maximize return on investment. 
-              </p>
-              <div className="flex gap-4">
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-blue-500 to-blue-700">
-                  Get Started
-                </a>
-                <a href="#" className="px-6 py-3 rounded-md text-white bg-gradient-to-r from-pink-500 to-pink-600">
-                  Free Consultation
-                </a>
-              </div>
-            </div>
-            <div className="md:w-5/12 flex justify-center pt-20">
-              <img src={web2} alt="Digital Marketing" className="rounded-lg object-contain" />
-            </div>
-          </div>
+    <section className="nft-main-banner-sec pt-24 pb-12">
+  <div className="container mx-auto px-6 md:px-28">
+    <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
+      
+      {/* Left Content */}
+      <div className="md:w-1/2">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          SofiLoft Technologies – Expert{" "}
+          <span className="relative text-red-500">
+            Digital Marketing
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-red-500"></span>
+          </span>{" "}
+          Services
+        </h1>
+        <p className="text-lg text-gray-600 leading-8 mb-6 font-outfit">
+          At SofiLoft Technologies, we understand that in today’s digital world, a strong online presence is crucial for business success. Our comprehensive digital marketing solutions are crafted to help brands of all sizes connect with their target audiences, increase visibility, and drive meaningful engagement. Leveraging the latest tools and strategies, we deliver customized campaigns that optimize your marketing budget to maximize return on investment. 
+        </p>
+        <div className="flex gap-4">
+          <a
+            href="/ContactForm"
+            className="px-6 py-3 rounded-md text-white font-medium bg-orange-500 hover:to-pink-700 transition"
+          >
+            Book A Consultation
+          </a>
         </div>
-      </section>
+      </div>
 
-      {/* SECOND SECTION (Unchanged) */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          <div className="flex-1 flex justify-center">
-            <img src={web3} alt="Digital Marketing Services" className="max-w-sm w-full" />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Data-Driven <span className="text-pink-500 underline">Marketing Solutions</span>
-            </h2>
-            <p className="mt-6 text-gray-600">
-              Our digital strategies are designed to deliver measurable results and long-term growth for your business.
-            </p>
-            <button className="mt-6 bg-gradient-to-r from-blue-500 to-pink-500 text-white px-6 py-3 rounded-md">
-              Talk to Our Experts
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* Right Image (hidden on mobile) */}
+      <div className="hidden md:flex md:w-5/12 justify-center pt-20">
+        <img
+          src={web2}
+          alt="Digital Marketing"
+          className="rounded-lg object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+     
 
       {/* SERVICES SECTION (Updated) */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Our <span className="text-pink-500">Digital Marketing</span> Services
+            Our <span className="text-orange-500">Digital Marketing</span> Services
           </h2>
           <p className="text-gray-600 mt-3">
             Take your business to new heights with our comprehensive marketing services.
@@ -322,12 +319,12 @@ const DigitalMarketing = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col">
+            <div key={service.id} className="bg-[#fbfbfb] shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
               <div className={`w-14 h-14 ${service.color} text-white flex items-center justify-center rounded-full mb-4`}>
                 {service.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="leading-[28px] text-[#616b80]">{service.description}</p>
             </div>
           ))}
         </div>
@@ -368,7 +365,7 @@ Industry-Specific Digital Marketing Solutions
               <div className="grid grid-cols-2 gap-4">
                 {stack.items.map((item, i) => (
                   <div key={i} className="flex flex-col items-center justify-center bg-black rounded-lg p-3">
-                    <img src={item.img} alt={item.name} className="w-10 h-10 mb-2" />
+                    <img src={item.img} alt={item.name} className="w-14 h-14 mb-2" />
                     <p className="text-white text-sm">{item.name}</p>
                   </div>
                 ))}

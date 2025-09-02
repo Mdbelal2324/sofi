@@ -6,24 +6,24 @@ import whyImage from "../assets/image/chose.jpg"; // replace with your image pat
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <MdOutlineManageSearch className="text-blue-500 text-3xl" />,
+      icon: <MdOutlineManageSearch className="text-green-500 text-3xl" />,
       title: "Client-Centric Approach",
       desc: "We take the time to delve into your unique goals, challenges, and target audience before crafting any solutions."
     },
     {
-      icon: <FaCheckCircle className="text-blue-500 text-3xl" />,
+      icon: <FaCheckCircle className="text-green-500 text-3xl" />,
       title: " Proven Track Record of Success",
       desc: "We showcase a curated selection of our best projects across various industries, demonstrating our ability."
     },
     {
-      icon: <FaUsers className="text-blue-500 text-3xl" />,
+      icon: <FaUsers className="text-green-500 text-3xl" />,
       title: "A Team of Experts You Can Trust",
       desc: "Our team comprises passionate and dedicated IT specialists with a deep understanding of the latest technologies."
     }
   ];
 
   return (
-    <section className="py-16 bg-[#3f51b5]">
+    <section className="bg-gradient-to-b from-[#0f172a] to-[#1e3a8a] py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
@@ -38,24 +38,11 @@ export default function WhyChooseUs() {
 
           {/* Right Content */}
           <div>
-            <span className="flex items-center text-yellow-300 font-semibold uppercase tracking-wide mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6v6l4 2"
-                />
-              </svg>
+            <span className="flex items-center text-white text-extrabold uppercase tracking-wide mb-2">
+            
               Why Choose Us
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-yellow-300 b-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white b-4">
               Your Trusted Partner For IT Success
             </h2>
             <p className="text-gray-200 mb-6">
@@ -69,7 +56,7 @@ export default function WhyChooseUs() {
                 <div key={index} className="flex items-start">
                   <div className="flex-shrink-0 mr-4">{feature.icon}</div>
                   <div>
-                    <h3 className="text-lg font-semibold text-yellow-300">
+                    <h3 className="text-lg font-extrabold text-white">
                       {feature.title}
                     </h3>
                     <p className="text-gray-200">{feature.desc}</p>
